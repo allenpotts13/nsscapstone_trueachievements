@@ -1,0 +1,46 @@
+@startuml
+
+actor "Client" as client
+participant "API Gateway/Lambda" as apiGateway
+participant "CreateGroupActivity" as createGroupActivity
+participant "GroupDao" as groupDao
+database "DynamoDB" as dynamoDB
+
+title Create Group
+
+client -> apiGateway : HTTP Request
+activate apiGateway
+
+apiGateway -> createGroupActivity : CreateGroupActivity
+activate createGroupActivity
+
+createGroupActivity -> createGroupActivity : validate group name from request
+
+createGroupActivity -> createGroupActivity: create Group
+
+createGroupActivity -> groupDao : saveGroup(Group)
+activate groupDao
+
+groupDao -> dynamoDB : store Group
+activate dynamoDB
+
+dynamoDB --> groupDao : return 200 response
+deactivate dynamoDB
+
+groupDao --> createGroupActivity : return updated Group object
+deactivate groupDao
+
+createGroupActivity -> createGroupActivity: create GroupModel
+
+createGroupActivity -> createGroupActivity: set GroupModel with saved Group data
+
+createGroupActivity -> createGroupActivity: Create CreateGroupResponse
+createGroupActivity -> createGroupActivity: Set GroupModel field in CreateGroupResponse
+
+createGroupActivity --> apiGateway : return CreateGroupResponse
+deactivate createGroupActivity
+
+apiGateway --> client : return 200 response with CreateGroupResponse data
+deactivate apiGateway
+
+@enduml
