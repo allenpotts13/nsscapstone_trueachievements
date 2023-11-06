@@ -4,7 +4,7 @@
 Xbox is a well-known brand and one that is synonymous with gaming. 
 A great website, TrueAchievements.com, leans into the achievement's gamers earn while gaming. 
 They add their own score based on many factors, including difficulty, rarity, and other secret sauce algorithms. 
-However, the one thing its lacking in is an app! Great web interface, no app!
+However, the one thing its lacking in is the ability to group your games up to help find and organize your information.
 
 I wish to build a TrueAchievements Service that will allow users to import their data, be able to search and even create groups of games to help better narrow their scopes. 
 The groups feature is where the biggest benefit will be seen. 
@@ -31,7 +31,7 @@ U6. As a customer, I want to be able to search my entire game library.
 
 U7. As a customer, I want to be able to see my statistics. (Total games, Hours played, Total Achievement Score, etc.)
 
-U8. As a customer, I want to be able to add a game from within the game details page. 
+U8. As a customer, I want to be able to add a game to a group from within the game details page. 
 
 U9. As a customer, I want to be able to add a tag to a game to define a genre. 
 
@@ -128,7 +128,7 @@ String contestStatus;
       `GameNotFoundException`
 
 ## 5.5 Add Game to Group Endpoint
-* Accepts `POST` requests to `/groups/:groupName/game`
+* Accepts `POST` requests to `/groups/:groupName/games`
 * Accepts a group name and a game to be added. The game is specified by its uniqueId and gameName.
     * If the group is not found, will throw a `GroupNotFoundException`
     * If the uniqueId or gameName doesn't exist, will throw a
@@ -141,6 +141,10 @@ String contestStatus;
 * If the group name is found, but contains no games, the games list will be
   empty
 * If the group name is not found, will throw a `GroupNotFoundException`
+
+## 5.7 Get All Groups Endpoint
+* Accepts `GET` requests to `/groups`
+* Retrieves all groups 
 
 # 6. Tables
 
