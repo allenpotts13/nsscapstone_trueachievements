@@ -45,8 +45,8 @@ you more freedom over how things are structured. The data within will only perta
 to add other users. 
 
 ## 4. Proposed Architecture Overview
-We will use API Gateway and Lambda to create six endpoints (`GetUserLambda`,
-`CreateGroupLambda`, `GetGroupLambda`, `GetGameLambda`, `AddGameToGroupLambda`, and `GetGamesInGroupLambda`)
+We will use API Gateway and Lambda to create six endpoints (`GetUserStatsLambda`, `CreateGroupLambda`, 
+`GetGroupLambda`, `GetGameLambda`, `GetAllGroupsLambda`, `GetAllGamesLambda`, `AddGameToGroupLambda`, and `GetGamesInGroupLambda`)
 that will handle the creation, update, and retrieval of groups to satisfy our
 requirements.
 
@@ -107,6 +107,16 @@ List<String> gameNotes;
 String contestStatus;
 ```
 
+```
+// UserStatsModel
+
+Integer gamerScore;
+Integer trueAchievementScore;
+Integer hoursPlayed;
+Integer numberOfGamesOwned;
+Integer myCompletionPercentage;
+```
+
 ## 5.2. Get Group Endpoint
 * Accepts `GET` requests to `/groups/:groupName`
 * Accepts a group name and returns the corresponding GroupModel.
@@ -122,9 +132,9 @@ String contestStatus;
       `InvalidAttributeException`
 
 ## 5.4 Get Game Endpoint
-* Accepts `GET` requests to `/game/:uniqueId/:gameName`
-* Accepts a uniqueId and gameName and returns the corresponding GameModel.
-    * If the given group name is not found, will throw a
+* Accepts `GET` requests to `/games/:uniqueId/`
+* Accepts a uniqueId and returns the corresponding GameModel.
+    * If the given unique ID is not found, will throw a
       `GameNotFoundException`
 
 ## 5.5 Add Game to Group Endpoint
@@ -146,6 +156,14 @@ String contestStatus;
 * Accepts `GET` requests to `/groups`
 * Retrieves all groups
 
+## 5.8 Get All Games Endpoint
+* Accepts `GET` requests to `/games`
+* Retrieves all games
+
+## 5.9 Get User Stats Endpoint
+* Accepts `GET` requests to `/games`
+* Retrieves user stats from various data points
+
 # 6. Tables
 
 ### 6.1. 'groups'
@@ -157,7 +175,7 @@ gameList // list
 ### 6.2. 'games'
 ```
 uniqueId // partition key, string
-gameName // sort key, string	
+gameName // string	
 platform // string	
 gameURL // string	
 achievementsWonNoDlc // number	
@@ -189,4 +207,6 @@ walkthrough // string
 gameNotes // stringList
 contestStatus // string
 ```
+
+- platform-uniqueId-index includes gameName
 
