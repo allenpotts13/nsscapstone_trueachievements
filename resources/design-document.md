@@ -161,7 +161,7 @@ Integer myCompletionPercentage;
 * Retrieves all games
 
 ## 5.9 Get User Stats Endpoint
-* Accepts `GET` requests to `/games`
+* Accepts `GET` requests to `/statistics`
 * Retrieves user stats from various data points
 
 # 6. Tables
