@@ -1,10 +1,17 @@
 package nsscapstone_trueachievements.dynamodb.models;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Represents a record in the games table.
+ */
+@DynamoDBTable(tableName = "games")
 public class Game {
-
     private String uniqueId;
     private String gameName;
     private String platform;
@@ -37,7 +44,7 @@ public class Game {
     private String walkthrough;
     private List<String> gameNotes;
     private String contestStatus;
-
+    @DynamoDBHashKey(attributeName = "id")
     public String getUniqueId() {
         return uniqueId;
     }
@@ -45,7 +52,7 @@ public class Game {
     public void setUniqueId(String uniqueId) {
         this.uniqueId = uniqueId;
     }
-
+    @DynamoDBAttribute(attributeName = "gameName")
     public String getGameName() {
         return gameName;
     }
@@ -53,11 +60,13 @@ public class Game {
     public void setGameName(String gameName) {
         this.gameName = gameName;
     }
-
+    @DynamoDBAttribute(attributeName = "platform")
     public String getPlatform() {
         return platform;
     }
 
+    public String setPlatform() { return this.platform; }
+    @DynamoDBAttribute(attributeName = "gameURL")
     public String getGameURL() {
         return gameURL;
     }
@@ -65,7 +74,7 @@ public class Game {
     public void setGameURL(String gameURL) {
         this.gameURL = gameURL;
     }
-
+    @DynamoDBAttribute(attributeName = "achievementsWonNoDlc")
     public Integer getAchievementsWonNoDlc() {
         return achievementsWonNoDlc;
     }
@@ -73,7 +82,7 @@ public class Game {
     public void setAchievementsWonNoDlc(Integer achievementsWonNoDlc) {
         this.achievementsWonNoDlc = achievementsWonNoDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "maxAchievementsNoDlc")
     public Integer getMaxAchievementsNoDlc() {
         return maxAchievementsNoDlc;
     }
@@ -81,7 +90,7 @@ public class Game {
     public void setMaxAchievementsNoDlc(Integer maxAchievementsNoDlc) {
         this.maxAchievementsNoDlc = maxAchievementsNoDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "achievementsWonIncludeDlc")
     public Integer getAchievementsWonIncludeDlc() {
         return achievementsWonIncludeDlc;
     }
@@ -89,7 +98,7 @@ public class Game {
     public void setAchievementsWonIncludeDlc(Integer achievementsWonIncludeDlc) {
         this.achievementsWonIncludeDlc = achievementsWonIncludeDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "maxAchievementsIncludeDlc")
     public Integer getMaxAchievementsIncludeDlc() {
         return maxAchievementsIncludeDlc;
     }
@@ -97,7 +106,7 @@ public class Game {
     public void setMaxAchievementsIncludeDlc(Integer maxAchievementsIncludeDlc) {
         this.maxAchievementsIncludeDlc = maxAchievementsIncludeDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "gamerScoreWonNoDlc")
     public Integer getGamerScoreWonNoDlc() {
         return gamerScoreWonNoDlc;
     }
@@ -105,7 +114,7 @@ public class Game {
     public void setGamerScoreWonNoDlc(Integer gamerScoreWonNoDlc) {
         this.gamerScoreWonNoDlc = gamerScoreWonNoDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "maxGamerScoreNoDlc")
     public Integer getMaxGamerScoreNoDlc() {
         return maxGamerScoreNoDlc;
     }
@@ -113,7 +122,7 @@ public class Game {
     public void setMaxGamerScoreNoDlc(Integer maxGamerScoreNoDlc) {
         this.maxGamerScoreNoDlc = maxGamerScoreNoDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "gamerScoreWonIncludeDlc")
     public Integer getGamerScoreWonIncludeDlc() {
         return gamerScoreWonIncludeDlc;
     }
@@ -121,7 +130,7 @@ public class Game {
     public void setGamerScoreWonIncludeDlc(Integer gamerScoreWonIncludeDlc) {
         this.gamerScoreWonIncludeDlc = gamerScoreWonIncludeDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "maxGamerscoreIncludeDlc")
     public Integer getMaxGamerscoreIncludeDlc() {
         return maxGamerscoreIncludeDlc;
     }
@@ -129,7 +138,7 @@ public class Game {
     public void setMaxGamerscoreIncludeDlc(Integer maxGamerscoreIncludeDlc) {
         this.maxGamerscoreIncludeDlc = maxGamerscoreIncludeDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "trueAchievementWonNoDlc")
     public Integer getTrueAchievementWonNoDlc() {
         return trueAchievementWonNoDlc;
     }
@@ -137,7 +146,7 @@ public class Game {
     public void setTrueAchievementWonNoDlc(Integer trueAchievementWonNoDlc) {
         this.trueAchievementWonNoDlc = trueAchievementWonNoDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "maxTrueAchievementNoDlc")
     public Integer getMaxTrueAchievementNoDlc() {
         return maxTrueAchievementNoDlc;
     }
@@ -145,7 +154,7 @@ public class Game {
     public void setMaxTrueAchievementNoDlc(Integer maxTrueAchievementNoDlc) {
         this.maxTrueAchievementNoDlc = maxTrueAchievementNoDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "trueAchievementWonIncludeDlc")
     public Integer getTrueAchievementWonIncludeDlc() {
         return trueAchievementWonIncludeDlc;
     }
@@ -153,7 +162,7 @@ public class Game {
     public void setTrueAchievementWonIncludeDlc(Integer trueAchievementWonIncludeDlc) {
         this.trueAchievementWonIncludeDlc = trueAchievementWonIncludeDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "maxTrueAchievementIncludeDlc")
     public Integer getMaxTrueAchievementIncludeDlc() {
         return maxTrueAchievementIncludeDlc;
     }
@@ -161,7 +170,7 @@ public class Game {
     public void setMaxTrueAchievementIncludeDlc(Integer maxTrueAchievementIncludeDlc) {
         this.maxTrueAchievementIncludeDlc = maxTrueAchievementIncludeDlc;
     }
-
+    @DynamoDBAttribute(attributeName = "myCompletionPercentage")
     public Integer getMyCompletionPercentage() {
         return myCompletionPercentage;
     }
@@ -169,7 +178,7 @@ public class Game {
     public void setMyCompletionPercentage(Integer myCompletionPercentage) {
         this.myCompletionPercentage = myCompletionPercentage;
     }
-
+    @DynamoDBAttribute(attributeName = "completionDate")
     public String getCompletionDate() {
         return completionDate;
     }
@@ -177,7 +186,7 @@ public class Game {
     public void setCompletionDate(String completionDate) {
         this.completionDate = completionDate;
     }
-
+    @DynamoDBAttribute(attributeName = "challengesWon")
     public Integer getChallengesWon() {
         return challengesWon;
     }
@@ -185,7 +194,7 @@ public class Game {
     public void setChallengesWon(Integer challengesWon) {
         this.challengesWon = challengesWon;
     }
-
+    @DynamoDBAttribute(attributeName = "maxChallenges")
     public Integer getMaxChallenges() {
         return maxChallenges;
     }
@@ -193,7 +202,7 @@ public class Game {
     public void setMaxChallenges(Integer maxChallenges) {
         this.maxChallenges = maxChallenges;
     }
-
+    @DynamoDBAttribute(attributeName = "hoursPlayed")
     public Integer getHoursPlayed() {
         return hoursPlayed;
     }
@@ -201,7 +210,7 @@ public class Game {
     public void setHoursPlayed(Integer hoursPlayed) {
         this.hoursPlayed = hoursPlayed;
     }
-
+    @DynamoDBAttribute(attributeName = "myRating")
     public Float getMyRating() {
         return myRating;
     }
@@ -209,7 +218,7 @@ public class Game {
     public void setMyRating(Float myRating) {
         this.myRating = myRating;
     }
-
+    @DynamoDBAttribute(attributeName = "siteRating")
     public Float getSiteRating() {
         return siteRating;
     }
@@ -217,7 +226,7 @@ public class Game {
     public void setSiteRating(Float siteRating) {
         this.siteRating = siteRating;
     }
-
+    @DynamoDBAttribute(attributeName = "myRatio")
     public Float getMyRatio() {
         return myRatio;
     }
@@ -225,15 +234,11 @@ public class Game {
     public void setMyRatio(Float myRatio) {
         this.myRatio = myRatio;
     }
+    @DynamoDBAttribute(attributeName = "siteRatio")
+    public Float getSiteRatio() { return siteRatio; }
 
-    public Float getSiteRatio() {
-        return siteRatio;
-    }
-
-    public void setSiteRatio(Float siteRatio) {
-        this.siteRatio = siteRatio;
-    }
-
+    public void setSiteRatio(Float siteRatio) { this.siteRatio = siteRatio; }
+    @DynamoDBAttribute(attributeName = "ownershipStatus")
     public String getOwnershipStatus() {
         return ownershipStatus;
     }
@@ -241,7 +246,7 @@ public class Game {
     public void setOwnershipStatus(String ownershipStatus) {
         this.ownershipStatus = ownershipStatus;
     }
-
+    @DynamoDBAttribute(attributeName = "playStatus")
     public String getPlayStatus() {
         return playStatus;
     }
@@ -249,7 +254,7 @@ public class Game {
     public void setPlayStatus(String playStatus) {
         this.playStatus = playStatus;
     }
-
+    @DynamoDBAttribute(attributeName = "format")
     public String getFormat() {
         return format;
     }
@@ -257,7 +262,7 @@ public class Game {
     public void setFormat(String format) {
         this.format = format;
     }
-
+    @DynamoDBAttribute(attributeName = "completionEstimate")
     public String getCompletionEstimate() {
         return completionEstimate;
     }
@@ -265,7 +270,7 @@ public class Game {
     public void setCompletionEstimate(String completionEstimate) {
         this.completionEstimate = completionEstimate;
     }
-
+    @DynamoDBAttribute(attributeName = "walkthrough")
     public String getWalkthrough() {
         return walkthrough;
     }
@@ -273,7 +278,7 @@ public class Game {
     public void setWalkthrough(String walkthrough) {
         this.walkthrough = walkthrough;
     }
-
+    @DynamoDBAttribute(attributeName = "gameNotes")
     public List<String> getGameNotes() {
         return gameNotes;
     }
@@ -281,7 +286,7 @@ public class Game {
     public void setGameNotes(List<String> gameNotes) {
         this.gameNotes = gameNotes;
     }
-
+    @DynamoDBAttribute(attributeName = "contestStatus")
     public String getContestStatus() {
         return contestStatus;
     }
