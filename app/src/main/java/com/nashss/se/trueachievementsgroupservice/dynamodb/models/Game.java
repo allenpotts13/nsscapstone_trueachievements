@@ -1,4 +1,4 @@
-package nsscapstone_trueachievements.dynamodb.models;
+package com.nashss.se.trueachievementsgroupservice.dynamodb.models;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
