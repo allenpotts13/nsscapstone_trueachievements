@@ -31,7 +31,7 @@ U6. As a customer, I want to be able to search my entire game library.
 
 U7. As a customer, I want to be able to see my statistics. (Total games, Hours played, Total Achievement Score, etc.)
 
-U8. As a customer, I want to be able to add a game from within the game details page. 
+U8. As a customer, I want to be able to add a game to a group from within the game details page. 
 
 U9. As a customer, I want to be able to add a tag to a game to define a genre. 
 
@@ -163,6 +163,7 @@ Integer myCompletionPercentage;
 ## 5.9 Get User Stats Endpoint
 * Accepts `GET` requests to `/statistics`
 * Retrieves user stats from various data points
+
 
 # 6. Tables
 
