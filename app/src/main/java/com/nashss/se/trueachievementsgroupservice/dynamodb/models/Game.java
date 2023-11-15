@@ -131,11 +131,11 @@ public class Game {
         this.gamerScoreWonIncludeDlc = gamerScoreWonIncludeDlc;
     }
     @DynamoDBAttribute(attributeName = "maxGamerscoreIncludeDlc")
-    public Integer getMaxGamerscoreIncludeDlc() {
+    public Integer getMaxGamerScoreIncludeDlc() {
         return maxGamerscoreIncludeDlc;
     }
 
-    public void setMaxGamerscoreIncludeDlc(Integer maxGamerscoreIncludeDlc) {
+    public void setMaxGamerScoreIncludeDlc(Integer maxGamerscoreIncludeDlc) {
         this.maxGamerscoreIncludeDlc = maxGamerscoreIncludeDlc;
     }
     @DynamoDBAttribute(attributeName = "trueAchievementWonNoDlc")

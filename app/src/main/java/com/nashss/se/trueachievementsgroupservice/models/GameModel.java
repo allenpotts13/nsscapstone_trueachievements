@@ -367,7 +367,7 @@ public class GameModel implements Comparable<GameModel> {
             this.gamerScoreWonIncludeDlc = gamerScoreWonIncludeDlc;
             return this;
         }
-        public Builder withMaxGamerscoreIncludeDlc(Integer maxGamerscoreIncludeDlc) {
+        public Builder withMaxGamerScoreIncludeDlc(Integer maxGamerscoreIncludeDlc) {
             this.maxGamerscoreIncludeDlc = maxGamerscoreIncludeDlc;
             return this;
         }
