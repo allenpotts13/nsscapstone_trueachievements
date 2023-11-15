@@ -58,12 +58,12 @@ public class GroupModel implements Comparable<GroupModel> {
         private String groupName;
         private List<Game> gamesList;
 
-        public Builder groupName(String groupName) {
+        public Builder withGroupName(String groupName) {
             this.groupName = groupName;
             return this;
         }
 
-        public Builder gamesList(List<Game> gamesList) {
+        public Builder withGamesList(List<Game> gamesList) {
             this.gamesList = copyToList(gamesList);
             return this;
         }
