@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  My Social Network
+  TrueAchievements Group Service
 
 Parameters:
 
@@ -208,13 +208,13 @@ Resources:
               Action: dynamodb:*
               Resource: !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/groups"
                 
-        - PolicyName: 'AccessContactsTable'
+        - PolicyName: 'AccessGamesTable'
           PolicyDocument:
             Version: '2012-10-17'
             Statement:
             - Effect: Allow
               Action: dynamodb:*
-              Resource: !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/contacts"
+              Resource: !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games"
 
   #-----------------------------------------------------
   # Lambda Functions Configuration
