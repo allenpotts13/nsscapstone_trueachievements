@@ -3,7 +3,6 @@ package com.nashss.se.trueachievementsgroupservice.lambda;
 import com.amazonaws.services.lambda.runtime.events.APIGatewayProxyRequestEvent;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.nashss.se.trueachievementsgroupservice.utils.NullUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -46,7 +45,7 @@ public class LambdaRequest<T> extends APIGatewayProxyRequestEvent {
      */
     public T fromQuery(Function<Map<String, String>, T> converter) {
         log.info("Attempting to retrieve values from query string parameters.");
-        Map<String, String> query = NullUtils.ifNull(super.getQueryStringParameters(), Map.of());
+        Map<String, String> query = ifNull(super.getQueryStringParameters(), Map.of());
         return converter.apply(query);
     }
 
@@ -57,7 +56,7 @@ public class LambdaRequest<T> extends APIGatewayProxyRequestEvent {
      */
     public T fromPath(Function<Map<String, String>, T> converter) {
         log.info("Attempting to retrieve values from path parameters.");
-        Map<String, String> path = NullUtils.ifNull(super.getPathParameters(), Map.of());
+        Map<String, String> path = ifNull(super.getPathParameters(), Map.of());
         return converter.apply(path);
     }
 
@@ -69,8 +68,8 @@ public class LambdaRequest<T> extends APIGatewayProxyRequestEvent {
      */
     public T fromPathAndQuery(BiFunction<Map<String, String>, Map<String, String>, T> converter) {
         log.info("Attempting to retrieve values from path and query string parameters.");
-        Map<String, String> path = NullUtils.ifNull(super.getPathParameters(), Map.of());
-        Map<String, String> query = NullUtils.ifNull(super.getQueryStringParameters(), Map.of());
+        Map<String, String> path = ifNull(super.getPathParameters(), Map.of());
+        Map<String, String> query = ifNull(super.getQueryStringParameters(), Map.of());
         return converter.apply(path, query);
     }
 }
