@@ -26,8 +26,12 @@ public class GroupModel implements Comparable<GroupModel> {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         GroupModel that = (GroupModel) o;
         return Objects.equals(groupName, that.groupName) &&
                 Objects.equals(gamesList, that.gamesList);

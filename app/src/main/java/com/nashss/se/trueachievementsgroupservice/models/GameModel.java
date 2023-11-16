@@ -40,7 +40,7 @@ public class GameModel implements Comparable<GameModel> {
     private List<String> gameNotes;
     private String contestStatus;
 
-    public GameModel(String uniqueId, String gameName, String platform, String gameURL, Integer achievementsWonNoDlc,
+    private GameModel(String uniqueId, String gameName, String platform, String gameURL, Integer achievementsWonNoDlc,
                      Integer maxAchievementsNoDlc, Integer achievementsWonIncludeDlc, Integer maxAchievementsIncludeDlc,
                      Integer gamerScoreWonNoDlc, Integer maxGamerScoreNoDlc, Integer gamerScoreWonIncludeDlc,
                      Integer maxGamerscoreIncludeDlc, Integer trueAchievementWonNoDlc, Integer maxTrueAchievementNoDlc,
@@ -213,8 +213,12 @@ public class GameModel implements Comparable<GameModel> {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         GameModel gameModel = (GameModel) o;
 
         return Objects.equals(uniqueId, gameModel.uniqueId) &&

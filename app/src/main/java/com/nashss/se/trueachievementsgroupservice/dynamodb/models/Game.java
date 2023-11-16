@@ -23,7 +23,7 @@ public class Game {
     private Integer gamerScoreWonNoDlc;
     private Integer maxGamerScoreNoDlc;
     private Integer gamerScoreWonIncludeDlc;
-    private Integer maxGamerscoreIncludeDlc;
+    private Integer maxGamerScoreIncludeDlc;
     private Integer trueAchievementWonNoDlc;
     private Integer maxTrueAchievementNoDlc;
     private Integer trueAchievementWonIncludeDlc;
@@ -65,7 +65,8 @@ public class Game {
         return platform;
     }
 
-    public String setPlatform() { return this.platform; }
+    public void setPlatform(String platform) {
+        this.platform = platform; }
     @DynamoDBAttribute(attributeName = "gameURL")
     public String getGameURL() {
         return gameURL;
@@ -132,11 +133,11 @@ public class Game {
     }
     @DynamoDBAttribute(attributeName = "maxGamerscoreIncludeDlc")
     public Integer getMaxGamerScoreIncludeDlc() {
-        return maxGamerscoreIncludeDlc;
+        return maxGamerScoreIncludeDlc;
     }
 
-    public void setMaxGamerScoreIncludeDlc(Integer maxGamerscoreIncludeDlc) {
-        this.maxGamerscoreIncludeDlc = maxGamerscoreIncludeDlc;
+    public void setMaxGamerScoreIncludeDlc(Integer maxGamerScoreIncludeDlc) {
+        this.maxGamerScoreIncludeDlc = maxGamerScoreIncludeDlc;
     }
     @DynamoDBAttribute(attributeName = "trueAchievementWonNoDlc")
     public Integer getTrueAchievementWonNoDlc() {
@@ -235,9 +236,11 @@ public class Game {
         this.myRatio = myRatio;
     }
     @DynamoDBAttribute(attributeName = "siteRatio")
-    public Float getSiteRatio() { return siteRatio; }
+    public Float getSiteRatio() {
+        return siteRatio; }
 
-    public void setSiteRatio(Float siteRatio) { this.siteRatio = siteRatio; }
+    public void setSiteRatio(Float siteRatio) {
+        this.siteRatio = siteRatio; }
     @DynamoDBAttribute(attributeName = "ownershipStatus")
     public String getOwnershipStatus() {
         return ownershipStatus;
@@ -297,39 +300,50 @@ public class Game {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Game game = (Game) o;
-        return Objects.equals(uniqueId, game.uniqueId) && Objects.equals(gameName, game.gameName)
-            && Objects.equals(platform, game.platform) && Objects.equals(gameURL, game.gameURL)
-            && Objects.equals(achievementsWonNoDlc, game.achievementsWonNoDlc)
-            && Objects.equals(maxAchievementsNoDlc, game.maxAchievementsNoDlc)
-            && Objects.equals(achievementsWonIncludeDlc, game.achievementsWonIncludeDlc)
-            && Objects.equals(maxAchievementsIncludeDlc, game.maxAchievementsIncludeDlc)
-            && Objects.equals(gamerScoreWonNoDlc, game.gamerScoreWonNoDlc)
-            && Objects.equals(maxGamerScoreNoDlc, game.maxGamerScoreNoDlc)
-            && Objects.equals(gamerScoreWonIncludeDlc, game.gamerScoreWonIncludeDlc)
-            && Objects.equals(maxGamerscoreIncludeDlc, game.maxGamerscoreIncludeDlc)
-            && Objects.equals(trueAchievementWonNoDlc, game.trueAchievementWonNoDlc)
-            && Objects.equals(maxTrueAchievementNoDlc, game.maxTrueAchievementNoDlc)
-            && Objects.equals(trueAchievementWonIncludeDlc, game.trueAchievementWonIncludeDlc)
-            && Objects.equals(maxTrueAchievementIncludeDlc, game.maxTrueAchievementIncludeDlc)
-            && Objects.equals(myCompletionPercentage, game.myCompletionPercentage)
-            && Objects.equals(completionDate, game.completionDate) && Objects.equals(challengesWon, game.challengesWon)
-            && Objects.equals(maxChallenges, game.maxChallenges) && Objects.equals(hoursPlayed, game.hoursPlayed)
-            && Objects.equals(myRating, game.myRating) && Objects.equals(siteRating, game.siteRating)
-            && Objects.equals(myRatio, game.myRatio) && Objects.equals(siteRatio, game.siteRatio)
-            && Objects.equals(ownershipStatus, game.ownershipStatus) && Objects.equals(playStatus, game.playStatus)
-            && Objects.equals(format, game.format) && Objects.equals(completionEstimate, game.completionEstimate)
-            && Objects.equals(walkthrough, game.walkthrough) && Objects.equals(gameNotes, game.gameNotes)
-            && Objects.equals(contestStatus, game.contestStatus);
+        return Objects.equals(uniqueId, game.uniqueId) && Objects.equals(gameName, game.gameName) &&
+            Objects.equals(platform, game.platform) && Objects.equals(gameURL, game.gameURL) &&
+            Objects.equals(achievementsWonNoDlc, game.achievementsWonNoDlc) &&
+            Objects.equals(maxAchievementsNoDlc, game.maxAchievementsNoDlc) &&
+            Objects.equals(achievementsWonIncludeDlc, game.achievementsWonIncludeDlc) &&
+            Objects.equals(maxAchievementsIncludeDlc, game.maxAchievementsIncludeDlc) &&
+            Objects.equals(gamerScoreWonNoDlc, game.gamerScoreWonNoDlc) &&
+            Objects.equals(maxGamerScoreNoDlc, game.maxGamerScoreNoDlc) &&
+            Objects.equals(gamerScoreWonIncludeDlc, game.gamerScoreWonIncludeDlc) &&
+            Objects.equals(maxGamerScoreIncludeDlc, game.maxGamerScoreIncludeDlc) &&
+            Objects.equals(trueAchievementWonNoDlc, game.trueAchievementWonNoDlc) &&
+            Objects.equals(maxTrueAchievementNoDlc, game.maxTrueAchievementNoDlc) &&
+            Objects.equals(trueAchievementWonIncludeDlc, game.trueAchievementWonIncludeDlc) &&
+            Objects.equals(maxTrueAchievementIncludeDlc, game.maxTrueAchievementIncludeDlc) &&
+            Objects.equals(myCompletionPercentage, game.myCompletionPercentage) &&
+            Objects.equals(completionDate, game.completionDate) &&
+            Objects.equals(challengesWon, game.challengesWon) &&
+            Objects.equals(maxChallenges, game.maxChallenges) &&
+            Objects.equals(hoursPlayed, game.hoursPlayed) &&
+            Objects.equals(myRating, game.myRating) &&
+            Objects.equals(siteRating, game.siteRating) &&
+            Objects.equals(myRatio, game.myRatio) &&
+            Objects.equals(siteRatio, game.siteRatio) &&
+            Objects.equals(ownershipStatus, game.ownershipStatus) &&
+            Objects.equals(playStatus, game.playStatus) &&
+            Objects.equals(format, game.format) &&
+            Objects.equals(completionEstimate, game.completionEstimate) &&
+            Objects.equals(walkthrough, game.walkthrough) &&
+            Objects.equals(gameNotes, game.gameNotes) &&
+            Objects.equals(contestStatus, game.contestStatus);
     }
 
     @Override
     public int hashCode() {
         return Objects.hash(uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
             achievementsWonIncludeDlc, maxAchievementsIncludeDlc, gamerScoreWonNoDlc, maxGamerScoreNoDlc,
-            gamerScoreWonIncludeDlc, maxGamerscoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
+            gamerScoreWonIncludeDlc, maxGamerScoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
             trueAchievementWonIncludeDlc, maxTrueAchievementIncludeDlc, myCompletionPercentage, completionDate,
             challengesWon, maxChallenges, hoursPlayed, myRating, siteRating, myRatio, siteRatio, ownershipStatus,
             playStatus, format, completionEstimate, walkthrough, gameNotes, contestStatus);

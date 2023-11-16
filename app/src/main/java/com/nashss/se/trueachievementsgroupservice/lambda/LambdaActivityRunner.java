@@ -1,7 +1,8 @@
 package com.nashss.se.trueachievementsgroupservice.lambda;
 
-import com.nashss.se.trueachievementsgroupservice.DaggerServiceComponent;
+import com.nashss.se.trueachievementsgroupservice.dependency.DaggerServiceComponent;
 import com.nashss.se.trueachievementsgroupservice.dependency.ServiceComponent;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
