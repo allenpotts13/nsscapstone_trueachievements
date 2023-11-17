@@ -8,4 +8,4 @@
  */
 
 rootProject.name = 'nsscapstone_trueachievements'
-include('app')
+include 'TrueAchievementsGroupLambda'

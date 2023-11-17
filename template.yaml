@@ -401,7 +401,7 @@ Resources:
       GlobalSecondaryIndexes:
         - IndexName: "Platform-UniqueId-Index"
           KeySchema:
-            - AttributeName: "Platform"
+            - AttributeName: "platform"
               KeyType: "HASH"
           Projection:
             ProjectionType: "INCLUDE"
@@ -413,8 +413,6 @@ Resources:
     Properties:
       AttributeDefinitions:
         - AttributeName: "groupName"
-          AttributeType: "S"
-        - AttributeName: "userId"
           AttributeType: "S"
       KeySchema:
         - AttributeName: "groupName"
