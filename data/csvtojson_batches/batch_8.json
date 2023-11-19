@@ -1,0 +1,2729 @@
+{
+  "games": [
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "fda09e76-ccad-4e21-b5e6-1338de17661e"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Costume Quest"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Costume-Quest/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "15"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "20"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "251"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "316"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.09"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.27"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "6-8 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Costume-Quest/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Costume Quest"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "08b1d270-5df8-40f8-bdb1-c7b2f798957a"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Costume Quest 2"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Costume-Quest-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "18"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "18"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1413"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1413"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.67"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.41"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "8-10 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Costume-Quest-2/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Costume Quest 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "73575b7c-7b55-4a1a-955f-1b3c98c9fba9"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crackdown"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crackdown/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "25"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "43"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "25"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "470"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "900"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "470"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "696"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2065"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "696"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2971"
+          },
+          "myCompletionPercentage": {
+            "N": "58"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.64"
+          },
+          "myRatio": {
+            "N": "1.48"
+          },
+          "siteRatio": {
+            "N": "2.38"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Crackdown/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crackdown"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "5824fa8c-8d77-4760-a6f5-9ffb892c0144"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crackdown 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crackdown-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "23"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "23"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "70"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "490"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "490"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "638"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2186"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "638"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3555"
+          },
+          "myCompletionPercentage": {
+            "N": "46"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.59"
+          },
+          "myRatio": {
+            "N": "1.3"
+          },
+          "siteRatio": {
+            "N": "2.37"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "30-35 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crackdown 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "2b492c6c-780f-41ce-9f8c-9b3023386f5b"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crackdown 3: Campaign"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crackdown-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "29"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "70"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "29"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "95"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "270"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "270"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1750"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "385"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2639"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "385"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "6565"
+          },
+          "myCompletionPercentage": {
+            "N": "41"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "7"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.54"
+          },
+          "myRatio": {
+            "N": "1.43"
+          },
+          "siteRatio": {
+            "N": "3.75"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Crackdown-3-Campaign/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crackdown 3: Campaign"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "20f572c1-6b8c-4dee-9de0-107441672b04"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crackdown 3: Wrecking Zone"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crackdown-3-Wrecking-Zone/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "12"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "500"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1202"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1202"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.16"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.4"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "6-8 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crackdown 3: Wrecking Zone"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a602300d-af1d-4df3-8012-e2e637faacdd"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crazy Taxi"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crazy-Taxi/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "12"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "30"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "30"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "200"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "52"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "491"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "52"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "491"
+          },
+          "myCompletionPercentage": {
+            "N": "25"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.31"
+          },
+          "myRatio": {
+            "N": "1.75"
+          },
+          "siteRatio": {
+            "N": "2.46"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "5-6 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Crazy-Taxi/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crazy Taxi"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0dace8ac-eb7c-43b5-9e47-3eeeff895755"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Cricket 22"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Cricket-22/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "30"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "30"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3290"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3290"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.23"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.29"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Cricket 22"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d1311603-e440-49e2-b40f-0391718023c4"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crimson Dragon"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crimson-Dragon-Xbox-One/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "31"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "33"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "32"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "45"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "850"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "950"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "2009"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3159"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "2397"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5411"
+          },
+          "myCompletionPercentage": {
+            "N": "82"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "3"
+          },
+          "maxChallenges": {
+            "N": "44"
+          },
+          "hoursPlayed": {
+            "N": "7"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.85"
+          },
+          "myRatio": {
+            "N": "2.52"
+          },
+          "siteRatio": {
+            "N": "3.61"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Crimson-Dragon/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crimson Dragon"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b7cf60a9-65d0-4559-b52e-84709a1cb2fc"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crusader Kings III"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crusader-Kings-III/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "18"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "67"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "18"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "81"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "105"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "105"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1290"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "169"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "9473"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "169"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "11631"
+          },
+          "myCompletionPercentage": {
+            "N": "27"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "15"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.92"
+          },
+          "myRatio": {
+            "N": "1.62"
+          },
+          "siteRatio": {
+            "N": "9.02"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crusader Kings III"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "180b87c4-3fe4-481d-a4a4-c225528f7993"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crusader Kings III (Windows)"
+          },
+          "platform": {
+            "S": "Windows"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crusader-Kings-III-Windows/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "4"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "56"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "4"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "127"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "22"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "22"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1865"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "29"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4129"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "29"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "8938"
+          },
+          "myCompletionPercentage": {
+            "N": "7"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "8"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.47"
+          },
+          "myRatio": {
+            "N": "1.32"
+          },
+          "siteRatio": {
+            "N": "4.79"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crusader Kings III (Windows)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "4f6ae1a0-d370-4c0f-ac7b-95a6fe265535"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crysis"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crysis/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "40"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "40"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1624"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1624"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.92"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.62"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Crysis/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crysis"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "60973ec4-12d2-4836-9b47-641580793027"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crysis 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crysis-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "18"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "18"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "345"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "345"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "469"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2657"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "469"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2657"
+          },
+          "myCompletionPercentage": {
+            "N": "36"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.78"
+          },
+          "myRatio": {
+            "N": "1.36"
+          },
+          "siteRatio": {
+            "N": "2.66"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Crysis-2/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crysis 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "cadb1dbd-e715-44fd-a142-8014e7caeb47"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Crysis 3"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Crysis-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "60"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2964"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3705"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.67"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.96"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Crysis 3"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "c3bf7b52-993c-414d-ae39-d9311035738c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Cuphead"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Cuphead/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "4"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "28"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "4"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "42"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "65"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "65"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "82"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2613"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "82"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4124"
+          },
+          "myCompletionPercentage": {
+            "N": "14"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.54"
+          },
+          "myRatio": {
+            "N": "1.27"
+          },
+          "siteRatio": {
+            "N": "2.75"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Cuphead/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Cuphead"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "5dfe874d-74d7-41bc-aa52-a77248f6caf7"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Curse of the Dead Gods"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Curse-of-the-Dead-Gods/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "19"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "30"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "19"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "30"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "430"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "430"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1511"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "9187"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1511"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "9187"
+          },
+          "myCompletionPercentage": {
+            "N": "63"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "49"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.56"
+          },
+          "myRatio": {
+            "N": "3.52"
+          },
+          "siteRatio": {
+            "N": "9.19"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "120-150 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Curse of the Dead Gods"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "59f97518-1032-4859-8329-227f72d0c5f5"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Cyberpunk 2077"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Cyberpunk-2077/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "44"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "57"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1455"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "50"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2117"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "50"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3525"
+          },
+          "myCompletionPercentage": {
+            "N": "7"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "8"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.23"
+          },
+          "myRatio": {
+            "N": "1.12"
+          },
+          "siteRatio": {
+            "N": "2.42"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Cyberpunk-2077/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Cyberpunk 2077"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a2401c44-f20d-41da-8828-ac25e211cbd6"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dance Central"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dance-Central/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "14"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "14"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "225"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "225"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "422"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "5258"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "422"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5258"
+          },
+          "myCompletionPercentage": {
+            "N": "28"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.72"
+          },
+          "myRatio": {
+            "N": "1.88"
+          },
+          "siteRatio": {
+            "N": "5.26"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "30-35 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Dance-Central/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dance Central"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "bfcde870-ce75-4dc1-be0e-329cd17cde7c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dance Central 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dance-Central-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "12"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "12"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "215"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "215"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "386"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3646"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "386"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3646"
+          },
+          "myCompletionPercentage": {
+            "N": "24"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.93"
+          },
+          "myRatio": {
+            "N": "1.8"
+          },
+          "siteRatio": {
+            "N": "3.65"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dance Central 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a330f2c7-89d3-444d-8298-a1e65f2b4a02"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dance Central 3"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dance-Central-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "8"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "45"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "45"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "135"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "135"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "286"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3223"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "286"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3223"
+          },
+          "myCompletionPercentage": {
+            "N": "18"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.13"
+          },
+          "myRatio": {
+            "N": "2.12"
+          },
+          "siteRatio": {
+            "N": "3.22"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "35-40 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dance Central 3"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0bee31f3-536c-4a0a-9c65-fa12f7a472c3"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dance Central: Spotlight"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dance-Central-Spotlight/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "8"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "35"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "35"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "145"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "145"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "203"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "5501"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "203"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5501"
+          },
+          "myCompletionPercentage": {
+            "N": "23"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.57"
+          },
+          "myRatio": {
+            "N": "1.41"
+          },
+          "siteRatio": {
+            "N": "5.5"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Dance-Central-Spotlight/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dance Central: Spotlight"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "21424ae0-5873-49e1-b68f-f04a0a4b9702"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dante's Inferno"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dantes-Inferno/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "25"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "42"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "25"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "54"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "560"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "560"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1290"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "772"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1729"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "772"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2529"
+          },
+          "myCompletionPercentage": {
+            "N": "60"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.83"
+          },
+          "myRatio": {
+            "N": "1.38"
+          },
+          "siteRatio": {
+            "N": "1.96"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Dantes-Inferno/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dante's Inferno"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "eb6e5ddf-85b2-481b-b318-f7c2c39975e8"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dark Alliance"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dark-Alliance/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "37"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "48"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "37"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "54"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "800"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "800"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1085"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "2820"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4137"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "2820"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4597"
+          },
+          "myCompletionPercentage": {
+            "N": "77"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "44"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.73"
+          },
+          "myRatio": {
+            "N": "3.53"
+          },
+          "siteRatio": {
+            "N": "4.24"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dark Alliance"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "9f6d76ef-b0e8-467a-ad19-0d2256af8fb5"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dark Souls"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dark-Souls/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "41"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "41"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "47"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2509"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "47"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2509"
+          },
+          "myCompletionPercentage": {
+            "N": "7"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.2"
+          },
+          "myRatio": {
+            "N": "1.06"
+          },
+          "siteRatio": {
+            "N": "2.51"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Dark-Souls/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dark Souls"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "49fcb7cc-d0c0-4b6d-9470-8806e667c12a"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Dark Souls II: Scholar of the First Sin"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Dark-Souls-II-Scholar-of-the-First-Sin/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "2"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "38"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "2"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "38"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "20"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "20"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "20"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1960"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "20"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1960"
+          },
+          "myCompletionPercentage": {
+            "N": "5"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.4"
+          },
+          "myRatio": {
+            "N": "1.01"
+          },
+          "siteRatio": {
+            "N": "1.96"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Dark-Souls-II-Scholar-of-the-First-Sin/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Dark Souls II: Scholar of the First Sin"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2729 @@
+{
+  "games": [
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e202587a-a941-4772-a768-2a8c964519ec"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Forza Horizon 3"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Forza-Horizon-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "24"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "64"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "28"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "135"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "300"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "350"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "3000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "425"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2038"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "492"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7878"
+          },
+          "myCompletionPercentage": {
+            "N": "30"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "2"
+          },
+          "maxChallenges": {
+            "N": "592"
+          },
+          "hoursPlayed": {
+            "N": "18"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.68"
+          },
+          "myRatio": {
+            "N": "1.41"
+          },
+          "siteRatio": {
+            "N": "2.63"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Forza-Horizon-3/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Forza Horizon 3"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e39f4574-ad6a-4cc4-bc2f-b990fe042576"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Forza Horizon 4"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Forza-Horizon-4/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "24"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "55"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "28"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "178"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "320"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "350"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "3610"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "541"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2367"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "603"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "11027"
+          },
+          "myCompletionPercentage": {
+            "N": "33"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "33"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.58"
+          },
+          "myRatio": {
+            "N": "1.72"
+          },
+          "siteRatio": {
+            "N": "3.05"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Forza-Horizon-4/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Forza Horizon 4"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "5e60f8db-ab8e-4c65-ad84-2405a374810f"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Forza Horizon 5"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Forza-Horizon-5/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "35"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "53"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "35"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "137"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "610"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "610"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1095"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2492"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1095"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7719"
+          },
+          "myCompletionPercentage": {
+            "N": "66"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "36"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.53"
+          },
+          "myRatio": {
+            "N": "1.8"
+          },
+          "siteRatio": {
+            "N": "3.09"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Forza-Horizon-5/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Forza Horizon 5"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "67f92152-5e38-4778-a639-064ac948c813"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Forza Motorsport"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Forza-Motorsport/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "57"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "57"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4379"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4379"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.99"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "4.38"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "120-150 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Forza Motorsport"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "11a3c00e-0176-48d4-a43b-90334f059231"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Forza Motorsport 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Forza-Motorsport-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "13"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "44"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "13"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "44"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "156"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "156"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "253"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2490"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "253"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2490"
+          },
+          "myCompletionPercentage": {
+            "N": "30"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.74"
+          },
+          "myRatio": {
+            "N": "1.62"
+          },
+          "siteRatio": {
+            "N": "2.49"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Forza-Motorsport-2/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Forza Motorsport 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "dc038893-6def-4e54-a348-fb5e4080bcb2"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Forza Motorsport 5"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Forza-Motorsport-5/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "23"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "78"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "23"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "98"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "230"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "230"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1400"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "438"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4374"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "438"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "6740"
+          },
+          "myCompletionPercentage": {
+            "N": "29"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "1"
+          },
+          "maxChallenges": {
+            "N": "25"
+          },
+          "hoursPlayed": {
+            "N": "25"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.07"
+          },
+          "myRatio": {
+            "N": "1.9"
+          },
+          "siteRatio": {
+            "N": "4.81"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Forza-Motorsport-5/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Forza Motorsport 5"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "692a1a87-9864-4135-a1b8-3ea4c60aa454"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Forza Motorsport 7"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Forza-Motorsport-7/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "15"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "62"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "15"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "62"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "175"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "175"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "289"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3542"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "289"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3542"
+          },
+          "myCompletionPercentage": {
+            "N": "24"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "34"
+          },
+          "hoursPlayed": {
+            "N": "11"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.3"
+          },
+          "myRatio": {
+            "N": "1.66"
+          },
+          "siteRatio": {
+            "N": "3.54"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "120-150 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Forza-Motorsport-7/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Forza Motorsport 7"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "6195f8d6-737d-45f2-84d7-bf9bad36337b"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Frog Detective: The Entire Mystery"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Frog-Detective-The-Entire-Mystery/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "18"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "18"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1583"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1583"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.11"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.58"
+          },
+          "ownershipStatus": {
+            "S": "PC Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "2-3 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Frog-Detective-The-Entire-Mystery/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Frog Detective: The Entire Mystery"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "df235cf4-cb35-4455-9862-2162a8121215"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "From Space"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/From-Space/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "32"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "41"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1230"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1555"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "7000"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7325"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.31"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "4.71"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note From Space"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "56d3eb2b-3fd4-4bd8-90a5-d3c905b8342f"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Frostpunk (Windows)"
+          },
+          "platform": {
+            "S": "Windows"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Frostpunk/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "11"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "49"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "11"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "115"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "185"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "185"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2345"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "269"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3563"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "269"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "10681"
+          },
+          "myCompletionPercentage": {
+            "N": "22"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "13"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.34"
+          },
+          "myRatio": {
+            "N": "1.46"
+          },
+          "siteRatio": {
+            "N": "4.56"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Frostpunk (Windows)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b24ede28-66e4-4077-91d2-315d1a420d73"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Frostpunk: Console Edition"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Frostpunk-Console-Edition/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "37"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "63"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1390"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "6607"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "8303"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.36"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "5.97"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Frostpunk: Console Edition"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "684d0775-c7b3-4ab5-9168-ed8f41ac8b0f"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Fruit Ninja Kinect"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Fruit-Ninja-Kinect/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "7"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "7"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "21"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "110"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "110"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "350"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "171"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "330"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "171"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "661"
+          },
+          "myCompletionPercentage": {
+            "N": "58"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.8"
+          },
+          "myRatio": {
+            "N": "1.56"
+          },
+          "siteRatio": {
+            "N": "1.89"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "4-5 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Fruit-Ninja-Kinect/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Fruit Ninja Kinect"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "ec9b28c4-e701-414a-a420-d226817477ab"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Fruit Ninja Kinect 2"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Fruit-Ninja-Kinect-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "30"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "30"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "97"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3030"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "97"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3030"
+          },
+          "myCompletionPercentage": {
+            "N": "10"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.88"
+          },
+          "myRatio": {
+            "N": "1.39"
+          },
+          "siteRatio": {
+            "N": "3.03"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Fruit Ninja Kinect 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "da1cd5ff-a532-4c2b-adc5-fbba42ab2404"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Full House Poker"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Full-House-Poker/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "20"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "20"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "26"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "38"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "200"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "300"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "281"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "281"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "485"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1073"
+          },
+          "myCompletionPercentage": {
+            "N": "90"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.71"
+          },
+          "myRatio": {
+            "N": "1.62"
+          },
+          "siteRatio": {
+            "N": "2.15"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Full House Poker"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "f6b6f333-2d46-432b-abbf-ee1e1200390d"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Full Throttle Remastered"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Full-Throttle-Remastered/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "40"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "40"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1289"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1289"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.57"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.29"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "2-3 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Full-Throttle-Remastered/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Full Throttle Remastered"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d3108304-fe38-43a4-bcee-d2199f143218"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Galactic Civilizations III (Windows)"
+          },
+          "platform": {
+            "S": "Windows"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Galactic-Civilizations-III/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "68"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "102"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1075"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1470"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "5822"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7451"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.81"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "5.07"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Galactic Civilizations III (Windows)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "62eba4d7-d634-4960-aed5-525e58aaab44"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Galaga"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Galaga/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "6"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "6"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "12"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "200"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "78"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "241"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "78"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "241"
+          },
+          "myCompletionPercentage": {
+            "N": "50"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.26"
+          },
+          "myRatio": {
+            "N": "1.12"
+          },
+          "siteRatio": {
+            "N": "1.21"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "1-2 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Galaga/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Galaga"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "ef807f6b-1d53-4320-801c-d04f0b97d13b"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Game Room"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Game-Room/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "56"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "56"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "15"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "15"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "17"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "7257"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "17"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7257"
+          },
+          "myCompletionPercentage": {
+            "N": "5"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "1.97"
+          },
+          "myRatio": {
+            "N": "1.16"
+          },
+          "siteRatio": {
+            "N": "7.26"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Game-Room/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Game Room"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "fce20afb-2927-4322-9bf9-5e06c587e90c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Gang Beasts"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Gang-Beasts/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "19"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "19"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1946"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1946"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.93"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.95"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "1-2 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Gang-Beasts/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Gang Beasts"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "3431bf90-d296-40a3-b2e0-ed8b9d10cd32"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Garden Story"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Garden-Story/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "21"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "21"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3500"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3500"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.33"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.5"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Garden Story"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "306a9607-6bdc-465b-9172-058edba03e6b"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Gears 5"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Gears-5/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "8"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "68"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "181"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "60"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "60"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "109"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4956"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "109"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "18463"
+          },
+          "myCompletionPercentage": {
+            "N": "12"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "14"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.1"
+          },
+          "myRatio": {
+            "N": "1.82"
+          },
+          "siteRatio": {
+            "N": "7.39"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "1000+ hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Gears 5"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "30df8e43-a26f-4757-ab33-4b6ed71f2e41"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Gears of War"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "31"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "49"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "31"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "57"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "620"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "620"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1054"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2692"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1054"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3519"
+          },
+          "myCompletionPercentage": {
+            "N": "63"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.13"
+          },
+          "myRatio": {
+            "N": "1.7"
+          },
+          "siteRatio": {
+            "N": "2.82"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Gears of War"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "cca178d1-af3c-4ebc-b5ea-5a355a5fc650"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Gears of War 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "28"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "28"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "79"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "460"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "460"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1750"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "616"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1901"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "616"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3493"
+          },
+          "myCompletionPercentage": {
+            "N": "56"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.3"
+          },
+          "myRatio": {
+            "N": "1.34"
+          },
+          "siteRatio": {
+            "N": "2.0"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War-2/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Gears of War 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0f19b772-ec62-4273-b4f6-db47ca50c143"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Gears of War 3"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "33"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "33"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "82"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "465"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "465"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "631"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2859"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "631"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5620"
+          },
+          "myCompletionPercentage": {
+            "N": "66"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.44"
+          },
+          "myRatio": {
+            "N": "1.36"
+          },
+          "siteRatio": {
+            "N": "2.81"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "1000+ hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War-3/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Gears of War 3"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a0754a98-520c-4076-bd07-c1600e49ce60"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Gears of War 4"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War-4/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "36"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "75"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "54"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "164"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "280"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "745"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "4000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "461"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4655"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1206"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "21540"
+          },
+          "myCompletionPercentage": {
+            "N": "44"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "2"
+          },
+          "maxChallenges": {
+            "N": "36"
+          },
+          "hoursPlayed": {
+            "N": "25"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.19"
+          },
+          "myRatio": {
+            "N": "1.62"
+          },
+          "siteRatio": {
+            "N": "5.39"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "200-300 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Gears-of-War-4/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Gears of War 4"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    }
+  ]
+}

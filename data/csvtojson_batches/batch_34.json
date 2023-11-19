@@ -1,0 +1,2729 @@
+{
+  "games": [
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "223379da-206f-4567-a489-712618699ea7"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Roguebook"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Roguebook/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "39"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "53"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "43"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "58"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "630"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "700"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1100"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1198"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3460"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1312"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3662"
+          },
+          "myCompletionPercentage": {
+            "N": "74"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "61"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.91"
+          },
+          "myRatio": {
+            "N": "1.87"
+          },
+          "siteRatio": {
+            "N": "3.33"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Roguebook"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "bddf7c83-da2e-4259-b323-5888d390d6f5"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Roundguard"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Roundguard/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "45"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "45"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "49"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "80"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1140"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1800"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1550"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1550"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1865"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4924"
+          },
+          "myCompletionPercentage": {
+            "N": "84"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "26"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.99"
+          },
+          "myRatio": {
+            "N": "1.64"
+          },
+          "siteRatio": {
+            "N": "2.74"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Roundguard"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "9b2cedfc-6a95-40da-9e99-96b1f394fed2"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Rubber Bandits"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Rubber-Bandits/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "19"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "19"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1970"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1970"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.07"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.97"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "1-2 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Rubber-Bandits/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Rubber Bandits"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a2d5c53e-90d7-419c-841c-9750459b08d2"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Rune Factory 4 Special"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Rune-Factory-4-Special/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "38"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "38"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "5690"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5690"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.19"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "5.69"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "200-300 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Rune Factory 4 Special"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "69e41652-2ac4-4591-bb84-e7d1c66dda0c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Rush: A Disney Pixar Adventure"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Rush-A-Disney-Pixar-Adventure/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3362"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3362"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.86"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.36"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Rush-A-Disney-Pixar-Adventure/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Rush: A Disney Pixar Adventure"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "edc896e0-1e9a-4ed1-b855-369288436517"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Ryse: Son of Rome"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Ryse-Son-of-Rome/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "56"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "58"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "68"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "76"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "970"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1620"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1821"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2004"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "3247"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4929"
+          },
+          "myCompletionPercentage": {
+            "N": "89"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "1"
+          },
+          "maxChallenges": {
+            "N": "8"
+          },
+          "hoursPlayed": {
+            "N": "41"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.94"
+          },
+          "myRatio": {
+            "N": "2.0"
+          },
+          "siteRatio": {
+            "N": "2.46"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Ryse-Son-of-Rome/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Ryse: Son of Rome"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "810e68ca-6b53-4158-bac7-a924665b9060"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Saints Row (2006)"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Saints-Row-Xbox-360/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "14"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "43"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "14"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "43"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "410"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "410"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "704"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3606"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "704"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3606"
+          },
+          "myCompletionPercentage": {
+            "N": "33"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.5"
+          },
+          "myRatio": {
+            "N": "1.72"
+          },
+          "siteRatio": {
+            "N": "3.61"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Saints-Row/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Saints Row (2006)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b985e3bc-f97b-4637-80f8-75a0415ec37f"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Saints Row 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Saints-Row-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "4"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "4"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "60"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "95"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "95"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "120"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2834"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "120"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3492"
+          },
+          "myCompletionPercentage": {
+            "N": "8"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.03"
+          },
+          "myRatio": {
+            "N": "1.26"
+          },
+          "siteRatio": {
+            "N": "2.79"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Saints-Row-2/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Saints Row 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b5276cca-86dd-4c00-8cd7-1a6bd18f9a0b"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Saints Row: The Third"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Saints-Row-The-Third/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "7"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "80"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "100"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "110"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1300"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "119"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1683"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "136"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2220"
+          },
+          "myCompletionPercentage": {
+            "N": "13"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.13"
+          },
+          "myRatio": {
+            "N": "1.24"
+          },
+          "siteRatio": {
+            "N": "1.71"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "30-35 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Saints-Row-The-Third/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Saints Row: The Third"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "2c4a1409-6931-48cf-be2d-cc9820e7cea5"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Saints Row: The Third Remastered"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Saints-Row-The-Third-Remastered/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "2"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "79"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "2"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "79"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "25"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1290"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "25"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1290"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "25"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2646"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "25"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2646"
+          },
+          "myCompletionPercentage": {
+            "N": "3"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.16"
+          },
+          "myRatio": {
+            "N": "1.01"
+          },
+          "siteRatio": {
+            "N": "2.05"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "30-35 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Saints Row: The Third Remastered"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "8ff7ce64-212f-44f2-bb76-9a4059850a78"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Samurai Warriors 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Samurai-Warriors-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "1"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "21"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "1"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "29"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "50"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "50"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "54"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1359"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "54"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1797"
+          },
+          "myCompletionPercentage": {
+            "N": "5"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.38"
+          },
+          "myRatio": {
+            "N": "1.09"
+          },
+          "siteRatio": {
+            "N": "1.44"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Samurai Warriors 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "cd9be5f1-70c1-4730-9ac6-07fd1d6f74b8"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Saw"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Saw/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "29"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "46"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "29"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "46"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "470"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "470"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "533"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1295"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "533"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1295"
+          },
+          "myCompletionPercentage": {
+            "N": "63"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.02"
+          },
+          "myRatio": {
+            "N": "1.13"
+          },
+          "siteRatio": {
+            "N": "1.3"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "8-10 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Saw/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Saw"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a55aa06f-a6bb-4399-8b6f-3b8ae826fd92"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Scarlet Nexus"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Scarlet-Nexus/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "7"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "53"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "7"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "53"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "95"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "95"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "144"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3081"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "144"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3081"
+          },
+          "myCompletionPercentage": {
+            "N": "13"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "4"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.97"
+          },
+          "myRatio": {
+            "N": "1.52"
+          },
+          "siteRatio": {
+            "N": "3.08"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Scarlet Nexus"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "f1e28273-c1f8-40fc-86cc-1f590ecc3e13"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Scorn"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Scorn/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "12"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1440"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1440"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.33"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.44"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "5-6 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Scorn/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Scorn"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "6ae486c3-91aa-4086-bec8-e68041cb1424"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "ScreamRide"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/ScreamRide/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "47"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "47"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "13568"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "13568"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.01"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "13.57"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/ScreamRide-Xbox-One/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note ScreamRide"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "195f1d3c-f883-4804-8235-8d37f9f3e0b7"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "SD Gundam Battle Alliance"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/SD-Gundam-Battle-Alliance/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "43"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "43"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2867"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2867"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.51"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.87"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note SD Gundam Battle Alliance"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e4e1f6af-038b-46b5-8d80-d450dffa77f5"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Sea of Solitude"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Sea-of-Solitude/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "22"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "22"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1947"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1947"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.57"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.95"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "5-6 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Sea of Solitude"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "4f359f2f-3836-4590-95ee-c1353ef10862"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Sea of Stars"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Sea-of-Stars/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "42"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "42"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2542"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2542"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.53"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.54"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Sea of Stars"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e5e578fb-df2e-4ef2-be07-fe85bf9500d1"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Sea of Thieves"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Sea-of-Thieves/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "10"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "60"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "12"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "247"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "95"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "105"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "4970"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "114"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "6453"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "129"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "76105"
+          },
+          "myCompletionPercentage": {
+            "N": "12"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "7"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.78"
+          },
+          "myRatio": {
+            "N": "1.23"
+          },
+          "siteRatio": {
+            "N": "15.31"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "1000+ hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Sea-of-Thieves/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Sea of Thieves"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "9593cb18-ced6-4369-aae0-c62e2b6a050c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Sea Salt"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Sea-Salt/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "4"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "19"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "4"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "19"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "100"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "100"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "167"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4073"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "167"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4073"
+          },
+          "myCompletionPercentage": {
+            "N": "21"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "2"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.18"
+          },
+          "myRatio": {
+            "N": "1.68"
+          },
+          "siteRatio": {
+            "N": "4.07"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "8-10 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Sea Salt"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "65f2e712-4456-45cf-9f0a-7671401fc9d0"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Second Extinction"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Second-Extinction/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "10"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "29"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "10"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "29"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "280"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "280"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "610"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4609"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "610"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4609"
+          },
+          "myCompletionPercentage": {
+            "N": "34"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "14"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.0"
+          },
+          "myRatio": {
+            "N": "2.18"
+          },
+          "siteRatio": {
+            "N": "4.61"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Second-Extinction/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Second Extinction"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "2abbcfa0-8710-4b48-a6ca-9282a15c5f08"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Serious Sam 4"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Serious-Sam-4/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "6"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "54"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "6"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "54"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "124"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2957"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "124"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2957"
+          },
+          "myCompletionPercentage": {
+            "N": "11"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.18"
+          },
+          "myRatio": {
+            "N": "1.56"
+          },
+          "siteRatio": {
+            "N": "2.96"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "8-10 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Serious-Sam-4/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Serious Sam 4"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0ee26e7e-d454-49eb-b147-0661a991851d"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Serious Sam: Siberian Mayhem"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Serious-Sam-Siberian-Mayhem/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "49"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "49"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "7124"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7124"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.28"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "7.12"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Serious Sam: Siberian Mayhem"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0785cf2e-8b9d-467d-b9a0-f46caf900dc7"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Shadow of the Tomb Raider"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Shadow-of-the-Tomb-Raider/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "52"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "63"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "52"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "99"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "870"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "870"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1690"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1270"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1673"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1270"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3108"
+          },
+          "myCompletionPercentage": {
+            "N": "83"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "24"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.28"
+          },
+          "myRatio": {
+            "N": "1.46"
+          },
+          "siteRatio": {
+            "N": "1.84"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Shadow-of-the-Tomb-Raider/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Shadow of the Tomb Raider"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "598101ed-c672-4995-98e8-508843345251"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Shadow Warrior 2"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Shadow-Warrior-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "1"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "39"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "1"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "39"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "15"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "15"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "15"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4511"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "15"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4511"
+          },
+          "myCompletionPercentage": {
+            "N": "3"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.7"
+          },
+          "myRatio": {
+            "N": "1.0"
+          },
+          "siteRatio": {
+            "N": "4.51"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Shadow Warrior 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    }
+  ]
+}

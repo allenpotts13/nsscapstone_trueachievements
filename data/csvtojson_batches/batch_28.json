@@ -1,0 +1,2729 @@
+{
+  "games": [
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d274e4c9-6768-4456-b8ba-736f965c3f43"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed Heat"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Heat/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "6"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "42"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "6"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "42"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "111"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3204"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "111"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3204"
+          },
+          "myCompletionPercentage": {
+            "N": "14"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "6"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.58"
+          },
+          "myRatio": {
+            "N": "1.39"
+          },
+          "siteRatio": {
+            "N": "3.2"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed Heat"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a0d2d3ca-7071-496a-a639-e44c1b4b8109"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed Hot Pursuit Remastered"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Hot-Pursuit-Remastered/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "66"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "66"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4388"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4388"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.7"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "4.39"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "30-35 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed Hot Pursuit Remastered"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "4a5e4f16-f7a0-4960-be9d-1023ee3a9437"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed Payback"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Payback/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "53"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "57"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3257"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3813"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.52"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.05"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Payback/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed Payback"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "545f5dea-f870-46f2-8e3d-6a832f05eef8"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed Rivals"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Rivals/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "2"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "25"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "2"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "25"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "40"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "40"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "50"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3557"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "50"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3557"
+          },
+          "myCompletionPercentage": {
+            "N": "8"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "1"
+          },
+          "hoursPlayed": {
+            "N": "2"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.3"
+          },
+          "myRatio": {
+            "N": "1.27"
+          },
+          "siteRatio": {
+            "N": "3.56"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Rivals/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed Rivals"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "54bf378d-2f6c-477a-a1f1-beeb17e08322"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed Unbound"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Unbound/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "5"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "41"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "5"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "41"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "60"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "60"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "82"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4077"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "82"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4077"
+          },
+          "myCompletionPercentage": {
+            "N": "12"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "3"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.38"
+          },
+          "myRatio": {
+            "N": "1.37"
+          },
+          "siteRatio": {
+            "N": "4.08"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed Unbound"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "488c7ac8-d2b5-4bb3-9fab-6e047d19ebb1"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: Carbon"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Carbon/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "20"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "20"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "315"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "315"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "602"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "7005"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "602"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7005"
+          },
+          "myCompletionPercentage": {
+            "N": "40"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.05"
+          },
+          "myRatio": {
+            "N": "1.91"
+          },
+          "siteRatio": {
+            "N": "7.01"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: Carbon"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e4fb5f74-e083-4a8e-81f5-a6b0b54e9c6c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: Hot Pursuit"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NFS-Hot-Pursuit/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "18"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "18"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "72"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "210"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "210"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1390"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "272"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2333"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "272"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3290"
+          },
+          "myCompletionPercentage": {
+            "N": "36"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.89"
+          },
+          "myRatio": {
+            "N": "1.3"
+          },
+          "siteRatio": {
+            "N": "2.37"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Hot-Pursuit/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: Hot Pursuit"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "ff9bf787-c41f-443b-9bef-01b598973b31"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: Most Wanted"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Most-Wanted-2012/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "10"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "46"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "10"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "60"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "130"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "130"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1280"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "156"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2142"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "156"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3154"
+          },
+          "myCompletionPercentage": {
+            "N": "22"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.75"
+          },
+          "myRatio": {
+            "N": "1.2"
+          },
+          "siteRatio": {
+            "N": "2.46"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Most-Wanted-2012/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: Most Wanted"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b7c33b7a-be7b-47cf-b859-931762aa26f9"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: Most Wanted (2005)"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NFS-Most-Wanted/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "14"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "15"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "14"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "15"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "650"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "650"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "895"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1442"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "895"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1442"
+          },
+          "myCompletionPercentage": {
+            "N": "93"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.78"
+          },
+          "myRatio": {
+            "N": "1.38"
+          },
+          "siteRatio": {
+            "N": "1.44"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Most-Wanted/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: Most Wanted (2005)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "51314c30-c114-4cc5-a051-814f22f362e0"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: ProStreet"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-ProStreet/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "14"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "14"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "255"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "255"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "401"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2844"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "401"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2844"
+          },
+          "myCompletionPercentage": {
+            "N": "28"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.93"
+          },
+          "myRatio": {
+            "N": "1.57"
+          },
+          "siteRatio": {
+            "N": "2.84"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-ProStreet/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: ProStreet"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "76040b96-fe1e-4010-9194-20e1095b42db"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: SHIFT"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-SHIFT/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "11"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "29"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "11"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "39"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "440"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "440"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "539"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2163"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "539"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2920"
+          },
+          "myCompletionPercentage": {
+            "N": "38"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.54"
+          },
+          "myRatio": {
+            "N": "1.23"
+          },
+          "siteRatio": {
+            "N": "2.34"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-SHIFT/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: SHIFT"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "3ed51906-a6e6-438d-836d-cea8b9cd6b08"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: SHIFT 2: Unleashed"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Shift-2-Unleashed/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "10"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "40"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "10"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "48"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "90"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "90"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1115"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "119"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3701"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "119"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4010"
+          },
+          "myCompletionPercentage": {
+            "N": "25"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.46"
+          },
+          "myRatio": {
+            "N": "1.32"
+          },
+          "siteRatio": {
+            "N": "3.6"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: SHIFT 2: Unleashed"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "86ec7963-a267-4875-ab9c-4c3635107dcc"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: The Run"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-The-Run/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "14"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "36"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "14"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "42"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "440"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "440"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1200"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "546"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2669"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "546"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3268"
+          },
+          "myCompletionPercentage": {
+            "N": "39"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.37"
+          },
+          "myRatio": {
+            "N": "1.24"
+          },
+          "siteRatio": {
+            "N": "2.72"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-The-Run/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: The Run"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "14a56e73-51f1-4307-8036-09e617aadfad"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Need for Speed: Undercover"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Need-for-Speed-Undercover/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "31"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "31"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "605"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "605"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "874"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1917"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "874"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1917"
+          },
+          "myCompletionPercentage": {
+            "N": "62"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.27"
+          },
+          "myRatio": {
+            "N": "1.44"
+          },
+          "siteRatio": {
+            "N": "1.92"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Need for Speed: Undercover"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d2bbe6d0-3550-4d1e-a37a-9caf47ead7ea"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Neon Abyss"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Neon-Abyss/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "36"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "36"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "7316"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7316"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.47"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "7.32"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Neon Abyss"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "c471706d-a969-4656-b1fa-4f356ca247eb"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Neon Abyss (Windows)"
+          },
+          "platform": {
+            "S": "Windows"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Neon-Abyss-Windows/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "36"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "36"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "5077"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5077"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.46"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "5.08"
+          },
+          "ownershipStatus": {
+            "S": "PC Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "120-150 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Neon Abyss (Windows)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "efa855e1-c297-4a74-81fb-fa86a7dc0ba4"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Netflix"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Netflix/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "2"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "10"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "2"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "10"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "0"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "0"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "0"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "0"
+          },
+          "myCompletionPercentage": {
+            "N": "20"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "22"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.46"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.0"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Netflix/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Netflix"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "abaf3fd6-7dea-4a37-8628-d44b80624366"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Neverwinter"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Neverwinter/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "46"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "48"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "105"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "206"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "775"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1985"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "3005"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "2091"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3957"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "10152"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "23236"
+          },
+          "myCompletionPercentage": {
+            "N": "78"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1481"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.68"
+          },
+          "myRatio": {
+            "N": "5.11"
+          },
+          "siteRatio": {
+            "N": "7.73"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "1000+ hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Neverwinter/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Neverwinter"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "f4daffdc-d0a6-4fa3-a72b-de336a6d4404"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "New Super Lucky's Tale"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/New-Super-Luckys-Tale/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "54"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "54"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2191"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2191"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.93"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.19"
+          },
+          "ownershipStatus": {
+            "S": "PC Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "10-12 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/New-Super-Luckys-Tale/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note New Super Lucky's Tale"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "cf138aa3-2557-45fb-b78e-a6ccf4e5969b"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "NFL on Xbox One"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NFL/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "2"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "8"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "2"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "11"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "0"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "0"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "0"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "0"
+          },
+          "myCompletionPercentage": {
+            "N": "25"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "27"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.38"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.0"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "1-2 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/NFL/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note NFL on Xbox One"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b7647c46-6c08-4b8f-a541-823c0e75a36e"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "NHL 17"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NHL-17/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "2"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "49"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "2"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "49"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "78"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3597"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "78"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3597"
+          },
+          "myCompletionPercentage": {
+            "N": "4"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "2"
+          },
+          "hoursPlayed": {
+            "N": "9"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.78"
+          },
+          "myRatio": {
+            "N": "1.74"
+          },
+          "siteRatio": {
+            "N": "3.6"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note NHL 17"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "28217f9a-e2a1-4dcf-9c75-a59783ea807e"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "NHL 18"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NHL-18/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "48"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "48"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3837"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3837"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "2"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.56"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.84"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note NHL 18"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "7c16f21d-3fde-4262-8d0d-062d4aac56de"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "NHL 19"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NHL-19/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "48"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "48"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3709"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3709"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.43"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.71"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "120-150 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/NHL-19/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note NHL 19"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "629618fa-8f0c-4f67-a6b5-93173bc85175"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "NHL 20"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NHL-20/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "48"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "48"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3234"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3234"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.54"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.23"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note NHL 20"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d5f60e6c-fae3-46ba-9a9e-498af79d4942"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "NHL 21"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/NHL-21/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "48"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "48"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3840"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3840"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.58"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.84"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note NHL 21"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,2729 @@
+{
+  "games": [
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "41e57221-8dbf-4f47-a822-84cc4c755c6d"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 23"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-23/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "23"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "23"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4047"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4047"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.9"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "4.05"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 23"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "28f4fb84-1a5d-4e03-8185-2a2385dbf16c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 23 (Xbox One)"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-23-Xbox-One/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "21"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "21"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3388"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3388"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.79"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.39"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 23 (Xbox One)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d5cea078-e627-4be6-b7a5-789fbd94c5d7"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 25"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-25/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "16"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "42"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "16"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "42"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "285"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "285"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "516"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2818"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "516"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2818"
+          },
+          "myCompletionPercentage": {
+            "N": "38"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "2"
+          },
+          "maxChallenges": {
+            "N": "4"
+          },
+          "hoursPlayed": {
+            "N": "45"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.28"
+          },
+          "myRatio": {
+            "N": "1.81"
+          },
+          "siteRatio": {
+            "N": "2.82"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-25/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 25"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d778ad6c-c633-4ef7-8ed9-4e34806600d1"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 25 (Xbox 360)"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-25-Xbox-360/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "7"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "41"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "7"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "41"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "120"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "120"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "234"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2634"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "234"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2634"
+          },
+          "myCompletionPercentage": {
+            "N": "17"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.69"
+          },
+          "myRatio": {
+            "N": "1.95"
+          },
+          "siteRatio": {
+            "N": "2.63"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-25-Xbox-360/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 25 (Xbox 360)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "30a4e83f-88b1-43bb-87db-6487312b2b40"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Mafia II"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Mafia-II/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "21"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "47"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "21"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "67"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "370"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "370"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "426"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1620"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "426"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2964"
+          },
+          "myCompletionPercentage": {
+            "N": "45"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.04"
+          },
+          "myRatio": {
+            "N": "1.15"
+          },
+          "siteRatio": {
+            "N": "1.98"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Mafia-II/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Mafia II"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "2cb5d784-a096-4c94-b669-5bd5af54e1a1"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Magic 2015 - Duels of the Planeswalkers"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Magic-2015-Duels-of-the-Planeswalkers/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "7"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "30"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "7"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "35"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "150"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "150"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1100"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "215"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2308"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "215"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2489"
+          },
+          "myCompletionPercentage": {
+            "N": "23"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "2"
+          },
+          "maxChallenges": {
+            "N": "27"
+          },
+          "hoursPlayed": {
+            "N": "11"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.89"
+          },
+          "myRatio": {
+            "N": "1.43"
+          },
+          "siteRatio": {
+            "N": "2.26"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Magic-The-Gathering--DotP-2015/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Magic 2015 - Duels of the Planeswalkers"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b0e96f8c-1b19-4718-b844-4b589e544aa3"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Magic: The Gathering - Duels of the Planeswalkers"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Magic-The-Gathering-Duels-of-the-Planeswalkers/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "4"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "4"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "21"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "350"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "94"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "308"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "94"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "543"
+          },
+          "myCompletionPercentage": {
+            "N": "33"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.8"
+          },
+          "myRatio": {
+            "N": "1.18"
+          },
+          "siteRatio": {
+            "N": "1.55"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "12-15 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Magic-The-Gathering--DotP/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Magic: The Gathering - Duels of the Planeswalkers"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e1e598c2-57ea-4bbc-a308-57bd12a75a79"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Magic: The Gathering - Duels of the Planeswalkers 2012"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Magic-The-Gathering-Duels-of-the-Planeswalkers-2012/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "5"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "5"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "15"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "55"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "55"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "58"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "244"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "58"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "316"
+          },
+          "myCompletionPercentage": {
+            "N": "42"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.1"
+          },
+          "myRatio": {
+            "N": "1.06"
+          },
+          "siteRatio": {
+            "N": "1.27"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "8-10 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Magic-The-Gathering--DotP-2012/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Magic: The Gathering - Duels of the Planeswalkers 2012"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "ee45133b-8418-4b3a-ab2d-e5406a0b9ee5"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Magic: The Gathering - Duels of the Planeswalkers 2013"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Magic-The-Gathering-Duels-of-the-Planeswalkers-2013/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "9"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "20"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "9"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "25"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "109"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "363"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "109"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "460"
+          },
+          "myCompletionPercentage": {
+            "N": "45"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.45"
+          },
+          "myRatio": {
+            "N": "1.37"
+          },
+          "siteRatio": {
+            "N": "1.84"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Magic: The Gathering - Duels of the Planeswalkers 2013"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "53a937ca-90eb-4193-b73c-8dd9db970bbb"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Maneater"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Maneater/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "32"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "32"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "32"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "44"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1350"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1905"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1905"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1905"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2766"
+          },
+          "myCompletionPercentage": {
+            "N": "100"
+          },
+          "completionDate": {
+            "S": "5/8/2021 22:55"
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "8"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.87"
+          },
+          "myRatio": {
+            "N": "1.91"
+          },
+          "siteRatio": {
+            "N": "2.05"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "10-12 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Maneater"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "ed72dc60-1403-4150-b9c9-4e4ac042b246"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Maquette"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Maquette/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "22"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "22"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2098"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2098"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.01"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.1"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "1-2 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Maquette"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "c044f951-71fc-4efb-9141-8c5e379538c0"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Marvel vs. Capcom 3: Fate of Two Worlds"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Marvel-vs-Capcom-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "4"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "47"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "4"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "47"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "50"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "50"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "54"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2616"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "54"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2616"
+          },
+          "myCompletionPercentage": {
+            "N": "9"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.78"
+          },
+          "myRatio": {
+            "N": "1.1"
+          },
+          "siteRatio": {
+            "N": "2.62"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Marvel vs. Capcom 3: Fate of Two Worlds"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "4616b76c-eb9a-4b8f-a558-33cfafc74747"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Marvel: Ultimate Alliance (Xbox 360)"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Marvel-Ultimate-Alliance/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "27"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "46"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "27"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "58"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "555"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "555"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "863"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2459"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "863"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2945"
+          },
+          "myCompletionPercentage": {
+            "N": "59"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.47"
+          },
+          "myRatio": {
+            "N": "1.56"
+          },
+          "siteRatio": {
+            "N": "2.36"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Marvel-Ultimate-Alliance-Xbox-360/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Marvel: Ultimate Alliance (Xbox 360)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "5bf1f8ac-ddae-430e-a431-95587d450104"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Marvel: Ultimate Alliance 2 (Xbox 360)"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Marvel-Ultimate-Alliance-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "24"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "24"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "58"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "365"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "365"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1250"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "501"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2160"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "501"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2760"
+          },
+          "myCompletionPercentage": {
+            "N": "48"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.71"
+          },
+          "myRatio": {
+            "N": "1.37"
+          },
+          "siteRatio": {
+            "N": "2.21"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Marvel: Ultimate Alliance 2 (Xbox 360)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "837f2d09-d716-4230-ac57-98670b857017"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Marvel's Avengers"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Marvels-Avengers/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "32"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "32"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "585"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "585"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "983"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2705"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "983"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2705"
+          },
+          "myCompletionPercentage": {
+            "N": "64"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "31"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.32"
+          },
+          "myRatio": {
+            "N": "1.68"
+          },
+          "siteRatio": {
+            "N": "2.71"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "100-120 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Marvel's Avengers"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b9009cb5-1901-40df-941d-dac2aa0ba715"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Marvel's Guardians of the Galaxy"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Marvels-Guardians-of-the-Galaxy/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "12"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "58"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "12"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "58"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "180"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "180"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "204"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1589"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "204"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1589"
+          },
+          "myCompletionPercentage": {
+            "N": "21"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "4"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.28"
+          },
+          "myRatio": {
+            "N": "1.14"
+          },
+          "siteRatio": {
+            "N": "1.59"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Marvels-Guardians-of-the-Galaxy/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Marvel's Guardians of the Galaxy"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "be3e7fd1-00df-4924-805b-5adddad18685"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Marvel's Midnight Suns"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Marvels-Midnight-Suns/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "4"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "51"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "4"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "72"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "40"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "40"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1510"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "47"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2184"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "47"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3340"
+          },
+          "myCompletionPercentage": {
+            "N": "8"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "3"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.31"
+          },
+          "myRatio": {
+            "N": "1.2"
+          },
+          "siteRatio": {
+            "N": "2.21"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Marvels-Midnight-Suns/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Marvel's Midnight Suns"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "c939dbee-9a9a-4d1f-99ed-486c5970b9eb"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Mass Effect"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "15"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "45"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "15"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "49"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "410"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "410"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1200"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "498"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1920"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "498"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2237"
+          },
+          "myCompletionPercentage": {
+            "N": "33"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.42"
+          },
+          "myRatio": {
+            "N": "1.22"
+          },
+          "siteRatio": {
+            "N": "1.87"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Mass Effect"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "3fe489cb-c944-4cd0-8265-be3b9744b454"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Mass Effect 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "41"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "42"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "62"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "820"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "870"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1355"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "955"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1317"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1023"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1838"
+          },
+          "myCompletionPercentage": {
+            "N": "79"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.68"
+          },
+          "myRatio": {
+            "N": "1.18"
+          },
+          "siteRatio": {
+            "N": "1.36"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-2/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Mass Effect 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "1416dacd-1b75-48e1-ab82-05aa30d7d371"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Mass Effect 2 (JP)"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-2-Japanese/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "52"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1030"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1274"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1304"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.35"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.27"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-2-JP-Ver/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Mass Effect 2 (JP)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "8c6aaf45-b0da-4f7f-b86f-a8d3c2540c55"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Mass Effect 3"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "40"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "40"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "68"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "715"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "715"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1550"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "870"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1469"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "870"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2389"
+          },
+          "myCompletionPercentage": {
+            "N": "80"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.53"
+          },
+          "myRatio": {
+            "N": "1.22"
+          },
+          "siteRatio": {
+            "N": "1.54"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "50-60 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-3/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Mass Effect 3"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "6d0dc914-eafc-4b0b-8b73-7b2126226eaa"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Mass Effect Legendary Edition"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-Legendary-Edition/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "5"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "127"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "5"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "127"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "2915"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2915"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "93"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "5475"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "93"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5475"
+          },
+          "myCompletionPercentage": {
+            "N": "4"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "5"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.77"
+          },
+          "myRatio": {
+            "N": "1.16"
+          },
+          "siteRatio": {
+            "N": "1.88"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "100-120 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-Legendary-Edition/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Mass Effect Legendary Edition"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "210ff848-3b09-423d-931c-566b84268002"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Mass Effect: Andromeda"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-Andromeda/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "16"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "55"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "16"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "55"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "240"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "240"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "360"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2317"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "360"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2317"
+          },
+          "myCompletionPercentage": {
+            "N": "29"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "1"
+          },
+          "hoursPlayed": {
+            "N": "48"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.83"
+          },
+          "myRatio": {
+            "N": "1.5"
+          },
+          "siteRatio": {
+            "N": "2.32"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Mass-Effect-Andromeda/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Mass Effect: Andromeda"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "99ffc1ab-9d23-4b4e-bcfd-79d0dd258fc7"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "MASSIVE CHALICE"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/MASSIVE-CHALICE/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "12"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "28"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "12"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "28"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "180"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "180"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "343"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "8474"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "343"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "8474"
+          },
+          "myCompletionPercentage": {
+            "N": "43"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "6"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.08"
+          },
+          "myRatio": {
+            "N": "1.91"
+          },
+          "siteRatio": {
+            "N": "8.47"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/MASSIVE-CHALICE-Xbox-One/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note MASSIVE CHALICE"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "7790cbb7-d065-4371-a4d6-b1e1f6a40678"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Matchpoint: Tennis Championships"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Matchpoint-Tennis-Championships/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "23"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "23"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3761"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3761"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.73"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.76"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Matchpoint-Tennis-Championships/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Matchpoint: Tennis Championships"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    }
+  ]
+}

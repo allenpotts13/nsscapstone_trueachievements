@@ -1,0 +1,2729 @@
+{
+  "games": [
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "787583e3-e69d-458c-be01-b467e66e6b34"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "LocoCycle"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/LocoCycle/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "20"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "20"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "20"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "20"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1353"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1353"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1353"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1353"
+          },
+          "myCompletionPercentage": {
+            "N": "100"
+          },
+          "completionDate": {
+            "S": "11/2/2014 4:55"
+          },
+          "challengesWon": {
+            "N": "1"
+          },
+          "maxChallenges": {
+            "N": "1"
+          },
+          "hoursPlayed": {
+            "N": "5"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.78"
+          },
+          "myRatio": {
+            "N": "1.35"
+          },
+          "siteRatio": {
+            "N": "1.35"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "5-6 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note LocoCycle"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "97b4a042-ab6d-47a0-bf22-743a59fc5b43"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lollipop Chainsaw"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lollipop-Chainsaw/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "19"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "19"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "280"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "280"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "370"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2017"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "370"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2017"
+          },
+          "myCompletionPercentage": {
+            "N": "38"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.79"
+          },
+          "myRatio": {
+            "N": "1.32"
+          },
+          "siteRatio": {
+            "N": "2.02"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Lollipop-Chainsaw/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lollipop Chainsaw"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0555dabc-53b1-40f6-82b8-8c94d0dbccf0"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lonely Mountains: Downhill"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lonely-Mountains-Downhill/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "47"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "82"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2230"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "8858"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "15600"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.45"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "7.0"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lonely Mountains: Downhill"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "26e44a96-ea76-4944-8a96-165e40257efe"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Loop Hero"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Loop-Hero/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4013"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4013"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.93"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "4.01"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Loop Hero"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "84f40bab-164e-44ce-840f-0d1798e19255"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Loot River"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Loot-River/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "15"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "15"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4575"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4575"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.27"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "4.58"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "12-15 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Loot River"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a8afa2fd-3fda-4b57-a925-3d458d6bf7e5"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lords of the Fallen (2014)"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lords-of-the-Fallen-Xbox-One/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "8"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "46"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "56"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "120"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "120"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1200"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "161"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4019"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "161"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4694"
+          },
+          "myCompletionPercentage": {
+            "N": "17"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.31"
+          },
+          "myRatio": {
+            "N": "1.35"
+          },
+          "siteRatio": {
+            "N": "3.91"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "35-40 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Lords-of-the-Fallen/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lords of the Fallen (2014)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0a5a7210-e7d8-4e74-abbf-8d81036286ec"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lost In Random"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lost-In-Random/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "17"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "40"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "17"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "40"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "330"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "330"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "623"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2595"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "623"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2595"
+          },
+          "myCompletionPercentage": {
+            "N": "43"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "9"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.76"
+          },
+          "myRatio": {
+            "N": "1.89"
+          },
+          "siteRatio": {
+            "N": "2.6"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Lost-In-Random/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lost In Random"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "f6eae3b9-0598-42b6-91e1-b943517809f0"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lost Odyssey"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lost-Odyssey/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "26"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "36"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "26"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "42"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "840"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "840"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1100"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1345"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1854"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1345"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2078"
+          },
+          "myCompletionPercentage": {
+            "N": "72"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.1"
+          },
+          "myRatio": {
+            "N": "1.6"
+          },
+          "siteRatio": {
+            "N": "1.89"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Lost-Odyssey/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lost Odyssey"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "9e3b629c-2506-461e-b956-ff3f0daf0b9b"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lost Planet 2"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lost-Planet-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "30"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "30"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "36"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "8988"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "36"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "8988"
+          },
+          "myCompletionPercentage": {
+            "N": "6"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.21"
+          },
+          "myRatio": {
+            "N": "1.2"
+          },
+          "siteRatio": {
+            "N": "8.99"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "300-500 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Lost-Planet-2/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lost Planet 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "cf555461-be26-4a46-a01e-4da33351ef56"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lost Planet: Extreme Condition"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lost-Planet/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "10"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "35"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "10"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "35"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "145"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "145"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "251"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4170"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "251"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4170"
+          },
+          "myCompletionPercentage": {
+            "N": "29"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.08"
+          },
+          "myRatio": {
+            "N": "1.73"
+          },
+          "siteRatio": {
+            "N": "4.17"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lost Planet: Extreme Condition"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "f5e8dfb6-3331-482a-bbac-e327b472ee8a"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Lumines Remastered"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Lumines-Remastered/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "5"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "29"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "5"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "29"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "105"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "105"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "171"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "9917"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "171"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "9917"
+          },
+          "myCompletionPercentage": {
+            "N": "17"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.32"
+          },
+          "myRatio": {
+            "N": "1.63"
+          },
+          "siteRatio": {
+            "N": "9.92"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Lumines Remastered"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "a3ee8516-acbf-45fe-bbea-df1ca478de01"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 07"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-07/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "8"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "46"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "46"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "115"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "115"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "183"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2337"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "183"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2337"
+          },
+          "myCompletionPercentage": {
+            "N": "17"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.68"
+          },
+          "myRatio": {
+            "N": "1.59"
+          },
+          "siteRatio": {
+            "N": "2.34"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 07"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "1a1ca60e-2027-4dca-a57c-39c8603e75bc"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 08"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-08/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "38"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "48"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "38"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "48"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "745"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "745"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "936"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1328"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "936"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1328"
+          },
+          "myCompletionPercentage": {
+            "N": "79"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.03"
+          },
+          "myRatio": {
+            "N": "1.26"
+          },
+          "siteRatio": {
+            "N": "1.33"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "6-8 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-08/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 08"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "dbf60e77-c374-4863-9e2c-a26d67c18e99"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 11"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-11/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "8"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "24"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "24"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "265"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "265"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "333"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1693"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "333"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1693"
+          },
+          "myCompletionPercentage": {
+            "N": "33"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.52"
+          },
+          "myRatio": {
+            "N": "1.26"
+          },
+          "siteRatio": {
+            "N": "1.69"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Disc"
+          },
+          "completionEstimate": {
+            "S": "6-8 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-11/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 11"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b834fc82-e479-4317-a65b-24253149619a"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 12"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-12/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "6"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "36"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "6"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "36"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "165"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "165"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "208"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1833"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "208"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1833"
+          },
+          "myCompletionPercentage": {
+            "N": "17"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.54"
+          },
+          "myRatio": {
+            "N": "1.26"
+          },
+          "siteRatio": {
+            "N": "1.83"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "10-12 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 12"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b241535f-509a-41e3-87a5-2fcde8240db6"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 13"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-13/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "42"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "42"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "67"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "5204"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "67"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "5204"
+          },
+          "myCompletionPercentage": {
+            "N": "7"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.55"
+          },
+          "myRatio": {
+            "N": "1.5"
+          },
+          "siteRatio": {
+            "N": "5.2"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-13/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 13"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "ccca3c3c-5184-4707-bae0-76eb2350e6cb"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 15"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-15/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "10"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "38"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "10"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "38"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "240"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "240"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "496"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3037"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "496"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3037"
+          },
+          "myCompletionPercentage": {
+            "N": "26"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "16"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.79"
+          },
+          "myRatio": {
+            "N": "2.07"
+          },
+          "siteRatio": {
+            "N": "3.04"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 15"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "95b159a5-3e47-4194-b049-cd3f9f348e09"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 16"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-16/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "15"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "36"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "15"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "36"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "280"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "280"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "457"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2995"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "457"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2995"
+          },
+          "myCompletionPercentage": {
+            "N": "42"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "1"
+          },
+          "hoursPlayed": {
+            "N": "19"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.68"
+          },
+          "myRatio": {
+            "N": "1.63"
+          },
+          "siteRatio": {
+            "N": "3.0"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 16"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "808d18dc-7f39-4621-95af-472128e44f58"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 17"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-17/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "3"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "35"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "3"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "35"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "90"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "90"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "132"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2361"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "132"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2361"
+          },
+          "myCompletionPercentage": {
+            "N": "9"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "1"
+          },
+          "hoursPlayed": {
+            "N": "8"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.75"
+          },
+          "myRatio": {
+            "N": "1.48"
+          },
+          "siteRatio": {
+            "N": "2.36"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-17/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 17"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0adcd3bd-2e45-4b40-b3bc-1a6b5ac08105"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 18"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-18/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "13"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "40"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "13"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "40"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "210"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "210"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "302"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2637"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "302"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2637"
+          },
+          "myCompletionPercentage": {
+            "N": "33"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "4"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.7"
+          },
+          "myRatio": {
+            "N": "1.44"
+          },
+          "siteRatio": {
+            "N": "2.64"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-18/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 18"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "733fbacf-a2e1-41ac-ab9f-7e3487fa8fa2"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 19"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-19/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "29"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "38"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "29"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "38"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "545"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "545"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1138"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2734"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1138"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2734"
+          },
+          "myCompletionPercentage": {
+            "N": "76"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "12"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.44"
+          },
+          "myRatio": {
+            "N": "2.09"
+          },
+          "siteRatio": {
+            "N": "2.73"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "15-20 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-19/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 19"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e55355ed-f903-4ce2-be3d-4aa05ff342a2"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 20"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-20/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "11"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "38"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "11"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "38"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "290"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "290"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "516"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2416"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "516"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2416"
+          },
+          "myCompletionPercentage": {
+            "N": "29"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "14"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.36"
+          },
+          "myRatio": {
+            "N": "1.78"
+          },
+          "siteRatio": {
+            "N": "2.42"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "8-10 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-20/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 20"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0d36a5fb-39cd-4015-afbc-6ea0e0695987"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 21"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-21/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "16"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "28"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "16"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "28"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "500"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "500"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1140"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2608"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1140"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2608"
+          },
+          "myCompletionPercentage": {
+            "N": "57"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "33"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.17"
+          },
+          "myRatio": {
+            "N": "2.28"
+          },
+          "siteRatio": {
+            "N": "2.61"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "8-10 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-21-Series-X/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 21"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e906ddb3-0cad-4287-8fae-8c403bc3a4e0"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 22"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-22/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "19"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "19"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2293"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2293"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.78"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.29"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "3-4 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-22/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 22"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "0c571d36-b23d-4df3-b632-7567d8e33a70"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Madden NFL 22 (Xbox One)"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-22-Xbox-One/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "16"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "16"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1985"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1985"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.76"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.99"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "3-4 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Madden-NFL-22-Xbox-One/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Madden NFL 22 (Xbox One)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    }
+  ]
+}

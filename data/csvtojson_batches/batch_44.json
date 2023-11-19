@@ -1,0 +1,2729 @@
+{
+  "games": [
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d60788c5-6919-4c6f-8a66-5c934794daf3"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "UNO (Xbox 360)"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Uno/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "10"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "10"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "12"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "145"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "145"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "200"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "167"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "267"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "167"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "267"
+          },
+          "myCompletionPercentage": {
+            "N": "83"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.48"
+          },
+          "myRatio": {
+            "N": "1.15"
+          },
+          "siteRatio": {
+            "N": "1.34"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "4-5 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/UNO-Xbox-360/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note UNO (Xbox 360)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "40fc17fe-39ec-478f-8f66-4091245cd543"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Unpacking"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Unpacking/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "25"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "25"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1475"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1475"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.47"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.48"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "1-2 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Unpacking/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Unpacking"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "e9c1b5a0-6c1d-47b2-893e-b9e00a036271"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Unravel"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Unravel/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "24"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "26"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "24"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "26"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "800"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "800"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "2051"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3059"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "2051"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3059"
+          },
+          "myCompletionPercentage": {
+            "N": "92"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "1"
+          },
+          "maxChallenges": {
+            "N": "1"
+          },
+          "hoursPlayed": {
+            "N": "11"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.97"
+          },
+          "myRatio": {
+            "N": "2.56"
+          },
+          "siteRatio": {
+            "N": "3.06"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "12-15 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Unravel/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Unravel"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "8803b7f1-d92c-4ffa-bbe1-4e429dcfb2fe"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Unravel Two"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Unravel-Two/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "28"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "28"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "13475"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "13475"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.82"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "13.48"
+          },
+          "ownershipStatus": {
+            "S": "EA Play"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Unravel-Two/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Unravel Two"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "89ff53b1-ca38-41d1-80fd-0b776032ab88"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "VALA: Vicious Attack Llama Apocalypse"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/VALA-Vicious-Attack-Llama-Apocalypse/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "11"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "20"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "11"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "20"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "320"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "320"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "988"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4510"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "988"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "4510"
+          },
+          "myCompletionPercentage": {
+            "N": "55"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "3"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "2.83"
+          },
+          "myRatio": {
+            "N": "3.09"
+          },
+          "siteRatio": {
+            "N": "4.51"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note VALA: Vicious Attack Llama Apocalypse"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "4d59ff08-180d-4ed0-b853-4d02d6efd11d"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Vampire Survivors"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Vampire-Survivors/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "140"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "140"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "159"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "196"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "1200"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1310"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1500"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1994"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1994"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "2195"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2664"
+          },
+          "myCompletionPercentage": {
+            "N": "100"
+          },
+          "completionDate": {
+            "S": "20/12/2022 02:50:40"
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "41"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.53"
+          },
+          "myRatio": {
+            "N": "1.68"
+          },
+          "siteRatio": {
+            "N": "1.78"
+          },
+          "ownershipStatus": {
+            "S": "PC Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "35-40 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Vampire Survivors"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "d276d931-2e4f-468c-ad48-9b8b7ed64117"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Vampire's Fall: Origins"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Vampires-Fall-Origins/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "28"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "28"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "28"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "28"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "2178"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2178"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "2178"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2178"
+          },
+          "myCompletionPercentage": {
+            "N": "100"
+          },
+          "completionDate": {
+            "S": "2/2/2021 18:02"
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "57"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.57"
+          },
+          "myRatio": {
+            "N": "2.18"
+          },
+          "siteRatio": {
+            "N": "2.18"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Vampires-Fall-Origins/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Vampire's Fall: Origins"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "3ce08f82-6aa8-4e8f-a1d3-4d26d60fe114"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Vampyr"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Vampyr/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "11"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "28"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "11"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "28"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "320"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "320"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "617"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2960"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "617"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2960"
+          },
+          "myCompletionPercentage": {
+            "N": "39"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "13"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.67"
+          },
+          "myRatio": {
+            "N": "1.93"
+          },
+          "siteRatio": {
+            "N": "2.96"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Vampyr/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Vampyr"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "5ba1d0e2-edc0-4eec-a60d-9233464c07b9"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Venba"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Venba/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "15"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "15"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1278"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1278"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.31"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "1.28"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "1-2 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Venba/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Venba"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "cca305ef-65b9-4d8f-83f5-398b570edafd"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Vikings \u2013 Wolves of Midgard"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Vikings-Wolves-of-Midgard/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "27"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "38"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "27"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "38"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "520"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "520"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "2130"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "6934"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "2130"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "6934"
+          },
+          "myCompletionPercentage": {
+            "N": "71"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "33"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.17"
+          },
+          "myRatio": {
+            "N": "4.1"
+          },
+          "siteRatio": {
+            "N": "6.93"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "60-80 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Vikings--Wolves-of-Midgard/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Vikings \u2013 Wolves of Midgard"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "5c3ec29e-7729-4e3b-bbfa-6ba1e8ada53e"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Viva Pi\u00f1ata"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Viva-Pinata/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "21"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "21"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "420"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "420"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "643"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "1988"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "643"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "1988"
+          },
+          "myCompletionPercentage": {
+            "N": "42"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.56"
+          },
+          "myRatio": {
+            "N": "1.53"
+          },
+          "siteRatio": {
+            "N": "1.99"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Viva-Piata/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Viva Pi\u00f1ata"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "4238b7f9-9bdd-4c71-97a2-5ccc8398d11e"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Viva Pi\u00f1ata: Trouble In Paradise"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Viva-Pinata-Trouble-In-Paradise/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "50"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2234"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2234"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.68"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.23"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Viva-Piata-Trouble-In-Paradise/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Viva Pi\u00f1ata: Trouble In Paradise"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "6cb0cde4-e64d-4337-ab28-105ef68ee6e6"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Voltron: Defender of the Universe"
+          },
+          "platform": {
+            "S": "Xbox 360"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Voltron/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "1"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "12"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "1"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "12"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "10"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "200"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "10"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "200"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "11"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "296"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "11"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "296"
+          },
+          "myCompletionPercentage": {
+            "N": "8"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.32"
+          },
+          "myRatio": {
+            "N": "1.14"
+          },
+          "siteRatio": {
+            "N": "1.48"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "6-8 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Voltron-Defender-of-the-Universe/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Voltron: Defender of the Universe"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "6f0e7666-4583-4e2f-b01c-c2277bf13a2c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Warhammer 40,000: Battlesector"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Warhammer-40000-Battlesector/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "14"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "30"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "14"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "30"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "350"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "350"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "623"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3284"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "623"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3284"
+          },
+          "myCompletionPercentage": {
+            "N": "47"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "7"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.55"
+          },
+          "myRatio": {
+            "N": "1.78"
+          },
+          "siteRatio": {
+            "N": "3.28"
+          },
+          "ownershipStatus": {
+            "S": "No longer have"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "20-25 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Warhammer 40,000: Battlesector"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "02afbb80-1be9-4181-8126-c4899cac353c"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Warhammer 40,000: Darktide"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Warhammer-40000-Darktide/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "8"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "36"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "8"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "36"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "80"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "244"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "9160"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "244"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "9160"
+          },
+          "myCompletionPercentage": {
+            "N": "22"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "14"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.59"
+          },
+          "myRatio": {
+            "N": "3.05"
+          },
+          "siteRatio": {
+            "N": "9.16"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "120-150 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Warhammer 40,000: Darktide"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "dabbfa8f-5bd0-4ccc-a95d-a1ea77a0b2ae"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Warhammer 40,000: Inquisitor - Martyr"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Warhammer-40000-Inquisitor--Martyr/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "33"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "42"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "55"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "89"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "600"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "775"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1315"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2680"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1569"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2301"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "3401"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "8836"
+          },
+          "myCompletionPercentage": {
+            "N": "81"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "88"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.78"
+          },
+          "myRatio": {
+            "N": "2.59"
+          },
+          "siteRatio": {
+            "N": "3.3"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Warhammer-40000-Inquisitor--Martyr/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Warhammer 40,000: Inquisitor - Martyr"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "538a0aff-2b8b-4361-aa53-0d1f7447712a"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Warhammer: Chaosbane"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Warhammer-Chaosbane/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "43"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "43"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "43"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "43"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "1000"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "2890"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2890"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "2890"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2890"
+          },
+          "myCompletionPercentage": {
+            "N": "100"
+          },
+          "completionDate": {
+            "S": "15/09/2021 23:50:03"
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "81"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.36"
+          },
+          "myRatio": {
+            "N": "2.89"
+          },
+          "siteRatio": {
+            "N": "2.89"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Warhammer: Chaosbane"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b83e0750-b7ec-4cc2-9b8c-ff06ac3fe520"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Warhammer: End Times - Vermintide"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Warhammer-End-Times-Vermintide/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "7"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "45"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "7"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "82"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "98"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "7781"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "98"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "16446"
+          },
+          "myCompletionPercentage": {
+            "N": "16"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "1"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.29"
+          },
+          "myRatio": {
+            "N": "1.41"
+          },
+          "siteRatio": {
+            "N": "8.22"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "150-200 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Warhammer-End-Times--Vermintide/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Warhammer: End Times - Vermintide"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "cff7cab7-3394-4cc2-b24c-052ef0e0f332"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Warhammer: Vermintide 2"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Warhammer-Vermintide-2/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "13"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "50"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "13"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "120"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "200"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "200"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "2750"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "320"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "6059"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "320"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "24812"
+          },
+          "myCompletionPercentage": {
+            "N": "26"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "9"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.76"
+          },
+          "myRatio": {
+            "N": "1.6"
+          },
+          "siteRatio": {
+            "N": "9.02"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Warhammer: Vermintide 2"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "439b6a04-428c-43c4-8398-e1f97176a136"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Wartales"
+          },
+          "platform": {
+            "S": "Xbox Series X|S"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Wartales/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "9"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "64"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "9"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "64"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "70"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "132"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "14183"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "132"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "14183"
+          },
+          "myCompletionPercentage": {
+            "N": "14"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "48"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.1"
+          },
+          "myRatio": {
+            "N": "1.89"
+          },
+          "siteRatio": {
+            "N": "14.18"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": ""
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Wartales"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "df0f40fc-81a9-4d2f-9900-79ee75954c1a"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Wasteland 2: Director's Cut"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Wasteland-2-Directors-Cut/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "46"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "46"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2867"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "2867"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.0"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "2.87"
+          },
+          "ownershipStatus": {
+            "S": "Xbox Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Wasteland-2-Directors-Cut/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Wasteland 2: Director's Cut"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "7cb22661-7518-4933-be8d-850900cc6d5f"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Wasteland 3"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Wasteland-3/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "62"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "86"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1490"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4942"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "6959"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.97"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "4.67"
+          },
+          "ownershipStatus": {
+            "S": "PC Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "120-150 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Wasteland 3"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "b69b7664-043c-4f41-8b15-8871a1235764"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Wasteland 3 (Windows)"
+          },
+          "platform": {
+            "S": "Windows"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Wasteland-3-Windows/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "33"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "62"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "33"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "86"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "500"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "500"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1490"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "1258"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "4824"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "1258"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "7192"
+          },
+          "myCompletionPercentage": {
+            "N": "53"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "49"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "4.09"
+          },
+          "myRatio": {
+            "N": "2.52"
+          },
+          "siteRatio": {
+            "N": "4.83"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": "Digital"
+          },
+          "completionEstimate": {
+            "S": "80-100 hours"
+          },
+          "walkthrough": {
+            "S": ""
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Wasteland 3 (Windows)"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "Not for contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "6758c089-fbc1-4881-bb68-40c4af61e262"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Wasteland Remastered"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Wasteland/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "0"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "35"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "35"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1000"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "3609"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "0"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3609"
+          },
+          "myCompletionPercentage": {
+            "N": "0"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "0"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.12"
+          },
+          "myRatio": {
+            "N": "0.0"
+          },
+          "siteRatio": {
+            "N": "3.61"
+          },
+          "ownershipStatus": {
+            "S": "PC Game Pass"
+          },
+          "playStatus": {
+            "S": ""
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "25-30 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Wasteland-Remastered/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Wasteland Remastered"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    },
+    {
+      "PutRequest": {
+        "Item": {
+          "uniqueId": {
+            "S": "117ad2a3-b8ff-47c7-8b49-6b981aa1f3a9"
+          },
+          "userId": {
+            "S": "allenpotts13@gmail.com"
+          },
+          "gameName": {
+            "S": "Watch Dogs: Legion"
+          },
+          "platform": {
+            "S": "Xbox One"
+          },
+          "gameURL": {
+            "S": "https://www.trueachievements.com/game/Watch-Dogs-Legion/achievements?gamerid=428021"
+          },
+          "achievementsWonNoDlc": {
+            "N": "2"
+          },
+          "maxAchievementsNoDlc": {
+            "N": "39"
+          },
+          "achievementsWonIncludeDlc": {
+            "N": "2"
+          },
+          "maxAchievementsIncludeDlc": {
+            "N": "49"
+          },
+          "gamerScoreWonNoDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreNoDlc": {
+            "N": "1000"
+          },
+          "gamerScoreWonIncludeDlc": {
+            "N": "45"
+          },
+          "maxGamerScoreIncludeDlc": {
+            "N": "1195"
+          },
+          "trueAchievementWonNoDlc": {
+            "N": "51"
+          },
+          "maxTrueAchievementNoDlc": {
+            "N": "2569"
+          },
+          "trueAchievementWonIncludeDlc": {
+            "N": "51"
+          },
+          "maxTrueAchievementIncludeDlc": {
+            "N": "3190"
+          },
+          "myCompletionPercentage": {
+            "N": "5"
+          },
+          "completionDate": {
+            "S": ""
+          },
+          "challengesWon": {
+            "N": "0"
+          },
+          "maxChallenges": {
+            "N": "0"
+          },
+          "hoursPlayed": {
+            "N": "3"
+          },
+          "myRating": {
+            "N": "0"
+          },
+          "siteRating": {
+            "N": "3.63"
+          },
+          "myRatio": {
+            "N": "1.13"
+          },
+          "siteRatio": {
+            "N": "2.67"
+          },
+          "ownershipStatus": {
+            "S": "Owned"
+          },
+          "playStatus": {
+            "S": "Playing now"
+          },
+          "format": {
+            "S": ""
+          },
+          "completionEstimate": {
+            "S": "40-50 hours"
+          },
+          "walkthrough": {
+            "S": "https://www.trueachievements.com/game/Watch-Dogs-Legion/walkthrough"
+          },
+          "gameNotes": {
+            "L": [
+              {
+                "S": "Empty Note Watch Dogs: Legion"
+              }
+            ]
+          },
+          "contestStatus": {
+            "S": "For contests"
+          }
+        }
+      }
+    }
+  ]
+}

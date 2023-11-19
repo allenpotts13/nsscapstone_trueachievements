@@ -28,6 +28,7 @@ public class ModelConverter {
         }
 
         return GroupModel.builder()
+                .withUserId(group.getUserId())
                 .withGroupName(group.getGroupName())
                 .withGamesList(copyToList(group.getGamesList()))
                 .build();
@@ -41,6 +42,7 @@ public class ModelConverter {
      */
     public GameModel toGameModel(Game game) {
         return GameModel.builder()
+            .withUserId(game.getUserId())
             .withUniqueId(game.getUniqueId())
             .withGameName(game.getGameName())
             .withPlatform(game.getPlatform())
