@@ -393,9 +393,13 @@ Resources:
           AttributeType: "S"
         - AttributeName: "platform"
           AttributeType: "S"
+        - AttributeName: "userId"
+          AttributeType: "S"
       KeySchema:
-        - AttributeName: "uniqueId"
+        - AttributeName: "userId"
           KeyType: "HASH"
+        - AttributeName: "uniqueId"
+          KeyType: "RANGE"
       BillingMode: "PAY_PER_REQUEST"
       TableName: "games"
       GlobalSecondaryIndexes:
@@ -414,9 +418,13 @@ Resources:
       AttributeDefinitions:
         - AttributeName: "groupName"
           AttributeType: "S"
+        - AttributeName: "userId"
+          AttributeType: "S"
       KeySchema:
-        - AttributeName: "groupName"
+        - AttributeName: "userId"
           KeyType: "HASH"
+        - AttributeName: "groupName"
+          KeyType: "RANGE"
       BillingMode: "PAY_PER_REQUEST"
       TableName: "groups"
 

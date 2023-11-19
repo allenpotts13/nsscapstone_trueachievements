@@ -7,6 +7,7 @@ import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.c
 import static org.apache.commons.lang3.ObjectUtils.defaultIfNull;
 
 public class GameModel implements Comparable<GameModel> {
+    private String userId;
     private String uniqueId;
     private String gameName;
     private String platform;
@@ -40,15 +41,17 @@ public class GameModel implements Comparable<GameModel> {
     private List<String> gameNotes;
     private String contestStatus;
 
-    private GameModel(String uniqueId, String gameName, String platform, String gameURL, Integer achievementsWonNoDlc,
-                     Integer maxAchievementsNoDlc, Integer achievementsWonIncludeDlc, Integer maxAchievementsIncludeDlc,
-                     Integer gamerScoreWonNoDlc, Integer maxGamerScoreNoDlc, Integer gamerScoreWonIncludeDlc,
-                     Integer maxGamerscoreIncludeDlc, Integer trueAchievementWonNoDlc, Integer maxTrueAchievementNoDlc,
-                     Integer trueAchievementWonIncludeDlc, Integer maxTrueAchievementIncludeDlc,
-                     Integer myCompletionPercentage, String completionDate, Integer challengesWon,
-                     Integer maxChallenges, Integer hoursPlayed, Float myRating, Float siteRating, Float myRatio,
-                     Float siteRatio, String ownershipStatus, String playStatus, String format,
-                     String completionEstimate, String walkthrough, List<String> gameNotes, String contestStatus) {
+    private GameModel(String userId, String uniqueId, String gameName, String platform, String gameURL,
+                      Integer achievementsWonNoDlc, Integer maxAchievementsNoDlc, Integer achievementsWonIncludeDlc,
+                      Integer maxAchievementsIncludeDlc, Integer gamerScoreWonNoDlc, Integer maxGamerScoreNoDlc,
+                      Integer gamerScoreWonIncludeDlc, Integer maxGamerscoreIncludeDlc, Integer trueAchievementWonNoDlc,
+                      Integer maxTrueAchievementNoDlc, Integer trueAchievementWonIncludeDlc,
+                      Integer maxTrueAchievementIncludeDlc, Integer myCompletionPercentage, String completionDate,
+                      Integer challengesWon, Integer maxChallenges, Integer hoursPlayed, Float myRating,
+                      Float siteRating, Float myRatio, Float siteRatio, String ownershipStatus, String playStatus,
+                      String format, String completionEstimate, String walkthrough, List<String> gameNotes,
+                      String contestStatus) {
+        this.userId = userId;
         this.uniqueId = uniqueId;
         this.gameName = gameName;
         this.platform = defaultIfNull(platform, "");
@@ -83,6 +86,7 @@ public class GameModel implements Comparable<GameModel> {
         this.contestStatus = defaultIfNull(contestStatus, "");
     }
 
+    public String getUserId() { return userId; }
     public String getUniqueId() {
         return uniqueId;
     }
@@ -221,7 +225,8 @@ public class GameModel implements Comparable<GameModel> {
         }
         GameModel gameModel = (GameModel) o;
 
-        return Objects.equals(uniqueId, gameModel.uniqueId) &&
+        return Objects.equals(userId, gameModel.userId) &&
+                Objects.equals(uniqueId, gameModel.uniqueId) &&
                 Objects.equals(gameName, gameModel.gameName) &&
                 Objects.equals(platform, gameModel.platform) &&
                 Objects.equals(gameURL, gameModel.gameURL) &&
@@ -257,7 +262,7 @@ public class GameModel implements Comparable<GameModel> {
 
     @Override
     public int hashCode() {
-        return Objects.hash(uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
+        return Objects.hash(userId, uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
             achievementsWonIncludeDlc, maxAchievementsIncludeDlc, gamerScoreWonNoDlc, maxGamerScoreNoDlc,
             gamerScoreWonIncludeDlc, maxGamerscoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
             trueAchievementWonIncludeDlc, maxTrueAchievementIncludeDlc, myCompletionPercentage, completionDate,
@@ -294,6 +299,7 @@ public class GameModel implements Comparable<GameModel> {
     }
 
     public static class Builder {
+        private String userId;
         private String uniqueId;
         private String gameName;
         private String platform;
@@ -327,6 +333,10 @@ public class GameModel implements Comparable<GameModel> {
         private List<String> gameNotes;
         private String contestStatus;
 
+        public Builder withUserId(String userId) {
+            this.userId = userId;
+            return this;
+        }
         public Builder withUniqueId(String uniqueId) {
             this.uniqueId = uniqueId;
             return this;
@@ -456,7 +466,7 @@ public class GameModel implements Comparable<GameModel> {
             return this;
         }
         public GameModel build() {
-            return new GameModel(uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
+            return new GameModel(userId, uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
                 achievementsWonIncludeDlc, maxAchievementsIncludeDlc, gamerScoreWonNoDlc, maxGamerScoreNoDlc,
                 gamerScoreWonIncludeDlc, maxGamerscoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
                 trueAchievementWonIncludeDlc, maxTrueAchievementIncludeDlc, myCompletionPercentage, completionDate,

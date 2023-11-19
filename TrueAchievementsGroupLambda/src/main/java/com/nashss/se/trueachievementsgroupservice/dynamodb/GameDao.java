@@ -1,14 +1,11 @@
 package com.nashss.se.trueachievementsgroupservice.dynamodb;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
-import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.exceptions.GameNotFoundException;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 
-import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -56,8 +53,8 @@ public class GameDao {
      * @param userId the user ID
      * @return the stored contacts, or none if none were found.
      */
-    public List<Game> getAllGames(String userId) {
-
-        return gamesList;
-    }
+//    public List<Game> getAllGames(String userId) {
+//
+//        return gamesList;
+//    }
 }

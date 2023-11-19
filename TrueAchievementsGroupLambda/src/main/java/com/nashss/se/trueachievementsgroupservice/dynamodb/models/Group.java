@@ -1,6 +1,8 @@
 package com.nashss.se.trueachievementsgroupservice.dynamodb.models;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 import java.util.List;
@@ -11,10 +13,18 @@ import java.util.Objects;
  */
 @DynamoDBTable(tableName = "groups")
 public class Group {
+    private String userId;
     private String groupName;
     private List<Game> gamesList;
 
-    @DynamoDBAttribute(attributeName = "groupName")
+    @DynamoDBHashKey(attributeName = "userId")
+    public String getUserId() {
+        return userId;
+    }
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+    @DynamoDBRangeKey(attributeName = "groupName")
     public String getGroupName() {
         return groupName;
     }
@@ -40,11 +50,13 @@ public class Group {
             return false;
         }
         Group group = (Group) o;
-        return Objects.equals(groupName, group.groupName) && Objects.equals(gamesList, group.gamesList);
+        return Objects.equals(userId, group.userId) &&
+            Objects.equals(groupName, group.groupName) &&
+            Objects.equals(gamesList, group.gamesList);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(groupName, gamesList);
+        return Objects.hash(userId, groupName, gamesList);
     }
 }

@@ -2,6 +2,7 @@ package com.nashss.se.trueachievementsgroupservice.dynamodb.models;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.Objects;
  */
 @DynamoDBTable(tableName = "games")
 public class Game {
+    private String userId;
     private String uniqueId;
     private String gameName;
     private String platform;
@@ -44,11 +46,17 @@ public class Game {
     private String walkthrough;
     private List<String> gameNotes;
     private String contestStatus;
-    @DynamoDBHashKey(attributeName = "id")
+    @DynamoDBHashKey(attributeName = "userId")
+    public String getUserId() {
+        return userId;
+    }
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+    @DynamoDBRangeKey(attributeName = "uniqueId")
     public String getUniqueId() {
         return uniqueId;
     }
-
     public void setUniqueId(String uniqueId) {
         this.uniqueId = uniqueId;
     }
@@ -307,8 +315,11 @@ public class Game {
             return false;
         }
         Game game = (Game) o;
-        return Objects.equals(uniqueId, game.uniqueId) && Objects.equals(gameName, game.gameName) &&
-            Objects.equals(platform, game.platform) && Objects.equals(gameURL, game.gameURL) &&
+        return Objects.equals(userId, game.userId) &&
+            Objects.equals(uniqueId, game.uniqueId) &&
+            Objects.equals(gameName, game.gameName) &&
+            Objects.equals(platform, game.platform) &&
+            Objects.equals(gameURL, game.gameURL) &&
             Objects.equals(achievementsWonNoDlc, game.achievementsWonNoDlc) &&
             Objects.equals(maxAchievementsNoDlc, game.maxAchievementsNoDlc) &&
             Objects.equals(achievementsWonIncludeDlc, game.achievementsWonIncludeDlc) &&
@@ -341,7 +352,7 @@ public class Game {
 
     @Override
     public int hashCode() {
-        return Objects.hash(uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
+        return Objects.hash(userId, uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
             achievementsWonIncludeDlc, maxAchievementsIncludeDlc, gamerScoreWonNoDlc, maxGamerScoreNoDlc,
             gamerScoreWonIncludeDlc, maxGamerScoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
             trueAchievementWonIncludeDlc, maxTrueAchievementIncludeDlc, myCompletionPercentage, completionDate,

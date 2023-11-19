@@ -8,14 +8,19 @@ import java.util.Objects;
 import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.copyToList;
 
 public class GroupModel implements Comparable<GroupModel> {
+    private String userId;
     private String groupName;
     private List<Game> gamesList;
 
-    private GroupModel(String groupName, List<Game> gamesList) {
+    private GroupModel(String userId, String groupName, List<Game> gamesList) {
+        this.userId = userId;
         this.groupName = groupName;
         this.gamesList = gamesList;
     }
 
+    public String getUserId() {
+        return userId;
+    }
     public String getGroupName() {
         return groupName;
     }
@@ -59,8 +64,14 @@ public class GroupModel implements Comparable<GroupModel> {
     }
 
     public static class Builder {
+        private String userId;
         private String groupName;
         private List<Game> gamesList;
+
+        public Builder withUserId(String userId) {
+            this.userId = userId;
+            return this;
+        }
 
         public Builder withGroupName(String groupName) {
             this.groupName = groupName;
@@ -73,7 +84,7 @@ public class GroupModel implements Comparable<GroupModel> {
         }
 
         public GroupModel build() {
-            return new GroupModel(groupName, gamesList);
+            return new GroupModel(userId, groupName, gamesList);
         }
     }
 }

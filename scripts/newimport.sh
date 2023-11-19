@@ -1,4 +1,6 @@
-inputDir="/home/viking/TrueAchievements/nsscapstone_trueachievements/data/input_batches"
+#!/bin/bash
+
+inputDir="/home/viking/TrueAchievements/nsscapstone_trueachievements/data/csvtojson_batches"
 batchSize=25
 
 files=("$inputDir"/*)
@@ -9,7 +11,7 @@ end=$((i + batchSize - 1))
 
 batch_files=("${files[@]:start+1:start+batchSize}")
 
-for file in "${batch_files[@]}"; do
+for file in "${batch_files[@]}";do
 	aws dynamodb batch-write-item --request-items "file://${file}"
 done
 done
