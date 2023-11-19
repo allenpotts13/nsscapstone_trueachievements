@@ -1,11 +1,14 @@
 package com.nashss.se.trueachievementsgroupservice.dynamodb;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
+import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.exceptions.GameNotFoundException;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 
+import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -32,12 +35,13 @@ public class GameDao {
     /**
      * Returns the {@link Game} corresponding to the specified id.
      *
+     * @param userId the user ID
      * @param uniqueId the unique ID
      *
      * @return the stored Game, or null if none was found.
      */
-    public Game getGame(String uniqueId) {
-        Game game = this.dynamoDbMapper.load(Game.class, uniqueId);
+    public Game getGame(String userId, String uniqueId) {
+        Game game = this.dynamoDbMapper.load(Game.class,userId, uniqueId);
 
         if (game == null) {
             metricsPublisher.addCount(MetricsConstants.GETGAME_GAMENOTFOUND_COUNT, 1);
@@ -51,10 +55,17 @@ public class GameDao {
      * Returns the Game List corresponding to the querying unique.
      *
      * @param userId the user ID
-     * @return the stored contacts, or none if none were found.
+     * @return the stored games, or none if none were found.
      */
-//    public List<Game> getAllGames(String userId) {
-//
-//        return gamesList;
-//    }
+    public List<Game> getAllGames(String userId) {
+        Game game = new Game();
+        game.setUserId(userId);
+
+        DynamoDBQueryExpression<Game> queryExpression = new DynamoDBQueryExpression<Game>()
+                .withHashKeyValues(game);
+
+        PaginatedQueryList<Game> gamesList = dynamoDbMapper.query(Game.class, queryExpression);
+
+        return gamesList;
+    }
 }
