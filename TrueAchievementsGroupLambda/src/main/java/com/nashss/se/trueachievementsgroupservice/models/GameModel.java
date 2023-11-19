@@ -86,7 +86,8 @@ public class GameModel implements Comparable<GameModel> {
         this.contestStatus = defaultIfNull(contestStatus, "");
     }
 
-    public String getUserId() { return userId; }
+    public String getUserId() {
+        return userId; }
     public String getUniqueId() {
         return uniqueId;
     }

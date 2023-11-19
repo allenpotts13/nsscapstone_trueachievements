@@ -1,12 +1,13 @@
 package com.nashss.se.trueachievementsgroupservice.dynamodb;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
-import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.exceptions.GameNotFoundException;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
+
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
+import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
 
 import java.util.List;
 import javax.inject.Inject;
@@ -41,7 +42,7 @@ public class GameDao {
      * @return the stored Game, or null if none was found.
      */
     public Game getGame(String userId, String uniqueId) {
-        Game game = this.dynamoDbMapper.load(Game.class,userId, uniqueId);
+        Game game = this.dynamoDbMapper.load(Game.class, userId, uniqueId);
 
         if (game == null) {
             metricsPublisher.addCount(MetricsConstants.GETGAME_GAMENOTFOUND_COUNT, 1);
