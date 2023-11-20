@@ -28,10 +28,10 @@ public class AddGameToGroupActivity {
     private final GroupDao groupDao;
 
     /**
-     * Instantiates a new AddContactToGroupActivity object.
+     * Instantiates a new AddGameToGroupActivity object.
      *
-     * @param gameDao GameDao to access the contact table.
-     * @param groupDao GroupDao to access the group table.
+     * @param gameDao GameDao to access the games table.
+     * @param groupDao GroupDao to access the groups table.
      */
     @Inject
     public AddGameToGroupActivity(GameDao gameDao, GroupDao groupDao) {
@@ -44,7 +44,7 @@ public class AddGameToGroupActivity {
      * to a group and persisting the updated group.
      *
      * @param addGameToGroupRequest request object containing the game userId and uniqueId and a name
-     *                                 to retrieve the group and contact.
+     *                                 to retrieve the group and game.
      * @return addGameToGroupResult result object containing the groups updated list
      *                                 of API defined {@link GameModel}s
      */

@@ -45,11 +45,11 @@ public class GroupDao {
     }
 
     /**
-     * Returns the {@link Group} corresponding to the specified userId and name.
+     * Returns the {@link Group} corresponding to the specified userId and groupName.
      *
      * @param userId the Group's userId
      * @param groupName the Group's name
-     * @return the stored Playlist, or null if none was found.
+     * @return the stored Group, or null if none was found.
      */
     public Group getGroup(String userId, String groupName) {
         Group group = this.dynamoDbMapper.load(Group.class, userId, groupName);
