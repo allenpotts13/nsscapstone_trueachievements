@@ -4,9 +4,11 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTypeConverted;
+import com.nashss.se.trueachievementsgroupservice.converters.GameListConverter;
 
-import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 /**
  * Represents a record in the groups table.
@@ -15,7 +17,7 @@ import java.util.Objects;
 public class Group {
     private String userId;
     private String groupName;
-    private List<Game> gamesList;
+    private Set<Game> gamesList;
 
     @DynamoDBHashKey(attributeName = "userId")
     public String getUserId() {
@@ -32,12 +34,13 @@ public class Group {
     public void setGroupName(String groupName) {
         this.groupName = groupName;
     }
+    @DynamoDBTypeConverted(converter = GameListConverter.class)
     @DynamoDBAttribute(attributeName = "games_list")
-    public List<Game> getGamesList() {
+    public Set<Game> getGamesList() {
         return gamesList;
     }
 
-    public void setGamesList(List<Game> gamesList) {
+    public void setGamesList(Set<Game> gamesList) {
         this.gamesList = gamesList;
     }
 

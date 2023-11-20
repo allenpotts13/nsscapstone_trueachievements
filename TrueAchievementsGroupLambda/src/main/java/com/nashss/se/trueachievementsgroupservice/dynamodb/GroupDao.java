@@ -1,9 +1,14 @@
 package com.nashss.se.trueachievementsgroupservice.dynamodb;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
+import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
+import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.exceptions.GroupNotFoundException;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-
+import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -26,5 +31,51 @@ public class GroupDao {
     public GroupDao(DynamoDBMapper dynamoDbMapper, MetricsPublisher metricsPublisher) {
         this.dynamoDbMapper = dynamoDbMapper;
         this.metricsPublisher = metricsPublisher;
+    }
+
+    /**
+     * Saves (creates or updates) the given {@link Group}.
+     *
+     * @param group The group to save
+     * @return The Group object that was saved
+     */
+    public Group saveGroup(Group group) {
+        this.dynamoDbMapper.save(group);
+        return group;
+    }
+
+    /**
+     * Returns the {@link Group} corresponding to the specified userId and name.
+     *
+     * @param userId the Group's userId
+     * @param groupName the Group's name
+     * @return the stored Playlist, or null if none was found.
+     */
+    public Group getGroup(String userId, String groupName) {
+        Group group = this.dynamoDbMapper.load(Group.class, userId, groupName);
+
+        if (group == null) {
+            metricsPublisher.addCount(MetricsConstants.GETGROUP_GROUPNOTFOUND_COUNT, 1);
+            throw new GroupNotFoundException("Could not find group for user " + userId + " with name " + groupName);
+        }
+        metricsPublisher.addCount(MetricsConstants.GETGROUP_GROUPNOTFOUND_COUNT, 0);
+        return group;
+    }
+
+    /**
+     * Returns the Group List corresponding to the querying user's ID.
+     *
+     * @param userId the user ID
+     * @return the stored groups, or none if none were found.
+     */
+    public List<Group> getAllGroups(String userId) {
+        Group group = new Group();
+        group.setUserId(userId);
+
+        DynamoDBQueryExpression<Group> queryExpression = new DynamoDBQueryExpression<Group>()
+            .withHashKeyValues(group);
+
+        PaginatedQueryList<Group> groupList = dynamoDbMapper.query(Group.class, queryExpression);
+        return groupList;
     }
 }
