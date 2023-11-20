@@ -3,8 +3,8 @@ package com.nashss.se.trueachievementsgroupservice.dynamodb.models;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
@@ -18,7 +18,7 @@ public class GroupTest {
         group = new Group();
         group.setGroupName("Test Group");
 
-        List<Game> gamesList = new ArrayList<>();
+        Set<Game> gamesList = new HashSet<>();
         Game game1 = new Game();
         game1.setUniqueId("123");
         game1.setGameName("Halo");
@@ -40,7 +40,7 @@ public class GroupTest {
 
     @Test
     void testGetGamesList() {
-        List<Game> gamesListTest = new ArrayList<>();
+        Set<Game> gamesListTest = new HashSet<>();
         Game game1 = new Game();
         game1.setUniqueId("123");
         game1.setGameName("Halo");
@@ -58,7 +58,7 @@ public class GroupTest {
 
     @Test
     void differentGamesList() {
-        List<Game> gamesListTest = new ArrayList<>();
+        Set<Game> gamesListTest = new HashSet<>();
         Game game1 = new Game();
         game1.setUniqueId("789");
         game1.setGameName("Gears of War");
