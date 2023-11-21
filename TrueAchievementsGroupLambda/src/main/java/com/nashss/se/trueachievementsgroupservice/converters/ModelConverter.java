@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Set;
 
 import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.copyToList;
+import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.copyToSet;
 
 /**
  * Converts between Data and API models.
@@ -30,7 +31,7 @@ public class ModelConverter {
         return GroupModel.builder()
                 .withUserId(group.getUserId())
                 .withGroupName(group.getGroupName())
-                .withGamesList(copyToList(group.getGamesList()))
+                .withGamesList(copyToSet(group.getGamesList()))
                 .build();
     }
 

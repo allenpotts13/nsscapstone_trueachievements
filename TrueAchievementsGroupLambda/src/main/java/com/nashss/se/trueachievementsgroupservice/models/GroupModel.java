@@ -4,15 +4,17 @@ import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.copyToList;
+import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.copyToSet;
 
 public class GroupModel implements Comparable<GroupModel> {
     private String userId;
     private String groupName;
-    private List<Game> gamesList;
+    private Set<Game> gamesList;
 
-    private GroupModel(String userId, String groupName, List<Game> gamesList) {
+    private GroupModel(String userId, String groupName, Set<Game> gamesList) {
         this.userId = userId;
         this.groupName = groupName;
         this.gamesList = gamesList;
@@ -25,7 +27,7 @@ public class GroupModel implements Comparable<GroupModel> {
         return groupName;
     }
 
-    public List<Game> getGamesList() {
+    public Set<Game> getGamesList() {
         return gamesList;
     }
 
@@ -66,7 +68,7 @@ public class GroupModel implements Comparable<GroupModel> {
     public static class Builder {
         private String userId;
         private String groupName;
-        private List<Game> gamesList;
+        private Set<Game> gamesList;
 
         public Builder withUserId(String userId) {
             this.userId = userId;
@@ -78,8 +80,8 @@ public class GroupModel implements Comparable<GroupModel> {
             return this;
         }
 
-        public Builder withGamesList(List<Game> gamesList) {
-            this.gamesList = copyToList(gamesList);
+        public Builder withGamesList(Set<Game> gamesList) {
+            this.gamesList = copyToSet(gamesList);
             return this;
         }
 
