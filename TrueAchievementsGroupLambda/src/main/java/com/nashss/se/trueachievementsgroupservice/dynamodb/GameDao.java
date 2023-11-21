@@ -9,7 +9,9 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -58,7 +60,7 @@ public class GameDao {
      * @param userId the user ID
      * @return the stored games, or none if none were found.
      */
-    public List<Game> getAllGames(String userId) {
+    public Set<Game> getAllGames(String userId) {
         Game game = new Game();
         game.setUserId(userId);
 
@@ -67,6 +69,6 @@ public class GameDao {
 
         PaginatedQueryList<Game> gamesList = dynamoDbMapper.query(Game.class, queryExpression);
 
-        return gamesList;
+        return new HashSet<>(gamesList);
     }
 }
