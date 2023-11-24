@@ -49,7 +49,7 @@
             "N": "1464"
           },
           "trueAchievementWonIncludeDlc": {
-            "N": "44"
+            "N": "44".builder()
           },
           "maxTrueAchievementIncludeDlc": {
             "N": "1464"
