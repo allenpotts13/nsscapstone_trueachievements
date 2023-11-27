@@ -395,6 +395,10 @@ Resources:
           AttributeType: "S"
         - AttributeName: "userId"
           AttributeType: "S"
+        - AttributeName: "gamerScoreWonIncludeDlc"
+          AttributeType: "N"
+        - AttributeName: "trueAchievementWonIncludeDlc"
+          AttributeType: "N"
       KeySchema:
         - AttributeName: "userId"
           KeyType: "HASH"
@@ -411,6 +415,24 @@ Resources:
             ProjectionType: "INCLUDE"
             NonKeyAttributes:
               - "gameName"
+        - IndexName: "GamerScoreWonIncludeDlc-UserId-Index"
+          KeySchema:
+            - AttributeName: "gamerScoreWonIncludeDlc"
+              KeyType: "HASH"
+          Projection:
+            ProjectionType: "KEYS_ONLY"
+        - IndexName: "TrueAchievementWonIncludeDlc-UserId-Index"
+          KeySchema:
+            - AttributeName: "trueAchievementWonIncludeDlc"
+              KeyType: "HASH"
+          Projection:
+            ProjectionType: "KEYS_ONLY"
+        - IndexName: "MyCompletionPercentage-UserId-Index"
+          KeySchema:
+            - AttributeName: "myCompletionPercentage"
+              KeyType: "HASH"
+          Projection:
+            ProjectionType: "KEYS_ONLY"
 
   GroupsTable:
     Type: AWS::DynamoDB::Table
