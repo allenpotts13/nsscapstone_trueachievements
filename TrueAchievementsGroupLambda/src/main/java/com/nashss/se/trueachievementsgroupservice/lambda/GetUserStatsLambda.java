@@ -1,4 +1,33 @@
 package com.nashss.se.trueachievementsgroupservice.lambda;
 
-public class GetUserStatsLambda {
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
+import com.nashss.se.trueachievementsgroupservice.activity.requests.GetUserStatsRequest;
+import com.nashss.se.trueachievementsgroupservice.activity.results.GetUserStatsResult;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class GetUserStatsLambda
+extends LambdaActivityRunner<GetUserStatsRequest, GetUserStatsResult>
+implements RequestHandler<AuthenticatedLambdaRequest<GetUserStatsRequest>, LambdaResponse> {
+
+    private final Logger log = LogManager.getLogger();
+
+    @Override
+    public LambdaResponse handleRequest(AuthenticatedLambdaRequest<GetUserStatsRequest> input, Context context) {
+        log.info("handleRequest");
+        return super.runActivity(
+            () -> {
+                GetUserStatsRequest unauthenticatedRequest = input.fromPath(path -> GetUserStatsRequest.builder()
+                    .withUserId(path.get("userId"))
+                    .build());
+                return input.fromUserClaims(claims ->
+                    GetUserStatsRequest.builder()
+                        .withUserId(claims.get("email"))
+                        .build());
+            },
+            (request, serviceComponent) ->
+                serviceComponent.provideGetUserStatsActivity().handleRequest(request)
+        );
+    }
 }
