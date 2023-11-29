@@ -216,7 +216,7 @@ Resources:
               Action: dynamodb:*
               Resource:
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games"
-              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/Platform-UniqueId-Index"
+              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/Platform-Index"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/GamerScoreWonIncludeDlc-Index"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/TrueAchievementWonIncludeDlc-Index"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/MyCompletionPercentage-Index"
@@ -419,7 +419,7 @@ Resources:
       BillingMode: "PAY_PER_REQUEST"
       TableName: "games"
       GlobalSecondaryIndexes:
-        - IndexName: "Platform-UniqueId-Index"
+        - IndexName: "Platform-Index"
           KeySchema:
             - AttributeName: "platform"
               KeyType: "HASH"

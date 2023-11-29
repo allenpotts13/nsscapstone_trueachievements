@@ -6,5 +6,5 @@ s3_prefix = "trueachievements"
 region = "us-east-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
-parameter_overrides = "CognitoDomain=\"project-trueachievements-allen-potts\" S3Bucket=\"s3-bucket nss-s3-c03-u7-capstone-allen.potts\" FrontendDeployment=\"local\""
+parameter_overrides = "CognitoDomain=\"project-trueachievements-allen-potts\" S3Bucket=\"s3-bucket nss-s3-c03-u7-capstone-allen.potts\" FrontendDeployment=\"remote\""
 image_repositories = []

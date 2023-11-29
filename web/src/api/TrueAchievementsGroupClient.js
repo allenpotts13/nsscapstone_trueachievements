@@ -7,7 +7,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
     constructor(props = {}) {
         super();
 
-        const methodsToBind = ['clientLoaded', 'getIdentity', 'login', 'logout', 'createGroup', 'getAllGroups', 'getAllGames', 'getGame', 'getUserStats', 'addGameToGroup', 'getGamesInGroup', 'getGroup'];
+        const methodsToBind = ['clientLoaded', 'getIdentity', 'login', 'logout', 'createGroup', 'getAllGames', 'getGroup'];
       
         this.bindClassMethods(methodsToBind, this);
 
