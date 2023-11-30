@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Games</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1f1f1f; /* Dark background color */
+            color: #fff; /* Text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #games-list {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .game {
+            border: 1px solid #333; /* Border color */
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #333; /* Game element background color */
+        }
+
+        h2 {
+            color: #ffcc00; /* Game title color */
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #3498db; /* Link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #search-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+
+        #search-field {
+            padding: 8px;
+            border: none;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+<img src="../static_assets/images/gamelibrary.png" alt="Gaming Icon" style="width: 50px; height: 50px; margin-right: 10px;">
+<h1>Gaming Collection</h1>
+</div>
+
+<div id="games-list"></div>
+
+<div id="search-container">
+    <input type="text" id="search-field" placeholder="Search...">
+</div>
+
+<script src="../src/pages/allGames.js"></script>
+</body>
+</html>

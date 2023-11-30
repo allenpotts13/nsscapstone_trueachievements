@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>Gaming Dashboard</title>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #1f1f1f;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/dashboard.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        #scoreboard {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .score-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .score-value {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Gaming Dashboard</h1>
+</header>
+
+<section id="scoreboard">
+    <div class="score-box" id="gamer-score">
+        <h2>GamerScore</h2>
+        <p class="score-value">Loading...</p>
+    </div>
+
+    <div class="score-box" id="achievements-won">
+        <h2>TrueAchievementsWon</h2>
+        <p class="score-value">Loading...</p>
+    </div>
+
+    <div class="score-box" id="completion-percentage">
+        <h2>Completion Percentage</h2>
+        <p class="score-value">Loading...</p>
+    </div>
+</section>
+
+<script src="../src/pages/dashboard.js"></script>
+</body>
+</html>
