@@ -9,10 +9,13 @@ import DataStore from "../util/DataStore";
 class ViewGames extends BindingClass {
     constructor() {
         super();
-        this.bindClassMethods(['clientLoaded', 'mount', 'addGamesToPage'], this);
+        this.bindClassMethods(['clientLoaded', 'mount', 'addGamesToPage','updatePagination', 'updateGamesPerPage', 'handleSearch'], this);
         this.dataStore = new DataStore();
         this.dataStore.addChangeListener(this.addGamesToPage);
         this.header = new Header(this.dataStore);
+        this.currentPage = 1;
+        this.gamesPerPage = 10;
+        this.filteredGames = null;
         console.log("viewgames constructor");
     }
 
@@ -22,118 +25,115 @@ class ViewGames extends BindingClass {
     async clientLoaded() {
         const games = await this.client.getAllGames();
         this.dataStore.set('games', games);
+        this.filteredGames = games;
     }
 
     /**
      * Add the header to the page and load the TrueAchievementGroupClient.
      */
-    mount() {
-        this.header.addHeaderToPage();
-
+    async mount() {
+        await this.header.addHeaderToPage();
         this.client = new TrueAchievementsGroupClient();
-        this.clientLoaded();
+        await this.clientLoaded();
+        this.setupControls();
     }
+
+    setupControls() {
+        // Add controls such as dropdown for games per page and search bar
+        const controlsContainer = document.getElementById('controls');
+        controlsContainer.innerHTML = '';
+
+        // Dropdown for games per page
+        const gamesPerPageDropdown = document.createElement('select');
+        gamesPerPageDropdown.addEventListener('change', () => {
+            this.gamesPerPage = parseInt(gamesPerPageDropdown.value);
+            this.currentPage = 1; // Reset to the first page when changing games per page
+            this.addGamesToPage();
+        });
+
+        // Populate games per page dropdown with options
+        [5, 10, 20, 50].forEach((option) => {
+            const optionElement = document.createElement('option');
+            optionElement.value = option.toString();
+            optionElement.textContent = option.toString();
+            gamesPerPageDropdown.appendChild(optionElement);
+        });
+
+        controlsContainer.appendChild(gamesPerPageDropdown);
+
+        // Search bar
+        const searchInput = document.createElement('input');
+        searchInput.type = 'text';
+        searchInput.placeholder = 'Search...';
+        searchInput.addEventListener('input', this.handleSearch.bind(this));
+
+        controlsContainer.appendChild(searchInput);
+
+        // Initial setup of pagination and games
+        this.addGamesToPage();
+    }
+
 
     /**
      * When the games list is updated in the datastore, update the games metadata on the page.
      */
     addGamesToPage() {
         console.log("addgamestopage")
-        const games = this.dataStore.get('games');
-        if (games == null) {
-            console.log("null games");
-            return;
+        const startIndex = (this.currentPage - 1) * this.gamesPerPage;
+        const endIndex = startIndex + this.gamesPerPage;
+        const paginatedGames = this.filteredGames.slice(startIndex, endIndex);
+
+        const gamesList = document.getElementById('games-list');
+        gamesList.innerHTML = ''; // Clear previous games
+
+        for (const game of paginatedGames) {
+            // ... (Same game element creation logic as before)
         }
 
-        const gamesList = document.getElementById("games-list");
+        this.updatePagination();
+    }
 
-        for(var i = 0; i < games.length; i++) {
-            const game = games[i];
-            const gameName = game.gameName || 'unknown'; // Replace null with an empty string
-            const platform = game.consolePlatform || 'unknown'; // Replace null with an empty string
-            const gameUrl = game.gameUrl || 'unknown'; // Replace null with an empty string
-            const achievementsWonIncludeDlc = game.achievementsWonIncludeDlc || 'unknown'; // Replace null with an empty string
-            const maxAchievementsIncludeDlc = game.maxAchievementsIncludeDlc || 'unknown'; // Replace null with an empty string
-            const gamerscoreWonIncludeDlc = game.gamerscoreWonIncludeDlc || 'unknown'; // Replace null with an empty string
-            const maxGamerscoreIncludeDlc = game.maxGamerscoreIncludeDlc || 'unknown'; // Replace null with an empty string
-            const trueAchievementWonIncludeDlc = game.trueAchievementWonIncludeDlc || 'unknown'; // Replace null with an empty string
-            const maxTrueAchievementIncludeDlc = game.maxTrueAchievementIncludeDlc || 'unknown'; // Replace null with an empty string
-            const myCompletionPercentage = game.myCompletionPercentage || 'unknown'; // Replace null with an empty string
-            const completionDate = game.completionDate || 'unknown'; // Replace null with an empty string
-            const hoursPlayed = game.hoursPlayed || 'unknown'; // Replace null with an empty string
-            const gameNotes = game.gameNotes || 'unknown'; // Replace null with an empty string
+    updatePagination() {
+        const totalPages = Math.ceil(this.filteredGames.length / this.gamesPerPage);
 
-            // Create elements to display game information
-            const gameElement = document.createElement('div');
-            gameElement.className = 'game';
+        const paginationContainer = document.getElementById('pagination');
+        paginationContainer.innerHTML = '';
 
-            const nameElement = document.createElement('h2');
-            nameElement.textContent = `Game: ${gameName}`;
-
-            const platformElement = document.createElement('p');
-            platformElement.textContent = `Platform: ${platform}`;
-
-            const gameUrlElement = document.createElement('p');
-            gameUrlElement.textContent = `Game URL: ${gameUrl}`;
-
-            const achievementsWonIncludeDlcElement = document.createElement('p');
-            achievementsWonIncludeDlcElement.textContent = `Achievements Won Include Dlc: ${achievementsWonIncludeDlc}`;
-
-            const maxAchievementsIncludeDlcElement = document.createElement('p');
-            maxAchievementsIncludeDlcElement.textContent = `Max Achievements Include Dlc: ${maxAchievementsIncludeDlc}`;
-
-            const gamerscoreWonIncludeDlcElement = document.createElement('p');
-            gamerscoreWonIncludeDlcElement.textContent = `Gamerscore Won Include Dlc: ${gamerscoreWonIncludeDlc}`;
-
-            const maxGamerscoreIncludeDlcElement = document.createElement('p');
-            maxGamerscoreIncludeDlcElement.textContent = `Max Gamerscore Include Dlc: ${maxGamerscoreIncludeDlc}`;
-
-            const trueAchievementWonIncludeDlcElement = document.createElement('p');
-            trueAchievementWonIncludeDlcElement.textContent = `True Achievement Won Include Dlc: ${trueAchievementWonIncludeDlc}`;
-
-            const maxTrueAchievementIncludeDlcElement = document.createElement('p');
-            maxTrueAchievementIncludeDlcElement.textContent = `Max True Achievement Include Dlc: ${maxTrueAchievementIncludeDlc}`;
-
-            const myCompletionPercentageElement = document.createElement('p');
-            myCompletionPercentageElement.textContent = `My Completion Percentage: ${myCompletionPercentage}`;
-
-            const completionDateElement = document.createElement('p');
-            completionDateElement.textContent = `Completion Date: ${completionDate}`;
-
-            const hoursPlayedElement = document.createElement('p');
-            hoursPlayedElement.textContent = `Hours Played: ${hoursPlayed}`;
-
-            const gameNotesElement = document.createElement('p');
-            gameNotesElement.textContent = `Game Notes: ${gameNotes}`;
-
-            // Add game information to the game element
-            gameElement.appendChild(nameElement);
-            gameElement.appendChild(platformElement);
-            gameElement.appendChild(gameUrlElement);
-            gameElement.appendChild(achievementsWonIncludeDlcElement);
-            gameElement.appendChild(maxAchievementsIncludeDlcElement);
-            gameElement.appendChild(gamerscoreWonIncludeDlcElement);
-            gameElement.appendChild(maxGamerscoreIncludeDlcElement);
-            gameElement.appendChild(trueAchievementWonIncludeDlcElement);
-            gameElement.appendChild(maxTrueAchievementIncludeDlcElement);
-            gameElement.appendChild(myCompletionPercentageElement);
-            gameElement.appendChild(completionDateElement);
-            gameElement.appendChild(hoursPlayedElement);
-            gameElement.appendChild(gameNotesElement);
-
-            // Add the game element to the page
-            gamesList.appendChild(gameElement);
+        for (let i = 1; i <= totalPages; i++) {
+            const pageButton = document.createElement('button');
+            pageButton.textContent = i.toString();
+            pageButton.addEventListener('click', () => {
+                this.currentPage = i;
+                this.addGamesToPage();
+            });
+            paginationContainer.appendChild(pageButton);
         }
     }
 
+    updateGamesPerPage() {
+        this.gamesPerPage = parseInt(document.getElementById('gamesPerPageDropdown').value);
+        this.currentPage = 1; // Reset to the first page when changing games per page
+        this.addGamesToPage();
+    }
+
+    handleSearch() {
+        const searchInput = document.getElementById('searchInput');
+        const searchTerm = searchInput.value.toLowerCase();
+
+        // Filter games based on the search term
+        this.filteredGames = this.dataStore.get('games').filter((game) => {
+            const gameName = game.gameName.toLowerCase();
+            return gameName.includes(searchTerm);
+        });
+
+        this.currentPage = 1; // Reset to the first page when performing a search
+        this.addGamesToPage();
+    }
 }
 
-/**
- * Main method to run when the page contents have loaded.
- */
 const main = async () => {
     const viewGames = new ViewGames();
-    viewGames.mount();
+    await viewGames.mount();
 };
 
 window.addEventListener('DOMContentLoaded', main);

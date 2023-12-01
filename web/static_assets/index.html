@@ -1,29 +1,65 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <script type="text/javascript" src="assets/getAllGroups.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueAchievements Group Service Login</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
+        #dos-prompt {
+            border: 1px solid white;
+            padding: 10px;
+            max-width: 400px;
+            text-align: left;
+            white-space: pre-line;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+            border: none;
+            outline: none;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
 </head>
+<body>
+<div id="dos-prompt">
+    <p>TrueAchievements Group Service</p>
+    <p>Login:</p>
+    <input type="text" id="usernameInput" placeholder="Username">
+    <p>Password:</p>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="login()">Login</button>
+</div>
 
-<body class="background">
-    <header class="header" id="header"></header>
-    <div class="card">
-        <h2>All Groups</h2>
-        <h4 id="group-list"></h4>
-        <p class="button-group">
-            <a href="createGroup.html" class="button">New Group</a>
-            <a href="createContact.html" class="button">New Contact</a>
-            <a href="allContacts.html" class="button">View All Contacts</a>
-        </p>
-    </div>
+<script src="../src/api/TrueAchievementsGroupClient.js"></script>
+<script>
+    import TrueAchievementsGroupClient from "../src/api/TrueAchievementsGroupClient";
+
+    const client = new TrueAchievementsGroupClient();
+
+    async function login() {
+        try {
+            await client.login();
+            console.log('Login successful');
+            // Additional logic after successful login
+        } catch (error) {
+            console.error('Login failed:', error);
+            // Handle login failure
+        }
+    }
+</script>
 </body>
-
 </html>

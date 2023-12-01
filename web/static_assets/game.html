@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file if needed -->
+    <title>View Game</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: #ffd700; /* Gold color */
+        }
+
+        a {
+            color: #00bcd4; /* Cyan color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff4081; /* Pink color */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #4caf50; /* Green color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+
+    </style>
+
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1 id="game-gameName">Loading game...</h1>
+</header>
+
+<!-- Game Details Section -->
+<section>
+    <h2>Game Details</h2>
+    <p>Platform: <span id="game-platform">N/A</span></p>
+    <p>Game URL: <span id="game-gameURL">N/A</span></p>
+    <p>My Completion Percentage: <span id="game-myCompletionPercentage">N/A</span></p>
+    <p>Completion Date: <span id="game-completionDate">N/A</span></p>
+    <p>Hours Played: <span id="game-hoursPlayed">N/A</span></p>
+    <p>My Rating: <span id="game-myRating">N/A</span> / <span id="game-siteRating">N/A</span></p>
+    <p>My Ratio: <span id="game-myRatio">N/A</span> / <span id="game-siteRatio">N/A</span></p>
+    <p>Ownership Status: <span id="game-ownerShipStatus">N/A</span></p>
+    <p>Play Status: <span id="game-playStatus">N/A</span></p>
+    <p>Format: <span id="game-format">N/A</span></p>
+    <p>Completion Estimate: <span id="game-completionEstimate">N/A</span></p>
+    <p>Walkthrough: <span id="game-walkthrough">N/A</span></p>
+    <p>Contest Status: <span id="game-contestStatus">N/A</span></p>
+    <!-- Add other details as needed -->
+
+    <h3>Achievements</h3>
+    <p>Achievements (No DLC): <span id="game-achievementsWonNoDlc">N/A</span> / <span id="game-maxAchievementsNoDlc">N/A</span></p>
+    <p>Achievements (Include DLC): <span id="game-achievementsWonIncludeDlc">N/A</span> / <span id="game-maxAchievementsIncludeDlc">N/A</span></p>
+    <p>GamerScore Won (No DLC): <span id="game-gamerScoreWonNoDlc">N/A</span> / <span id="game-maxGamerScoreNoDlc">N/A</span></p>
+    <p>GamerScore Won (Include DLC): <span id="game-gamerScoreWonIncludeDlc">N/A</span> / <span id="game-maxGamerScoreIncludeDlc">N/A</span></p>
+    <p>TrueAchievements Won (Include DLC): <span id="game-trueAchievementWonNoDlc">N/A</span> / <span id="game-maxTrueAchievementNoDlc">N/A</span></p>
+    <p>TrueAchievements Won (Include DLC): <span id="game-trueAchievementWonIncludeDlc">N/A</span> / <span id="game-maxTrueAchievementIncludeDlc">N/A</span></p>
+
+    <h3>Challenges</h3>
+    <p>Challenges Won: <span id="game-challengesWon">N/A</span> / <span id="game-maxChallenges">N/A</span></p>
+
+    <h3>Notes</h3>
+    <div id="game-gameNotes">
+        <!-- Notes will be populated dynamically -->
+    </div>
+</section>
+
+<!-- Add any additional sections as needed -->
+
+<!-- Include your ViewGame.js script -->
+<script src="../src/pages/viewGame.js"></script>
+
+<script>
+    // Main method to run when the page contents have loaded
+    const main = async () => {
+        const viewGame = new ViewGame();
+        viewGame.mount();
+    };
+
+    window.addEventListener('DOMContentLoaded', main);
+</script>
+
+<!-- Add any additional scripts here -->
+
+</body>
+</html>
