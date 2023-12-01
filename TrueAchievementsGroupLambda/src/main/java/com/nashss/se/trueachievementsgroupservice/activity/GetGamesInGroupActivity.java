@@ -6,7 +6,9 @@ import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GameModel;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,15 +24,18 @@ import javax.inject.Inject;
 public class GetGamesInGroupActivity {
     private final Logger log = LogManager.getLogger();
     private final GroupDao groupDao;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a new GetGamesInGroupActivity object.
      *
      * @param groupDao GroupDao to access the group table.
+     * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public GetGamesInGroupActivity(GroupDao groupDao) {
+    public GetGamesInGroupActivity(GroupDao groupDao, MetricsPublisher metricsPublisher) {
         this.groupDao = groupDao;
+        this.metricsPublisher = metricsPublisher;
     }
 
     /**
@@ -46,6 +51,7 @@ public class GetGamesInGroupActivity {
 
     public GetGamesInGroupResult handleRequest(final GetGamesInGroupRequest getGroupGamesRequest) {
         log.info("Received GetGamesInGroupRequest {}", getGroupGamesRequest);
+        long startTime = System.currentTimeMillis();
 
         Group group = groupDao.getGroup(getGroupGamesRequest.getUserId(), getGroupGamesRequest.getGroupName());
         if (group.getGamesList() == null) {
@@ -54,7 +60,9 @@ public class GetGamesInGroupActivity {
                     .build();
         }
         List<GameModel> gameModels = new ModelConverter().toGameModelList(group.getGamesList());
-
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        metricsPublisher.addTime("GetGamesInGroupActivity.handleRequest", duration);
         return GetGamesInGroupResult.builder()
                 .withGameList(gameModels)
                 .build();

@@ -2,11 +2,9 @@ package com.nashss.se.trueachievementsgroupservice.models;
 
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 
-import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.copyToList;
 import static com.nashss.se.trueachievementsgroupservice.utils.CollectionUtils.copyToSet;
 
 public class GroupModel implements Comparable<GroupModel> {

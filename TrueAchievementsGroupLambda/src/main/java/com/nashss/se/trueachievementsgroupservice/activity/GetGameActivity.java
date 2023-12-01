@@ -5,6 +5,7 @@ import com.nashss.se.trueachievementsgroupservice.activity.results.GetGameResult
 import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GameModel;
 
 import javax.inject.Inject;
@@ -16,15 +17,18 @@ import javax.inject.Inject;
  */
 public class GetGameActivity {
     private final GameDao gameDao;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a new GetGameActivity object.
      *
      * @param gameDao GameDao to access the games table.
+     * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public GetGameActivity(GameDao gameDao) {
+    public GetGameActivity(GameDao gameDao, MetricsPublisher metricsPublisher) {
         this.gameDao = gameDao;
+        this.metricsPublisher = metricsPublisher;
     }
 
     /**
@@ -41,8 +45,12 @@ public class GetGameActivity {
      */
 
     public GetGameResult handleRequest(final GetGameRequest getGameRequest) {
+        long startTime = System.currentTimeMillis();
         Game game = gameDao.getGame(getGameRequest.getUserId(), getGameRequest.getUniqueId());
         GameModel gameModel = new ModelConverter().toGameModel(game);
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        metricsPublisher.addTime("GetGameActivity.handleRequest", duration);
         return GetGameResult.builder()
                 .withGame(gameModel)
                 .build();

@@ -8,8 +8,10 @@ import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
 import com.nashss.se.trueachievementsgroupservice.exceptions.InvalidAttributeException;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GroupModel;
 import com.nashss.se.trueachievementsgroupservice.utils.TrueAchievementGroupServiceUtils;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -25,16 +27,19 @@ import javax.inject.Inject;
 public class CreateGroupActivity {
     private final Logger logger = LogManager.getLogger();
     private final GroupDao groupDao;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a new CreateGroupActivity object.
      *
      * @param groupDao GroupDao to access the group table.
+     * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public CreateGroupActivity(GroupDao groupDao) {
+    public CreateGroupActivity(GroupDao groupDao, MetricsPublisher metricsPublisher) {
         this.groupDao = groupDao;
 
+        this.metricsPublisher = metricsPublisher;
     }
 
     /**
@@ -53,6 +58,7 @@ public class CreateGroupActivity {
 
     public CreateGroupResult handleRequest(final CreateGroupRequest createGroupRequest) {
         logger.info("Received CreateGroupRequest {}", createGroupRequest);
+        long startTime = System.currentTimeMillis();
 
         if (!TrueAchievementGroupServiceUtils.isValidString(createGroupRequest.getGroupName())) {
             throw new InvalidAttributeException("Group name [" + createGroupRequest.getGroupName() +
@@ -77,6 +83,9 @@ public class CreateGroupActivity {
         groupDao.saveGroup(group);
 
         GroupModel groupModel = new ModelConverter().toGroupModel(group);
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        metricsPublisher.addTime("CreateGroupActivity::handleRequest", duration);
         return CreateGroupResult.builder()
             .withGroup(groupModel)
             .build();

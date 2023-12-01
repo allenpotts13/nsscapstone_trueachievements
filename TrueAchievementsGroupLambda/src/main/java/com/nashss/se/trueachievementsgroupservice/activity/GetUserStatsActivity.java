@@ -1,11 +1,10 @@
 package com.nashss.se.trueachievementsgroupservice.activity;
 
-import com.nashss.se.trueachievementsgroupservice.activity.requests.GetGameRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.GetUserStatsRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.GetUserStatsResult;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 
-import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,20 +19,31 @@ import javax.inject.Inject;
 public class GetUserStatsActivity {
     private final Logger log = LogManager.getLogger();
     private final GameDao gameDao;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a new GetUserStatsActivity object.
      *
      * @param gameDao GameDao to access the games table.
+     * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public GetUserStatsActivity(GameDao gameDao) {
+    public GetUserStatsActivity(GameDao gameDao, MetricsPublisher metricsPublisher) {
         this.gameDao = gameDao;
+        this.metricsPublisher = metricsPublisher;
     }
-
+    /**
+     * This method handles the incoming request by retrieving the user's stats.
+     * <p>
+     * It then returns the user's stats.
+     *
+     * @param getUserStatsRequest request object containing the user ID
+     * @return getUserStatsResult result object containing the API defined {@link GetUserStatsResult}
+     */
 
     public GetUserStatsResult handleRequest(final GetUserStatsRequest getUserStatsRequest) {
         log.info("handleRequest");
+        long startTime = System.currentTimeMillis();
 
         try {
             // Retrieve the game from the database
@@ -47,6 +57,10 @@ public class GetUserStatsActivity {
                 .build();
 
             log.info("Successfully retrieved user stats: {}", result);
+            long endTime = System.currentTimeMillis();
+            long duration = endTime - startTime;
+            metricsPublisher.addTime("GetUserStatsActivity.handleRequest", duration);
+
             return result;
         } catch (Exception e) {
             log.error("Error processing GetUserStatsRequest", e);

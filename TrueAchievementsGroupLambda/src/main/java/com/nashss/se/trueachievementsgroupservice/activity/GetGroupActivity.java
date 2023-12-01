@@ -6,7 +6,9 @@ import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GroupModel;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -20,15 +22,18 @@ import javax.inject.Inject;
 public class GetGroupActivity {
     private final Logger log = LogManager.getLogger();
     private final GroupDao groupDao;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a new GetGroupActivity object.
      *
      * @param groupDao GroupDao to access the group table.
+     * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public GetGroupActivity(GroupDao groupDao) {
+    public GetGroupActivity(GroupDao groupDao, MetricsPublisher metricsPublisher) {
         this.groupDao = groupDao;
+        this.metricsPublisher = metricsPublisher;
     }
 
     /**
@@ -44,10 +49,16 @@ public class GetGroupActivity {
 
     public GetGroupResult handleRequest(final GetGroupRequest getGroupRequest) {
         log.info("Received GetGroupRequest {}", getGroupRequest);
+        long startTime = System.currentTimeMillis();
+
         String requestedUserId = getGroupRequest.getUserId();
         String requestedName = getGroupRequest.getGroupName();
         Group group = groupDao.getGroup(requestedUserId, requestedName);
         GroupModel groupModel = new ModelConverter().toGroupModel(group);
+
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        metricsPublisher.addTime("GetGroupActivity", duration);
 
         return GetGroupResult.builder()
             .withGroup(groupModel)

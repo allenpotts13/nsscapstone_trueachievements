@@ -1,15 +1,17 @@
 package com.nashss.se.trueachievementsgroupservice.lambda;
 
-import com.amazonaws.services.lambda.runtime.Context;
-import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.GetGameRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.GetGameResult;
+
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class GetGameLambda
-extends LambdaActivityRunner<GetGameRequest, GetGameResult>
-implements RequestHandler<AuthenticatedLambdaRequest<GetGameRequest>, LambdaResponse> {
+        extends LambdaActivityRunner<GetGameRequest, GetGameResult>
+        implements RequestHandler<AuthenticatedLambdaRequest<GetGameRequest>, LambdaResponse> {
 
     private final Logger log = LogManager.getLogger();
 

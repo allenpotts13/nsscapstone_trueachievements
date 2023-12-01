@@ -1,9 +1,11 @@
 package com.nashss.se.trueachievementsgroupservice.lambda;
 
-import com.amazonaws.services.lambda.runtime.Context;
-import com.amazonaws.services.lambda.runtime.RequestHandler;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.AddGameToGroupRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.AddGameToGroupResult;
+
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
