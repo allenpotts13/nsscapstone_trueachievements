@@ -25,6 +25,7 @@ module.exports = {
   entry: {
     dashboard: path.resolve(__dirname, 'src', 'pages', 'dashboard.js'),
     createGroup: path.resolve(__dirname, 'src', 'pages', 'createGroup.js'),
+    viewGame: path.resolve(__dirname, 'src', 'pages', 'viewGame.js'),
     viewGroup: path.resolve(__dirname, 'src', 'pages', 'viewGroup.js'),
     allGames: path.resolve(__dirname, 'src', 'pages', 'allGames.js'),
     test: path.resolve(__dirname, 'src', 'pages', 'test.js'),
