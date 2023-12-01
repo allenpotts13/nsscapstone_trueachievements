@@ -140,7 +140,48 @@ class ViewGroup extends BindingClass {
          } catch (error) {
              console.error('Error adding contact:', error);
          }
-         }
+     }
+
+    /**
+     * Method to run when the delete game from group button is pressed.
+     * Call the TrueAchievementsGroupService to delete a game from the group.
+     */
+    async deleteGame(uniqueId) {
+        try {
+            const errorMessageDisplay = document.getElementById('error-message');
+            errorMessageDisplay.innerText = '';
+            errorMessageDisplay.classList.add('hidden');
+
+            const group = this.dataStore.get('group');
+            if (!group) {
+                return;
+            }
+
+            console.log('Data being sent in Axios request:', {
+                group: group.name,
+                uniqueId: uniqueId,
+            });
+
+            document.getElementById('delete-game').innerText = 'Deleting...';
+
+            // Call the client to delete the game from the group
+            const updatedGroup = await this.client.deleteGameFromGroup(group.name, uniqueId, (error) => {
+                errorMessageDisplay.innerText = `Error: ${error.message}`;
+                errorMessageDisplay.classList.remove('hidden');
+            });
+
+            // Update the group data in the DataStore
+            this.dataStore.set('group', updatedGroup);
+
+            // Reset the button text
+            document.getElementById('delete-game').innerText = 'Delete Game';
+
+            // Refresh the page or update the games list on the page
+            this.addGamesToPage();
+        } catch (error) {
+            console.error('Error deleting game:', error);
+        }
+    }
 
     async populateGameDropdown() {
         try {

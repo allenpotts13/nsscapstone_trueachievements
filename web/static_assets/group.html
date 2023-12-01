@@ -1,36 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script type="text/javascript" src="assets/viewGroup.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
+    <title>Your Group Page</title>
+    <style>
+        body {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Roboto Condensed', sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: #ffd700; /* Gold color */
+        }
+
+        a {
+            color: #00bcd4; /* Cyan color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff4081; /* Pink color */
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #4caf50; /* Green color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+
+    </style>
 </head>
+<body>
 
-<body class="background">
-<header class="header" id="header"></header>
-<div class="card">
-    <h2>Group Details</h2>
-    <h2 id="group-name"></h2>
-    <div class="tags" id="group-tags"></div>
-    <ol id="contact-list"></ol>
-</div>
-<div class="card">
-    <h2>Add Contact to Group</h2>
-    <form class="card-content" id="add-contact-form">
-        <p class="hidden error" id="error-message"></p>
-        <p class="form-field">
-            <label for="contact-dropdown">Select a Contact</label>
-            <select id="contact-dropdown" required></select>
-        </p>
-        <a href="#" class="button" id="add-contact">Add Contact</a>
+<!-- Header Section -->
+<header>
+    <h1 id="group-name">Loading group...</h1>
+</header>
+
+<!-- Games List Section -->
+<section>
+    <h2>Games List</h2>
+    <div id="games-list">
+        <!-- Games list will be populated dynamically -->
+    </div>
+</section>
+
+<!-- Delete Game Section -->
+<section>
+    <h2>Delete Game from Group</h2>
+    <form>
+        <label for="game-dropdown">Select game to delete:</label>
+        <select id="game-dropdown"></select>
+        <button id="delete-game" type="button">Delete Game</button>
     </form>
-</div>
-</body>
+</section>
 
+<!-- Error Message Section -->
+<section>
+    <p id="error-message" class="hidden"></p>
+</section>
+
+<!-- Include your ViewGroup.js script -->
+<script src="ViewGroup.js"></script>
+
+<script>
+    // Main method to run when the page contents have loaded
+    const main = async () => {
+        const viewGroup = new ViewGroup();
+        viewGroup.mount();
+    };
+
+    window.addEventListener('DOMContentLoaded', main);
+</script>
+</body>
 </html>
