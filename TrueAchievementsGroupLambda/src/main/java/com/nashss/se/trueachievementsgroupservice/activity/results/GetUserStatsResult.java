@@ -1,7 +1,5 @@
 package com.nashss.se.trueachievementsgroupservice.activity.results;
 
-import com.nashss.se.trueachievementsgroupservice.models.GameModel;
-
 public class GetUserStatsResult {
 
     private final Integer gamerScoreWonIncludeDlc;
@@ -10,7 +8,8 @@ public class GetUserStatsResult {
     private final String errorMessage;
 
 
-    private GetUserStatsResult(Integer gamerScoreWonIncludeDlc, Integer trueAchievementWonIncludeDlc, Integer myCompletionPercentage, String errorMessage) {
+    private GetUserStatsResult(Integer gamerScoreWonIncludeDlc, Integer trueAchievementWonIncludeDlc,
+                               Integer myCompletionPercentage, String errorMessage) {
         this.gamerScoreWonIncludeDlc = gamerScoreWonIncludeDlc;
         this.trueAchievementWonIncludeDlc = trueAchievementWonIncludeDlc;
         this.myCompletionPercentage = myCompletionPercentage;

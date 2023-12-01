@@ -1,14 +1,17 @@
 package com.nashss.se.trueachievementsgroupservice.dynamodb;
 
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
-import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
-import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
+import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
 import com.nashss.se.trueachievementsgroupservice.exceptions.GroupNotFoundException;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
+import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
+
 import java.util.List;
+import java.util.Set;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
@@ -77,5 +80,26 @@ public class GroupDao {
 
         PaginatedQueryList<Group> groupList = dynamoDbMapper.query(Group.class, queryExpression);
         return groupList;
+    }
+
+    /**
+     * Deletes the {@link Game} corresponding to the specified userId and groupName.
+     *
+     * @param userId the Group's userId
+     * @param groupName the Group's name
+     * @param uniqueId the Game's uniqueId
+     */
+    public Group deleteGameFromGroup(String userId, String groupName, String uniqueId) {
+        Group group = getGroup(userId, groupName);
+
+        Set<Game> gamesList = group.getGamesList();
+        if (gamesList != null) {
+            gamesList.removeIf(game -> game.getUniqueId().equals(uniqueId));
+
+            group.setGamesList(gamesList);
+
+            saveGroup(group);
+        }
+        return group;
     }
 }

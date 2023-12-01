@@ -5,6 +5,7 @@ import com.nashss.se.trueachievementsgroupservice.activity.results.GetAllGamesRe
 import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GameModel;
 
 import java.util.Collections;
@@ -20,15 +21,18 @@ import javax.inject.Inject;
  */
 public class GetAllGamesActivity {
     private final GameDao gameDao;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a new GetAllGamesActivity object.
      *
      * @param gameDao GameDao to access the games table.
+     * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public GetAllGamesActivity(GameDao gameDao) {
+    public GetAllGamesActivity(GameDao gameDao, MetricsPublisher metricsPublisher) {
         this.gameDao = gameDao;
+        this.metricsPublisher = metricsPublisher;
     }
 
     /**
@@ -36,13 +40,19 @@ public class GetAllGamesActivity {
      * <p>
      * It then returns the games.
      *
+     * @param getAllGamesRequest request object containing the user ID
+     *
      * @return getAllGamesResult result object containing the API defined GameModel
      */
 
     public GetAllGamesResult handleRequest(final GetAllGamesRequest getAllGamesRequest) {
+        long startTime = System.currentTimeMillis();
         Set<Game> gameList = gameDao.getAllGames(getAllGamesRequest.getUserId());
         List<GameModel> gameModelList = new ModelConverter().toGameModelList(new HashSet<>(gameList));
         Collections.sort(gameModelList);
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        metricsPublisher.addTime("GetAllGamesActivity.handleRequest", duration);
         return GetAllGamesResult.builder()
             .withGameList(gameModelList)
             .build();

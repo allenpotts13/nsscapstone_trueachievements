@@ -6,6 +6,7 @@ import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GameModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -27,11 +28,13 @@ public class GetGamesInGroupActivityTest {
     private GetGamesInGroupActivity getGroupGamesActivity;
 
     private ModelConverter modelConverter;
+    @Mock
+    private MetricsPublisher metricsPublisher;
 
     @BeforeEach
     void setup() {
         openMocks(this);
-        getGroupGamesActivity = new GetGamesInGroupActivity(groupDao);
+        getGroupGamesActivity = new GetGamesInGroupActivity(groupDao, metricsPublisher);
         modelConverter = new ModelConverter();
     }
 

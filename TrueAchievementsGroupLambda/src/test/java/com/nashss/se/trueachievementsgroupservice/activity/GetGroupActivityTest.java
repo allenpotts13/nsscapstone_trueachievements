@@ -1,15 +1,13 @@
 package com.nashss.se.trueachievementsgroupservice.activity;
 
-import com.google.common.collect.Sets;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.GetGroupRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.GetGroupResult;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
@@ -21,11 +19,13 @@ public class GetGroupActivityTest {
     private GroupDao groupDao;
 
     private GetGroupActivity getGroupActivity;
+    @Mock
+    private MetricsPublisher metricsPublisher;
 
     @BeforeEach
     public void setUp() {
         initMocks(this);
-        getGroupActivity = new GetGroupActivity(groupDao);
+        getGroupActivity = new GetGroupActivity(groupDao, metricsPublisher);
     }
 
     @Test

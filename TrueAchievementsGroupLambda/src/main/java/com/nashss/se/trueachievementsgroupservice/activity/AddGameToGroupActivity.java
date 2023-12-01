@@ -7,6 +7,7 @@ import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GameModel;
 
 import org.apache.logging.log4j.LogManager;
@@ -26,17 +27,20 @@ public class AddGameToGroupActivity {
     private final Logger logger = LogManager.getLogger();
     private final GameDao gameDao;
     private final GroupDao groupDao;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a new AddGameToGroupActivity object.
      *
      * @param gameDao GameDao to access the games table.
      * @param groupDao GroupDao to access the groups table.
+     * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public AddGameToGroupActivity(GameDao gameDao, GroupDao groupDao) {
+    public AddGameToGroupActivity(GameDao gameDao, GroupDao groupDao, MetricsPublisher metricsPublisher) {
         this.gameDao = gameDao;
         this.groupDao = groupDao;
+        this.metricsPublisher = metricsPublisher;
     }
 
     /**
@@ -51,6 +55,7 @@ public class AddGameToGroupActivity {
 
     public AddGameToGroupResult handleRequest(final AddGameToGroupRequest addGameToGroupRequest) {
         logger.info("Received AddGameToGroupRequest {} ", addGameToGroupRequest);
+        long startTime = System.currentTimeMillis();
 
         String userId = addGameToGroupRequest.getUserId();
         String uniqueId = addGameToGroupRequest.getUniqueId();
@@ -62,14 +67,19 @@ public class AddGameToGroupActivity {
         Set<Game> gamesSet = group.getGamesList();
         if (gamesSet == null) {
             gamesSet = new HashSet<>();
+            group.setGamesList(gamesSet);
         }
 
-        group.setGamesList(gamesSet);
+        gamesSet.add(game);
 
         groupDao.saveGroup(group);
 
         List<GameModel> gameModelList = new ModelConverter().toGameModelList(gamesSet);
         Set<GameModel> updatedContactSet = new HashSet<>(gameModelList);
+
+        long endTime = System.currentTimeMillis();
+        long duration = endTime - startTime;
+        metricsPublisher.addTime("AddGameToGroupActivity::handleRequest", duration);
 
         return AddGameToGroupResult.builder()
             .withGameSet(updatedContactSet)

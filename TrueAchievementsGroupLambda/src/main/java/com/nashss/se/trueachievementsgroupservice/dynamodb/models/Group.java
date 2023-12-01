@@ -1,11 +1,12 @@
 package com.nashss.se.trueachievementsgroupservice.dynamodb.models;
 
+import com.nashss.se.trueachievementsgroupservice.converters.GameListConverter;
+
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTypeConverted;
-import com.nashss.se.trueachievementsgroupservice.converters.GameListConverter;
 
 import java.util.Objects;
 import java.util.Set;

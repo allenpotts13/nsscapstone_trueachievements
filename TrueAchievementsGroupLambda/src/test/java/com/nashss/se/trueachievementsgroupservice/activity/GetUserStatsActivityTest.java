@@ -3,6 +3,7 @@ package com.nashss.se.trueachievementsgroupservice.activity;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.GetUserStatsRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.GetUserStatsResult;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -20,11 +21,13 @@ public class GetUserStatsActivityTest {
     private GetUserStatsActivity getUserStatsActivity;
     @Mock
     private GameDao mockGameDao;
+    @Mock
+    private MetricsPublisher metricsPublisher;
 
     @BeforeEach
     public void setUp() {
         initMocks(this);
-        getUserStatsActivity = new GetUserStatsActivity(mockGameDao);
+        getUserStatsActivity = new GetUserStatsActivity(mockGameDao, metricsPublisher);
     }
 
     @Test

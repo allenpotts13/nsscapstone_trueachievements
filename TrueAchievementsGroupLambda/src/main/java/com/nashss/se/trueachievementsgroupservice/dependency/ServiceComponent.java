@@ -2,6 +2,7 @@ package com.nashss.se.trueachievementsgroupservice.dependency;
 
 import com.nashss.se.trueachievementsgroupservice.activity.AddGameToGroupActivity;
 import com.nashss.se.trueachievementsgroupservice.activity.CreateGroupActivity;
+import com.nashss.se.trueachievementsgroupservice.activity.DeleteGameFromGroupActivity;
 import com.nashss.se.trueachievementsgroupservice.activity.GetAllGamesActivity;
 import com.nashss.se.trueachievementsgroupservice.activity.GetAllGroupsActivity;
 import com.nashss.se.trueachievementsgroupservice.activity.GetGameActivity;
@@ -63,4 +64,10 @@ public interface ServiceComponent {
      * @return GetUserStatsActivity
      */
     GetUserStatsActivity provideGetUserStatsActivity();
+
+    /**
+     * Provides the relevant activity.
+     * @return DeleteGameFromGroupActivity
+     */
+    DeleteGameFromGroupActivity provideDeleteGameFromGroupActivity();
 }
