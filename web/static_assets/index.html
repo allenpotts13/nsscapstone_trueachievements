@@ -1,65 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrueAchievements Group Service Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title>Gaming Dashboard</title>
     <style>
         body {
-            background-color: black;
-            color: white;
-            font-family: 'Courier New', monospace;
+            font-family: 'Press Start 2P', cursive;
+            background-color: #1f1f1f;
+            color: #fff;
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/dashboard.png');
+            background-size: cover;
+            background-position: center;
         }
 
-        #dos-prompt {
-            border: 1px solid white;
-            padding: 10px;
-            max-width: 400px;
-            text-align: left;
-            white-space: pre-line;
+        header {
+            text-align: center;
+            margin-bottom: 20px;
         }
 
-        input {
-            background-color: black;
-            color: white;
-            border: none;
-            outline: none;
-            font-family: 'Courier New', monospace;
+        h1 {
+            font-size: 2em;
+        }
+
+        #scoreboard {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .score-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .score-value {
+            font-size: 1.5em;
+            font-weight: bold;
         }
     </style>
 </head>
-<body>
-<div id="dos-prompt">
-    <p>TrueAchievements Group Service</p>
-    <p>Login:</p>
-    <input type="text" id="usernameInput" placeholder="Username">
-    <p>Password:</p>
-    <input type="password" id="passwordInput" placeholder="Password">
-    <button onclick="login()">Login</button>
+
+<body class="background">
+<header class="header" id="header"></header>
+<div class="card">
+    <h1>Gaming Dashboard</h1>
+    <section id="scoreboard">
+        <div class="score-box" id="gamer-score">
+            <h2>GamerScore</h2>
+            <p class="score-value">Loading...</p>
+        </div>
+
+        <div class="score-box" id="achievements-won">
+            <h2>TrueAchievementsWon</h2>
+            <p class="score-value">Loading...</p>
+        </div>
+
+        <div class="score-box" id="completion-percentage">
+            <h2>Completion Percentage</h2>
+            <p class="score-value">Loading...</p>
+        </div>
+    </section>
+    <p class="button-group">
+        <a href="" class="button">Groups</a>
+        <a href="../static_assets/allGames.html" class="button">Game Library</a>
+    </p>
 </div>
-
-<script src="../src/api/TrueAchievementsGroupClient.js"></script>
-<script>
-    import TrueAchievementsGroupClient from "../src/api/TrueAchievementsGroupClient";
-
-    const client = new TrueAchievementsGroupClient();
-
-    async function login() {
-        try {
-            await client.login();
-            console.log('Login successful');
-            // Additional logic after successful login
-        } catch (error) {
-            console.error('Login failed:', error);
-            // Handle login failure
-        }
-    }
-</script>
 </body>
+
 </html>

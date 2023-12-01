@@ -232,6 +232,31 @@ export default class TrueAchievementsGroupClient extends BindingClass {
     }
 
     /**
+     * Pulls in a group and deletes games from the games list
+     * @param groupName - The name of the group.
+     * @param uniqueId - The unique ID to be deleted.
+     * @param errorCallback - Callback function to handle errors.
+     * @returns The game being deleted from the group.
+     */
+    async deleteGameFromGroup(groupName, uniqueId, errorCallback) {
+        try {
+            const token = await this.getTokenOrThrow("Only authenticated users can delete a game from a group.");
+            const response = await this.axiosClient.delete(
+                `groups/${groupName}/games/${uniqueId}`,
+                {
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                    },
+                }
+            );
+            return response;
+        } catch (error) {
+            this.handleError(error, errorCallback);
+            throw error;
+        }
+    }
+
+    /**
      * Helper method to log the error and run any error functions.
      * @param error The error received from the server.
      * @param errorCallback (Optional) A function to execute if the call fails.
