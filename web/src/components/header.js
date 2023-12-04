@@ -37,7 +37,7 @@ export default class Header extends BindingClass {
 
         const covertConnectionText = document.createElement('div');
         covertConnectionText.classList.add('covert-connection-text', 'large-text');
-        covertConnectionText.innerText = 'CovertConnection';
+        covertConnectionText.innerText = 'TrueAchievements Group Service';
 
         const lineBreak = document.createElement('br');
 

@@ -23,7 +23,7 @@ class Dashboard extends BindingClass {
         try {
             const userData = await this.client.getUserStats();
 
-            // Assuming the response looks like { gamerScore, achievementsWon, completionPercentage }
+            // Store the user data in the data store
             this.dataStore.set('userData', {
                 gamerScoreWonIncludeDlc: userData.gamerScoreWonIncludeDlc || 0, // replace 0 with a default value if needed
                 trueAchievementWonIncludeDlc: userData.trueAchievementWonIncludeDlc || 0,

@@ -104,17 +104,19 @@ public class GameDao {
 
     private int sumIndex(String indexName, String attributeName, String conditionExpression ,
                          Map<String, AttributeValue> expressionAttributeValues) {
-        // Create a query expression
-        String queryExpression = "userId = :userId";
+        // Use a StringBuilder for constructing the query expression
+        StringBuilder queryExpressionBuilder = new StringBuilder("userId = :userId");
+
+        // Add additional conditions if provided
         if (conditionExpression != null && !conditionExpression.isEmpty()) {
-            queryExpression += " AND " + conditionExpression;
+            queryExpressionBuilder.append(" AND ").append(conditionExpression);
         }
 
         // Perform a scan using DynamoDBMapper
         PaginatedQueryList<Game> games = dynamoDbMapper.query(Game.class, new DynamoDBQueryExpression<Game>()
                 .withIndexName(indexName)
                 .withConsistentRead(false)
-                .withKeyConditionExpression(queryExpression)
+                .withKeyConditionExpression(queryExpressionBuilder.toString())
                 .withExpressionAttributeValues(expressionAttributeValues));
 
         Set<Game> gameSet = new HashSet<>(games);
