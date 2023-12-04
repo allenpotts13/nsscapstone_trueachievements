@@ -405,7 +405,7 @@ Resources:
         TrueAchievementsGroupService:
           Type: Api
           Properties:
-            Path: /statistics
+            Path: /statistics/games
             Method: get
 
   #-----------------------------------------------------

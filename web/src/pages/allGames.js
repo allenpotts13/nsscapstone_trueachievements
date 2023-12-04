@@ -15,7 +15,7 @@ class ViewGames extends BindingClass {
         this.header = new Header(this.dataStore);
         this.currentPage = 1;
         this.gamesPerPage = 10;
-        this.filteredGames = null;
+        this.filteredGames = [];
         console.log("viewgames constructor");
     }
 
@@ -40,7 +40,7 @@ class ViewGames extends BindingClass {
 
     setupControls() {
         // Add controls such as dropdown for games per page and search bar
-        const controlsContainer = document.getElementById('controls');
+        const controlsContainer = document.getElementById('search-container');
         controlsContainer.innerHTML = '';
 
         // Dropdown for games per page
@@ -79,6 +79,12 @@ class ViewGames extends BindingClass {
      */
     addGamesToPage() {
         console.log("addgamestopage")
+
+        if (this.filteredGames == null || this.filteredGames === undefined) {
+            console.log("null games");
+            return;
+        }
+
         const startIndex = (this.currentPage - 1) * this.gamesPerPage;
         const endIndex = startIndex + this.gamesPerPage;
         const paginatedGames = this.filteredGames.slice(startIndex, endIndex);
@@ -97,6 +103,10 @@ class ViewGames extends BindingClass {
         const totalPages = Math.ceil(this.filteredGames.length / this.gamesPerPage);
 
         const paginationContainer = document.getElementById('pagination');
+        if (!paginationContainer) {
+            console.log('No pagination container found');
+            return;
+        }
         paginationContainer.innerHTML = '';
 
         for (let i = 1; i <= totalPages; i++) {
@@ -118,6 +128,10 @@ class ViewGames extends BindingClass {
 
     handleSearch() {
         const searchInput = document.getElementById('searchInput');
+        if (!searchInput) {
+            console.log('No search input found');
+            return;
+        }
         const searchTerm = searchInput.value.toLowerCase();
 
         // Filter games based on the search term
