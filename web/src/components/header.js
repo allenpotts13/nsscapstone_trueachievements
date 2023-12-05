@@ -32,26 +32,18 @@ export default class Header extends BindingClass {
     }
 
     createSiteTitle() {
-        const siteTitleContainer = document.createElement('div');
-        siteTitleContainer.classList.add('site-title-container');
-
-        const covertConnectionText = document.createElement('div');
-        covertConnectionText.classList.add('covert-connection-text', 'large-text');
-        covertConnectionText.innerText = 'TrueAchievements Group Service';
-
-        const lineBreak = document.createElement('br');
-
         // Create a Home button
         const homeButton = document.createElement('a');
         homeButton.classList.add('header_home');
         homeButton.href = 'index.html';
         homeButton.innerText = 'Home';
 
-        siteTitleContainer.appendChild(covertConnectionText);
-        siteTitleContainer.appendChild(lineBreak);
-        siteTitleContainer.appendChild(homeButton);
+        const siteTitle = document.createElement('div');
 
-        return siteTitleContainer;
+        siteTitle.classList.add('site-title');
+        siteTitle.appendChild(homeButton);
+
+        return siteTitle;
     }
 
     createUserInfoForHeader(currentUser) {

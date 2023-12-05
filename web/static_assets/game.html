@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file if needed -->
     <title>View Game</title>
     <style>
         body {
@@ -52,12 +51,11 @@
 <body>
 
 <!-- Header Section -->
-<header>
-    <h1 id="game-gameName">Loading game...</h1>
-</header>
+<header class="header" id="header"></header>
 
 <!-- Game Details Section -->
 <section>
+    <h1 id="game-gameName">Loading game...</h1>
     <h2>Game Details</h2>
     <p>Platform: <span id="game-platform">N/A</span></p>
     <p>Game URL: <span id="game-gameURL">N/A</span></p>
@@ -72,7 +70,7 @@
     <p>Completion Estimate: <span id="game-completionEstimate">N/A</span></p>
     <p>Walkthrough: <span id="game-walkthrough">N/A</span></p>
     <p>Contest Status: <span id="game-contestStatus">N/A</span></p>
-    <!-- Add other details as needed -->
+
 
     <h3>Achievements</h3>
     <p>Achievements (No DLC): <span id="game-achievementsWonNoDlc">N/A</span> / <span id="game-maxAchievementsNoDlc">N/A</span></p>
@@ -87,26 +85,10 @@
 
     <h3>Notes</h3>
     <div id="game-gameNotes">
-        <!-- Notes will be populated dynamically -->
     </div>
 </section>
 
-<!-- Add any additional sections as needed -->
-
-<!-- Include your ViewGame.js script -->
 <script src="assets/viewGame.js"></script>
-
-<script>
-    // Main method to run when the page contents have loaded
-    const main = async () => {
-        const viewGame = new ViewGame();
-        viewGame.mount();
-    };
-
-    window.addEventListener('DOMContentLoaded', main);
-</script>
-
-<!-- Add any additional scripts here -->
-
 </body>
+
 </html>

@@ -8,8 +8,8 @@ export default class TrueAchievementsGroupClient extends BindingClass {
         super();
 
         const methodsToBind = ['clientLoaded', 'getIdentity', 'login', 'logout', 'createGroup', 'getAllGames',
-            'getGroup', 'getGamesInGroup', 'addGameToGroup', 'deleteGameFromGroup', 'getUserStats'];
-      
+            'getAllGroups', 'getGame', 'getGamesInGroup', 'getGroup', 'addGameToGroup', 'deleteGameFromGroup', 'getUserStats'];
+
         this.bindClassMethods(methodsToBind, this);
 
         this.authenticator = new Authenticator();
@@ -64,28 +64,28 @@ export default class TrueAchievementsGroupClient extends BindingClass {
 
         return await this.authenticator.getUserToken();
     }
-        /**
-         * Create a new group owned by the current user.
-         * @param groupName The name of the group to create.
-         * @param errorCallback (Optional) A function to execute if the call fails.
-         * @returns The group that has been created.
-        */
+    /**
+     * Create a new group owned by the current user.
+     * @param groupName The name of the group to create.
+     * @param errorCallback (Optional) A function to execute if the call fails.
+     * @returns The group that has been created.
+     */
 
-        async createGroup(groupName, errorCallback) {
-            try {
-                const token = await this.getTokenOrThrow("Only authenticated users can create groups.");
-                const response = await this.axiosClient.post(`groups`, {
-                    groupName: groupName
-                }, {
-                    headers: {
-                        Authorization: `Bearer ${token}`
-                    }
-                });
-                return response.data.group;
-            } catch (error) {
-                this.handleError(error, errorCallback)
-            }
+    async createGroup(groupName, errorCallback) {
+        try {
+            const token = await this.getTokenOrThrow("Only authenticated users can create groups.");
+            const response = await this.axiosClient.post(`groups`, {
+                groupName: groupName
+            }, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            return response.data.group;
+        } catch (error) {
+            this.handleError(error, errorCallback)
         }
+    }
 
     /**
      * Get all the games for the current user.
@@ -95,17 +95,18 @@ export default class TrueAchievementsGroupClient extends BindingClass {
 
     async getAllGames(errorCallback) {
         try {
-                const token = await this.getTokenOrThrow("Only authenticated users can see all contacts.");
-                const response = await this.axiosClient.get(`games`, {
-                    headers: {
-                        Authorization: `Bearer ${token}`
-                    }
-                });
-                return response.data.games;
-            } catch (error) {
-                    this.handleError(error, errorCallback)
-            }
+            const token = await this.getTokenOrThrow("Only authenticated users can see all contacts.");
+            const response = await this.axiosClient.get(`games`, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            console.log('API Response in getAllGames:', response.data)
+            return response.data;
+        } catch (error) {
+            this.handleError(error, errorCallback)
         }
+    }
 
     /**
      * Get all the groups for the current user.
@@ -114,33 +115,38 @@ export default class TrueAchievementsGroupClient extends BindingClass {
      */
 
     async getAllGroups(errorCallback) {
-                try {
-                        const token = await this.getTokenOrThrow("Only authenticated users can see all groups.");
-                        const response = await this.axiosClient.get(`groups`, {
-                            headers: {
-                                Authorization: `Bearer ${token}`
-                            }
-                        });
-                        return response.data.group;
-                    } catch (error) {
-                            this.handleError(error, errorCallback)
-                    }
+        try {
+            const token = await this.getTokenOrThrow("Only authenticated users can see all groups.");
+            const response = await this.axiosClient.get(`groups`, {
+                headers: {
+                    Authorization: `Bearer ${token}`
                 }
+            });
+            return response.data.group;
+        } catch (error) {
+            this.handleError(error, errorCallback)
+        }
+    }
 
     /**
      * Gets the game for the given userId.
      * @param uniqueId Unique identifier for a game.
      * @param errorCallback (Optional) A function to execute if the call fails.
      * @returns The game's metadata.
-    */
+     */
     async getGame(uniqueId, errorCallback) {
         try {
             const token = await this.getTokenOrThrow("Only authenticated users can view contacts.");
-            const response = await this.axiosClient.get(`games/${uniqueId}`, {
+            const url = `games/${uniqueId}`;
+            console.log(`API Request: GET ${url}, Authorization: Bearer ${token}`);
+
+            const response = await this.axiosClient.get(url, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
             });
+
+            console.log('API Response in getGame:', response.data);
             return response.data.game;
         } catch (error) {
             this.handleError(error, errorCallback);
@@ -152,7 +158,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
      * @param groupName Unique identifier for a group
      * @param errorCallback (Optional) A function to execute if the call fails.
      * @returns The list of games in a group.
-    */
+     */
     async getGamesInGroup(groupName, errorCallback) {
         try {
             const response = await this.axiosClient.get(`groups/${groupName}/games`);
@@ -167,7 +173,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
      * @param groupName Unique identifier for a group
      * @param errorCallback (Optional) A function to execute if the call fails.
      * @returns The group's metadata.
-    */
+     */
     async getGroup(groupName, errorCallback) {
         try {
             const token = await this.getTokenOrThrow("Only authenticated users can view contacts.");

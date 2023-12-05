@@ -24,21 +24,23 @@ class ViewGame extends BindingClass {
             const urlParams = new URLSearchParams(window.location.search);
             const encodedUniqueId = urlParams.get('uniqueId');
             const uniqueId = decodeURIComponent(encodedUniqueId);
-            document.getElementById('game-name').innerText = 'Loading game ...';
+            document.getElementById('game-gameName').innerText = 'Loading game ...';
             const game = await this.client.getGame(uniqueId);
+            console.log("game: ", game)
             this.dataStore.set('game', game);
         } catch (error) {
             console.error('Error loading game:', error);
+            this.dataStore.set('game', null);
         }
     }
 
     /**
      * Add the header to the page and load the TrueAchievementsGroupClient.
      */
-    mount() {
-        this.header.addHeaderToPage();
+    async mount() {
+        await this.header.addHeaderToPage();
         this.client = new TrueAchievementsGroupClient();
-        this.clientLoaded();
+        await this.clientLoaded();
     }
 
     /**
@@ -124,7 +126,7 @@ class ViewGame extends BindingClass {
  */
 const main = async () => {
     const viewGame = new ViewGame();
-    viewGame.mount();
+    await viewGame.mount();
 };
 
 window.addEventListener('DOMContentLoaded', main);
