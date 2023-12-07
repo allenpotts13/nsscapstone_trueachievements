@@ -24,21 +24,32 @@ class ViewGame extends BindingClass {
             const urlParams = new URLSearchParams(window.location.search);
             const encodedUniqueId = urlParams.get('uniqueId');
             const uniqueId = decodeURIComponent(encodedUniqueId);
-            document.getElementById('game-name').innerText = 'Loading game ...';
+
+            // Initialize the client instance
+            this.client = new TrueAchievementsGroupClient();
+
+            if (!this.client) {
+                console.error('Error: TrueAchievementsGroupClient is not initialized.');
+                return;
+            }
+
+            document.getElementById('game-gameName').innerText = 'Loading game ...';
             const game = await this.client.getGame(uniqueId);
+            console.log("game: ", game)
             this.dataStore.set('game', game);
         } catch (error) {
             console.error('Error loading game:', error);
+            this.dataStore.set('game', null);
         }
     }
 
     /**
      * Add the header to the page and load the TrueAchievementsGroupClient.
      */
-    mount() {
-        this.header.addHeaderToPage();
+    async mount() {
+        await this.header.addHeaderToPage();
         this.client = new TrueAchievementsGroupClient();
-        this.clientLoaded();
+        await this.clientLoaded();
     }
 
     /**
@@ -48,37 +59,69 @@ class ViewGame extends BindingClass {
         try {
             const game = this.dataStore.get('game');
 
-            document.getElementById('game-gameName').innerText = game.gameName || 'N/A';
-            document.getElementById('game-platform').innerText = game.platform || 'N/A';
-            document.getElementById('game-gameURL').innerText = game.gameURL || 'N/A';
-            document.getElementById('game-achievementsWonNoDlc').innerText = game.achievementsWonNoDlc || 'N/A';
-            document.getElementById('game-maxAchievementsNoDlc').innerText = game.maxAchievementsNoDlc || 'N/A';
-            document.getElementById('game-achievementsWonIncludeDlc').innerText = game.achievementsWonIncludeDlc || 'N/A';
-            document.getElementById('game-maxAchievementsIncludeDlc').innerText = game.maxAchievementsIncludeDlc || 'N/A';
-            document.getElementById('game-gamerScoreWonNoDlc').innerText = game.gamerScoreWonNoDlc || 'N/A';
-            document.getElementById('game-maxGamerScoreNoDlc').innerText = game.maxGamerScoreNoDlc || 'N/A';
-            document.getElementById('game-gamerScoreWonIncludeDlc').innerText = game.gamerScoreWonIncludeDlc || 'N/A';
-            document.getElementById('game-maxGamerScoreIncludeDlc').innerText = game.maxGamerScoreIncludeDlc || 'N/A';
-            document.getElementById('game-trueAchievementWonNoDlc').innerText = game.trueAchievementWonNoDlc || 'N/A';
-            document.getElementById('game-maxTrueAchievementNoDlc').innerText = game.maxTrueAchievementNoDlc || 'N/A';
-            document.getElementById('game-trueAchievementWonIncludeDlc').innerText = game.trueAchievementWonIncludeDlc || 'N/A';
-            document.getElementById('game-maxTrueAchievementIncludeDlc').innerText = game.maxTrueAchievementIncludeDlc || 'N/A';
-            document.getElementById('game-myCompletionPercentage').innerText = game.myCompletionPercentage || 'N/A';
-            document.getElementById('game-completionDate').innerText = game.completionDate || 'N/A';
-            document.getElementById('game-challengesWon').innerText = game.challengesWon || 'N/A';
-            document.getElementById('game-maxChallenges').innerText = game.maxChallenges || 'N/A';
-            document.getElementById('game-hoursPlayed').innerText = game.hoursPlayed || 'N/A';
-            document.getElementById('game-myRating').innerText = game.myRating || 'N/A';
-            document.getElementById('game-siteRating').innerText = game.siteRating || 'N/A';
-            document.getElementById('game-myRatio').innerText = game.myRatio || 'N/A';
-            document.getElementById('game-siteRatio').innerText = game.siteRatio || 'N/A';
-            document.getElementById('game-ownershipStatus').innerText = game.ownershipStatus || 'N/A';
-            document.getElementById('game-playStatus').innerText = game.playStatus || 'N/A';
-            document.getElementById('game-format').innerText = game.format || 'N/A';
-            document.getElementById('game-completionEstimate').innerText = game.completionEstimate || 'N/A';
-            document.getElementById('game-walkthrough').innerText = game.walkthrough || 'N/A';
+            const setInnerText = (elementId, value) => {
+                const element = document.getElementById(elementId);
+                if (element) {
+                    element.innerText = value || 'N/A';
+                }
+            };
+
+            setInnerText('game-gameName', game.gameName);
+            setInnerText('game-platform', game.platform);
+            const gameUrlElement = document.getElementById('gameUrlLink');
+            if (gameUrlElement) {
+                if (game.gameURL) {
+                    const link = document.createElement('a');
+                    link.href = game.gameURL;
+                    link.target = '_blank';
+                    link.textContent = game.gameURL;
+                    gameUrlElement.innerHTML = ''; // Clear existing content
+                    gameUrlElement.appendChild(link);
+                } else {
+                    gameUrlElement.innerHTML = 'N/A';
+                }
+            }
+            setInnerText('game-achievementsWonNoDlc', game.achievementsWonNoDlc);
+            setInnerText('game-maxAchievementsNoDlc', game.maxAchievementsNoDlc);
+            setInnerText('game-achievementsWonIncludeDlc', game.achievementsWonIncludeDlc);
+            setInnerText('game-maxAchievementsIncludeDlc', game.maxAchievementsIncludeDlc);
+            setInnerText('game-gamerScoreWonNoDlc', game.gamerScoreWonNoDlc);
+            setInnerText('game-maxGamerScoreNoDlc', game.maxGamerScoreNoDlc);
+            setInnerText('game-gamerScoreWonIncludeDlc', game.gamerScoreWonIncludeDlc);
+            setInnerText('game-maxGamerScoreIncludeDlc', game.maxGamerScoreIncludeDlc);
+            setInnerText('game-trueAchievementWonNoDlc', game.trueAchievementWonNoDlc);
+            setInnerText('game-maxTrueAchievementNoDlc', game.maxTrueAchievementNoDlc);
+            setInnerText('game-trueAchievementWonIncludeDlc', game.trueAchievementWonIncludeDlc);
+            setInnerText('game-maxTrueAchievementIncludeDlc', game.maxTrueAchievementIncludeDlc);
+            setInnerText('game-myCompletionPercentage', game.myCompletionPercentage);
+            setInnerText('game-completionDate', game.completionDate);
+            setInnerText('game-challengesWon', game.challengesWon);
+            setInnerText('game-maxChallenges', game.maxChallenges);
+            setInnerText('game-hoursPlayed', game.hoursPlayed);
+            setInnerText('game-myRating', game.myRating);
+            setInnerText('game-siteRating', game.siteRating);
+            setInnerText('game-myRatio', game.myRatio);
+            setInnerText('game-siteRatio', game.siteRatio);
+            setInnerText('game-ownershipStatus', game.ownershipStatus);
+            setInnerText('game-playStatus', game.playStatus);
+            setInnerText('game-format', game.format);
+            setInnerText('game-completionEstimate', game.completionEstimate);
+            const walkthroughElement = document.getElementById('walkthroughLink');
+            if (walkthroughElement) {
+                if (game.walkthrough) {
+                    const link = document.createElement('a');
+                    link.href = game.walkthrough;
+                    link.target = '_blank';
+                    link.textContent = game.walkthrough;
+                    walkthroughElement.innerHTML = ''; // Clear existing content
+                    walkthroughElement.appendChild(link);
+                } else {
+                    walkthroughElement.innerHTML = 'N/A';
+                }
+            }
+            setInnerText('game-contestStatus', game.contestStatus);
             this.populateList('game-gameNotes', game.gameNotes);
-            document.getElementById('game-contestStatus').innerText = game.contestStatus || 'N/A';
+
 
         } catch (error) {
             console.error('Error fetching game:', error);
@@ -124,7 +167,7 @@ class ViewGame extends BindingClass {
  */
 const main = async () => {
     const viewGame = new ViewGame();
-    viewGame.mount();
+    await viewGame.mount();
 };
 
 window.addEventListener('DOMContentLoaded', main);

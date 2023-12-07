@@ -5,17 +5,34 @@ export default class Authenticator extends BindingClass {
     constructor() {
         super();
 
-        const methodsToBind = ['getCurrentUserInfo'];
+        const methodsToBind = ['getCurrentUserInfo', 'refreshTokens', 'isUserLoggedIn', 'getUserToken', 'login', 'logout'];
         this.bindClassMethods(methodsToBind, this);
 
         this.configureCognito();
     }
 
     async getCurrentUserInfo() {
-        const cognitoUser = await Auth.currentAuthenticatedUser();
-        const { email, name } = cognitoUser.signInUserSession.idToken.payload;
-        return { email, name };
+        await this.refreshTokens();
+        try {
+            const cognitoUser = await Auth.currentAuthenticatedUser();
+            const { email, name } = cognitoUser.signInUserSession.idToken.payload;
+            return { email, name };
+        } catch (error) {
+            console.error('Failed to get current user info:', error);
+            throw error;
+        }
+
     }
+
+    async refreshTokens() {
+        try {
+            await Auth.currentSession();
+        } catch (error) {
+            console.error('Token refresh failed:', error);
+            throw error;
+        }
+    }
+
 
     async isUserLoggedIn() {
         try {

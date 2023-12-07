@@ -19,7 +19,7 @@ public class GameModel implements Comparable<GameModel> {
     private Integer gamerScoreWonNoDlc;
     private Integer maxGamerScoreNoDlc;
     private Integer gamerScoreWonIncludeDlc;
-    private Integer maxGamerscoreIncludeDlc;
+    private Integer maxGamerScoreIncludeDlc;
     private Integer trueAchievementWonNoDlc;
     private Integer maxTrueAchievementNoDlc;
     private Integer trueAchievementWonIncludeDlc;
@@ -44,7 +44,7 @@ public class GameModel implements Comparable<GameModel> {
     private GameModel(String userId, String uniqueId, String gameName, String platform, String gameURL,
                       Integer achievementsWonNoDlc, Integer maxAchievementsNoDlc, Integer achievementsWonIncludeDlc,
                       Integer maxAchievementsIncludeDlc, Integer gamerScoreWonNoDlc, Integer maxGamerScoreNoDlc,
-                      Integer gamerScoreWonIncludeDlc, Integer maxGamerscoreIncludeDlc, Integer trueAchievementWonNoDlc,
+                      Integer gamerScoreWonIncludeDlc, Integer maxGamerScoreIncludeDlc, Integer trueAchievementWonNoDlc,
                       Integer maxTrueAchievementNoDlc, Integer trueAchievementWonIncludeDlc,
                       Integer maxTrueAchievementIncludeDlc, Integer myCompletionPercentage, String completionDate,
                       Integer challengesWon, Integer maxChallenges, Integer hoursPlayed, Float myRating,
@@ -63,7 +63,7 @@ public class GameModel implements Comparable<GameModel> {
         this.gamerScoreWonNoDlc = gamerScoreWonNoDlc;
         this.maxGamerScoreNoDlc = maxGamerScoreNoDlc;
         this.gamerScoreWonIncludeDlc = gamerScoreWonIncludeDlc;
-        this.maxGamerscoreIncludeDlc = maxGamerscoreIncludeDlc;
+        this.maxGamerScoreIncludeDlc = maxGamerScoreIncludeDlc;
         this.trueAchievementWonNoDlc = trueAchievementWonNoDlc;
         this.maxTrueAchievementNoDlc = maxTrueAchievementNoDlc;
         this.trueAchievementWonIncludeDlc = trueAchievementWonIncludeDlc;
@@ -132,8 +132,8 @@ public class GameModel implements Comparable<GameModel> {
         return gamerScoreWonIncludeDlc;
     }
 
-    public Integer getMaxGamerscoreIncludeDlc() {
-        return maxGamerscoreIncludeDlc;
+    public Integer getMaxGamerScoreIncludeDlc() {
+        return maxGamerScoreIncludeDlc;
     }
 
     public Integer getTrueAchievementWonNoDlc() {
@@ -238,7 +238,7 @@ public class GameModel implements Comparable<GameModel> {
                 Objects.equals(gamerScoreWonNoDlc, gameModel.gamerScoreWonNoDlc) &&
                 Objects.equals(maxGamerScoreNoDlc, gameModel.maxGamerScoreNoDlc) &&
                 Objects.equals(gamerScoreWonIncludeDlc, gameModel.gamerScoreWonIncludeDlc) &&
-                Objects.equals(maxGamerscoreIncludeDlc, gameModel.maxGamerscoreIncludeDlc) &&
+                Objects.equals(maxGamerScoreIncludeDlc, gameModel.maxGamerScoreIncludeDlc) &&
                 Objects.equals(trueAchievementWonNoDlc, gameModel.trueAchievementWonNoDlc) &&
                 Objects.equals(maxTrueAchievementNoDlc, gameModel.maxTrueAchievementNoDlc) &&
                 Objects.equals(trueAchievementWonIncludeDlc, gameModel.trueAchievementWonIncludeDlc) &&
@@ -265,7 +265,7 @@ public class GameModel implements Comparable<GameModel> {
     public int hashCode() {
         return Objects.hash(userId, uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
             achievementsWonIncludeDlc, maxAchievementsIncludeDlc, gamerScoreWonNoDlc, maxGamerScoreNoDlc,
-            gamerScoreWonIncludeDlc, maxGamerscoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
+            gamerScoreWonIncludeDlc, maxGamerScoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
             trueAchievementWonIncludeDlc, maxTrueAchievementIncludeDlc, myCompletionPercentage, completionDate,
             challengesWon, maxChallenges, hoursPlayed, myRating, siteRating, myRatio, siteRatio, ownershipStatus,
             playStatus, format, completionEstimate, walkthrough, gameNotes, contestStatus);
@@ -312,7 +312,7 @@ public class GameModel implements Comparable<GameModel> {
         private Integer gamerScoreWonNoDlc;
         private Integer maxGamerScoreNoDlc;
         private Integer gamerScoreWonIncludeDlc;
-        private Integer maxGamerscoreIncludeDlc;
+        private Integer maxGamerScoreIncludeDlc;
         private Integer trueAchievementWonNoDlc;
         private Integer maxTrueAchievementNoDlc;
         private Integer trueAchievementWonIncludeDlc;
@@ -382,8 +382,8 @@ public class GameModel implements Comparable<GameModel> {
             this.gamerScoreWonIncludeDlc = gamerScoreWonIncludeDlc;
             return this;
         }
-        public Builder withMaxGamerScoreIncludeDlc(Integer maxGamerscoreIncludeDlc) {
-            this.maxGamerscoreIncludeDlc = maxGamerscoreIncludeDlc;
+        public Builder withMaxGamerScoreIncludeDlc(Integer maxGamerScoreIncludeDlc) {
+            this.maxGamerScoreIncludeDlc = maxGamerScoreIncludeDlc;
             return this;
         }
         public Builder withTrueAchievementWonNoDlc(Integer trueAchievementWonNoDlc) {
@@ -469,7 +469,7 @@ public class GameModel implements Comparable<GameModel> {
         public GameModel build() {
             return new GameModel(userId, uniqueId, gameName, platform, gameURL, achievementsWonNoDlc, maxAchievementsNoDlc,
                 achievementsWonIncludeDlc, maxAchievementsIncludeDlc, gamerScoreWonNoDlc, maxGamerScoreNoDlc,
-                gamerScoreWonIncludeDlc, maxGamerscoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
+                gamerScoreWonIncludeDlc, maxGamerScoreIncludeDlc, trueAchievementWonNoDlc, maxTrueAchievementNoDlc,
                 trueAchievementWonIncludeDlc, maxTrueAchievementIncludeDlc, myCompletionPercentage, completionDate,
                 challengesWon, maxChallenges, hoursPlayed, myRating, siteRating, myRatio, siteRatio, ownershipStatus,
                 playStatus, format, completionEstimate, walkthrough, gameNotes, contestStatus);

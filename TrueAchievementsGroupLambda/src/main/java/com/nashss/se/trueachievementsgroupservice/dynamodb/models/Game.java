@@ -147,7 +147,7 @@ public class Game {
     public void setGamerScoreWonIncludeDlc(Integer gamerScoreWonIncludeDlc) {
         this.gamerScoreWonIncludeDlc = gamerScoreWonIncludeDlc;
     }
-    @DynamoDBAttribute(attributeName = "maxGamerscoreIncludeDlc")
+    @DynamoDBAttribute(attributeName = "maxGamerScoreIncludeDlc")
     public Integer getMaxGamerScoreIncludeDlc() {
         return maxGamerScoreIncludeDlc;
     }

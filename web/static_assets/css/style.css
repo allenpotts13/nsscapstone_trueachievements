@@ -4,7 +4,7 @@
     --secondary-color: #ffffff;
     --tertiary-color: #f73333;
     --accent-color: #007bff;
-    --font-family: 'Special Elite', monospace;
+    --font-family: 'Roboto', sans-serif;
 }
 
 .background {
@@ -12,6 +12,17 @@
     margin: 0;
     counter-reset: section;
     font-family: var(--font-family);
+}
+
+.site-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure the buttons span the entire width */
+}
+
+.header_home {
+    margin: 0 10px; /* Adjust the margin as needed for spacing */
 }
 
 .header {
@@ -25,16 +36,13 @@
 }
 
 .button {
-    background-color: var(--accent-color);
-    border: none;
-    color: var(--secondary-color);
-    padding: 10px 16px;
-    text-align: center;
-    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
     text-decoration: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.2s ease;
+    border-radius: 5px;
+    margin: 0 10px;
 }
 
 .button:hover {
