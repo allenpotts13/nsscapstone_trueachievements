@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Groups</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1f1f1f;
+            /* Dark background color */
+            color: #fff;
+            /* Text color */
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            align-items: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: var(--tertiary-color);
+            padding: 16px 20px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        #group-list {
+            grid-row: 2;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .group-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .games-list {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .game-list-items {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .game-list-items li {
+            margin-bottom: 5px;
+        }
+
+        .no-games {
+            font-style: italic;
+            color: #888;
+        }
+
+        h2 {
+            color: #ffcc00;
+            /* Game title color */
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        a {
+            color: #3498db;
+            /* Link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button-group {
+            grid-row: 3;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+<div id="header"></div>
+<!-- Group List Section -->
+<section>
+    <h1>All Groups</h1>
+    <div id="group-list"></div>
+</section>
+<!-- Button Section -->
+<p class="button-group">
+    <a href="createGroup.html" class="button">New Group</a>
+</p>
+
+<script src="assets/getAllGroups.js"></script>
+</body>
+
+</html>

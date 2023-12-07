@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
+
     <title>Your Group Page</title>
     <style>
         body {
@@ -52,23 +53,35 @@
 
 <!-- Header Section -->
 <header>
-    <h1 id="group-name">Loading group...</h1>
+    <h1 class="header" id="header"></h1>
 </header>
 
 <!-- Games List Section -->
 <section>
-    <h2>Games List</h2>
+
+    <h1 id="group-name">Loading group...</h1>
+    <h3>Games List</h3>
     <div id="games-list">
         <!-- Games list will be populated dynamically -->
     </div>
+</section>
+
+<!-- Add Game Section -->
+<section>
+    <h2>Add Game to Group</h2>
+    <form id="add-game-form">
+        <label for="add-game-dropdown">Select game to add:</label>
+        <select id="add-game-dropdown"></select>
+        <button id="add-game" type="submit">Add Game</button>
+    </form>
 </section>
 
 <!-- Delete Game Section -->
 <section>
     <h2>Delete Game from Group</h2>
     <form>
-        <label for="game-dropdown">Select game to delete:</label>
-        <select id="game-dropdown"></select>
+        <label for="delete-game-dropdown">Select game to delete:</label>
+        <select id="delete-game-dropdown"></select>
         <button id="delete-game" type="button">Delete Game</button>
     </form>
 </section>
@@ -78,17 +91,7 @@
     <p id="error-message" class="hidden"></p>
 </section>
 
-<!-- Include your ViewGroup.js script -->
 <script src="assets/viewGroup.js"></script>
 
-<script>
-    // Main method to run when the page contents have loaded
-    const main = async () => {
-        const viewGroup = new ViewGroup();
-        viewGroup.mount();
-    };
-
-    window.addEventListener('DOMContentLoaded', main);
-</script>
 </body>
 </html>

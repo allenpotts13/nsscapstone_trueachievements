@@ -21,7 +21,7 @@ public class GetGameLambda
         return super.runActivity(
             () -> {
                 GetGameRequest unauthenticatedRequest = input.fromPath(path -> GetGameRequest.builder()
-                    .withUserId(path.get("userId"))
+                    .withUniqueId(path.get("uniqueId"))
                     .build());
                 return input.fromUserClaims(claims ->
                     GetGameRequest.builder()

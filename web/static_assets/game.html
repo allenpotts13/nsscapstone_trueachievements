@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,7 +58,11 @@
     <h1 id="game-gameName">Loading game...</h1>
     <h2>Game Details</h2>
     <p>Platform: <span id="game-platform">N/A</span></p>
-    <p>Game URL: <span id="game-gameURL">N/A</span></p>
+    <p>
+        Game URL:
+        <span id="gameUrlLink" th:if="${game.gameURL != null and game.gameURL != ''}"><a th:href="${game.gameURL}" target="_blank" th:text="${game.gameURL}">Visit Game URL</a></span>
+        <span th:unless="${game.gameURL != null and game.gameURL != ''}"></span>
+    </p>
     <p>My Completion Percentage: <span id="game-myCompletionPercentage">N/A</span></p>
     <p>Completion Date: <span id="game-completionDate">N/A</span></p>
     <p>Hours Played: <span id="game-hoursPlayed">N/A</span></p>
@@ -68,7 +72,11 @@
     <p>Play Status: <span id="game-playStatus">N/A</span></p>
     <p>Format: <span id="game-format">N/A</span></p>
     <p>Completion Estimate: <span id="game-completionEstimate">N/A</span></p>
-    <p>Walkthrough: <span id="game-walkthrough">N/A</span></p>
+    <p>
+        Walkthrough:
+        <span id="walkthroughLink" th:if="${game.walkthrough != null and game.walkthrough != ''}"><a th:href="${game.walkthrough}" target="_blank" th:text="${game.walkthrough}">Visit Walkthrough</a></span>
+        <span th:unless="${game.walkthrough != null and game.walkthrough != ''}"></span>
+    </p>
     <p>Contest Status: <span id="game-contestStatus">N/A</span></p>
 
 

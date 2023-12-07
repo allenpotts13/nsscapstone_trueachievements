@@ -16,7 +16,7 @@ class ViewGroup extends BindingClass {
         this.header = new Header(this.dataStore);
         console.log("viewgroup constructor");
 
-        this.addContact = this.addContact.bind(this);
+        this.addGame = this.addGame.bind(this);
     }
 
     /**
@@ -25,16 +25,26 @@ class ViewGroup extends BindingClass {
     async clientLoaded() {
         try {
           const urlParams = new URLSearchParams(window.location.search);
+            console.log('URL Parameters:', Object.fromEntries(urlParams.entries()));
           const encodedName = urlParams.get('name');
           const groupName = decodeURIComponent(encodedName);
+          console.log("Group name from URL:", groupName);
           document.getElementById('group-name').innerText = 'Loading group ...';
           const group = await this.client.getGroup(groupName);
           this.dataStore.set('group', group);
-          const games = await this.client.getAllGames();
+          const gamesResponse = await this.client.getAllGames();
+          console.log("API Response in getAllGames:", gamesResponse);
+          const games = gamesResponse.game || [];
+          if (!Array.isArray(games)) {
+              throw new Error('Invalid game data received');
+          }
+          const addGameButton = document.getElementById('add-game');
+          addGameButton.addEventListener('click', this.addGame);
           this.dataStore.set('games', games);
-          this.populateContactDropdown();
+          await this.populateGameDropdown();
         } catch (error) {
           console.error('Error loading group:', error);
+          throw error;
         }
       }
 
@@ -42,14 +52,20 @@ class ViewGroup extends BindingClass {
     /**
      * Add the header to the page and load the TrueAchievementsGroupClient.
      */
-    mount() {
-        document.getElementById('add-contact').addEventListener('click', this.addContact);
+    async mount() {
+        try {
+            await this.header.addHeaderToPage();
+            this.client = new TrueAchievementsGroupClient();
+            await this.clientLoaded();
+            await this.populateGameDropdown();
 
-        this.header.addHeaderToPage();
-        this.client = new TrueAchievementsGroupClient();
-        this.clientLoaded();
-        this.populateContactDropdown();
+            await Promise.all([this.addGroupToPage(), this.addGamesToPage()]);
+
+        } catch (error) {
+            console.error('Error loading group:', error);
         }
+    }
+
 
     /**
      * When the group is updated in the datastore, update the group metadata on the page.
@@ -58,7 +74,18 @@ class ViewGroup extends BindingClass {
         try {
             const group = this.dataStore.get('group');
 
-            document.getElementById('group-name').innerText = group.name || 'N/A';
+            if (!group || !group.groupName) {
+                console.error('Group is undefined.');
+                document.getElementById('group-name').innerText = 'N/A';
+                return;
+            }
+
+            console.log("Updated group in addGroupToPage:", group);
+
+            document.getElementById('group-name').innerText = group.groupName || 'N/A';
+
+
+            console.log("Games list in addGroupToPage:", group.gamesList);
 
         } catch (error) {
             console.error('Error fetching group:', error);
@@ -69,7 +96,7 @@ class ViewGroup extends BindingClass {
     /**
      * When the games are updated in the datastore, update the list of games on the page.
      */
-    addGamesToPage() {
+     addGamesToPage() {
       try {
         console.log('addgamestopage');
         const group = this.dataStore.get('group');
@@ -81,15 +108,15 @@ class ViewGroup extends BindingClass {
           return;
         }
 
-        const gamesListHtml = gamesList.map((game) => `
-          <li>
-            <h2><a href="/game.html?uniqueId=${game.uniqueId}">
-              ${game.gameName || ''} 
-            </a></h2>
-          </li>
+          const gamesListHtml = gamesList.map(game => `
+            <li>
+                <h2><a href="/game.html?uniqueId=${game.uniqueId}">
+                    ${game.gameName || ''} 
+                </a></h2>
+            </li>
         `).join('');
 
-        document.getElementById('games-list').innerHTML = `<ul>${gamesListHtml}</ul>`;
+          document.getElementById('games-list').innerHTML = `<ul>${gamesListHtml}</ul>`;
       } catch (error) {
         console.error('Error adding games to page:', error);
       }
@@ -99,48 +126,60 @@ class ViewGroup extends BindingClass {
      * Method to run when the add game to group submit button is pressed. Call the TrueAchievementsGroupService to add a game to the group.
      */
 
-     async addGame() {
-         try {
-             const errorMessageDisplay = document.getElementById('error-message');
-             errorMessageDisplay.innerText = '';
-             errorMessageDisplay.classList.add('hidden');
+    async addGame() {
+        try {
+            const errorMessageDisplay = document.getElementById('error-message');
+            errorMessageDisplay.innerText = '';
+            errorMessageDisplay.classList.add('hidden');
 
-             const group = this.dataStore.get('group');
-             if (!group) {
-                 return;
-             }
+            const group = this.dataStore.get('group');
+            console.log('Group in addGame:', group); // Add this log line
 
-         const uniqueId = document.getElementById('game-dropdown').value;
+            if (!group) {
+                console.error('Group is undefined.');
+                return;
+            }
 
-             if (!uniqueId) {
-                 errorMessageDisplay.innerText = 'Please select a game.';
-                 errorMessageDisplay.classList.remove('hidden');
-                 return;
-             }
-             console.log('Data being sent in Axios request:', {
-                 group: group.name,
-                 uniqueId: uniqueId,
-             });
+            const uniqueId = document.getElementById('add-game-dropdown').value;
 
-         document.getElementById('add-game').innerText = 'Adding...';
+            if (!uniqueId) {
+                errorMessageDisplay.innerText = 'Please select a game.';
+                errorMessageDisplay.classList.remove('hidden');
+                return;
+            }
 
-           // Call the client to add the game to the group
-         const updatedGroup = await this.client.addGameToGroup(group.name, uniqueId, (error) => {
-         errorMessageDisplay.innerText = `Error: ${error.message}`;
-         errorMessageDisplay.classList.remove('hidden');
-         });
-           // Update the group data in the DataStore
-         this.dataStore.set('group', updatedGroup);
+            console.log('Data being sent in Axios request:', {
+                groupName: group.groupName,
+                uniqueId: uniqueId,
+            });
 
-           // Reset the form and button text
-          document.getElementById('add-game').innerText = 'Add Game';
-          document.getElementById('add-game-form').reset();
+            document.getElementById('add-game').innerText = 'Adding...';
 
-          window.location.reload();
-         } catch (error) {
-             console.error('Error adding contact:', error);
-         }
-     }
+            // Call the client to add the game to the group
+            const updatedGroup = await this.client.addGameToGroup(group.groupName, uniqueId, (error) => {
+                errorMessageDisplay.innerText = `Error: ${error.message}`;
+                errorMessageDisplay.classList.remove('hidden');
+            });
+
+            // Update the group data in the DataStore
+            this.dataStore.set('group', updatedGroup);
+
+            // Reset the form and button text
+            document.getElementById('add-game').innerText = 'Add Game';
+            document.getElementById('add-game-form').reset();
+
+            await this.addGroupToPage();
+            await this.addGamesToPage();
+
+            console.log('After updating group and games on the page');
+
+            window.location.reload();
+        } catch (error) {
+            console.error('Error adding contact:', error);
+        }
+    }
+
+
 
     /**
      * Method to run when the delete game from group button is pressed.
@@ -158,14 +197,14 @@ class ViewGroup extends BindingClass {
             }
 
             console.log('Data being sent in Axios request:', {
-                group: group.name,
+                group: group.groupName,
                 uniqueId: uniqueId,
             });
 
             document.getElementById('delete-game').innerText = 'Deleting...';
 
             // Call the client to delete the game from the group
-            const updatedGroup = await this.client.deleteGameFromGroup(group.name, uniqueId, (error) => {
+            const updatedGroup = await this.client.deleteGameFromGroup(group.groupName, uniqueId, (error) => {
                 errorMessageDisplay.innerText = `Error: ${error.message}`;
                 errorMessageDisplay.classList.remove('hidden');
             });
@@ -191,7 +230,7 @@ class ViewGroup extends BindingClass {
                   console.log("No games found in DataStore");
                   return;
              }
-            const dropdown = document.getElementById('games-dropdown');
+            const dropdown = document.getElementById('add-game-dropdown');
 
             games.forEach((games) => {
                 const option = document.createElement('option');
@@ -213,7 +252,7 @@ class ViewGroup extends BindingClass {
  */
 const main = async () => {
     const viewGroup = new ViewGroup();
-    viewGroup.mount();
+    await viewGroup.mount();
 };
 
 window.addEventListener('DOMContentLoaded', main);

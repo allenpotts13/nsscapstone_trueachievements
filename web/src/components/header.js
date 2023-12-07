@@ -5,16 +5,17 @@ import BindingClass from "../util/bindingClass";
  * The header component for the website.
  */
 export default class Header extends BindingClass {
-    constructor() {
+    constructor(dataStore) {
         super();
 
         const methodsToBind = [
             'addHeaderToPage', 'createSiteTitle', 'createUserInfoForHeader',
-            'createLoginButton', 'createLoginButton', 'createLogoutButton'
+            'createLoginButton', 'createLoginButton', 'createLogoutButton', 'createGoBackButton'
         ];
         this.bindClassMethods(methodsToBind, this);
 
         this.client = new TrueAchievementsGroupClient();
+        this.dataStore = dataStore;
     }
 
     /**
@@ -25,10 +26,12 @@ export default class Header extends BindingClass {
 
         const siteTitle = this.createSiteTitle();
         const userInfo = this.createUserInfoForHeader(currentUser);
+        const goBackButton = this.createGoBackButton();
 
         const header = document.getElementById('header');
         header.appendChild(siteTitle);
         header.appendChild(userInfo);
+        header.appendChild(goBackButton);
     }
 
     createSiteTitle() {
@@ -39,7 +42,6 @@ export default class Header extends BindingClass {
         homeButton.innerText = 'Home';
 
         const siteTitle = document.createElement('div');
-
         siteTitle.classList.add('site-title');
         siteTitle.appendChild(homeButton);
 
@@ -65,6 +67,19 @@ export default class Header extends BindingClass {
 
     createLogoutButton(currentUser) {
         return this.createButton(`Logout: ${currentUser.name}`, this.client.logout);
+    }
+
+    createGoBackButton() {
+        const goBackButton = document.createElement('button');
+        goBackButton.classList.add('button');
+        goBackButton.innerText = 'Go Back';
+
+        goBackButton.addEventListener('click', () => {
+            console.log('Go Back button clicked!');
+            window.history.back();
+        });
+
+        return goBackButton;
     }
 
     createButton(text, clickHandler) {

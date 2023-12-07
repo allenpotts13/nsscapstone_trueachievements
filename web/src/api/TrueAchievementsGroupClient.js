@@ -49,11 +49,11 @@ export default class TrueAchievementsGroupClient extends BindingClass {
     }
 
     async login() {
-        this.authenticator.login();
+        await this.authenticator.login();
     }
 
     async logout() {
-        this.authenticator.logout();
+        await this.authenticator.logout();
     }
 
     async getTokenOrThrow(unauthenticatedErrorMessage) {
@@ -122,7 +122,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
                     Authorization: `Bearer ${token}`
                 }
             });
-            return response.data.group;
+            return response.data.groupList;
         } catch (error) {
             this.handleError(error, errorCallback)
         }
@@ -138,7 +138,15 @@ export default class TrueAchievementsGroupClient extends BindingClass {
         try {
             const token = await this.getTokenOrThrow("Only authenticated users can view contacts.");
             const url = `games/${uniqueId}`;
-            console.log(`API Request: GET ${url}, Authorization: Bearer ${token}`);
+
+            console.log('API Request in getGame:', {
+                method: 'GET',
+                url: this.axiosClient.defaults.baseURL + url,
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                    // Add any other headers as needed
+                },
+            });
 
             const response = await this.axiosClient.get(url, {
                 headers: {
@@ -184,7 +192,9 @@ export default class TrueAchievementsGroupClient extends BindingClass {
             });
             return response.data.group;
         } catch (error) {
+            console.error('Error fetching group:', error);
             this.handleError(error, errorCallback)
+            throw error;
         }
     }
     /**
@@ -203,7 +213,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
             const response = await this.axiosClient.post(
                 `groups/${groupName}/games`,
                 {
-                    name: groupName,
+                    groupName: groupName,
                     uniqueId: uniqueId
                 },
                 {
@@ -212,6 +222,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
                     },
                 }
             );
+            console.log('addGameToGroup response:', response);
             return response;
         } catch (error) {
             this.handleError(error, errorCallback);
