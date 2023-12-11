@@ -58,7 +58,7 @@ class CreateGroup extends BindingClass {
         const group = this.dataStore.get('group');
         if (group != null) {
             const encodedGroupName = encodeURIComponent(group.name);
-            window.location.href = `/group.html?name=${encodedGroupName}`;
+            window.location.href = `/group.html?groupName=${encodedGroupName}`;
         }
     }
 }

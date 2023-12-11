@@ -21,7 +21,6 @@ public class GetUserStatsLambda
         return super.runActivity(
             () -> {
                 GetUserStatsRequest unauthenticatedRequest = input.fromPath(path -> GetUserStatsRequest.builder()
-                    .withUserId(path.get("userId"))
                     .build());
                 return input.fromUserClaims(claims ->
                     GetUserStatsRequest.builder()

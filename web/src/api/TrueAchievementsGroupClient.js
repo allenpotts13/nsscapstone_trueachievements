@@ -223,7 +223,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
                 }
             );
             console.log('addGameToGroup response:', response);
-            return response;
+            return response.data.gameList;
         } catch (error) {
             this.handleError(error, errorCallback);
             throw error;
@@ -238,12 +238,28 @@ export default class TrueAchievementsGroupClient extends BindingClass {
     async getUserStats(errorCallback) {
         try {
             const token = await this.getTokenOrThrow("Only authenticated users can see their stats.");
-            const response = await this.axiosClient.get(`statistics`, {
+            const requestConfig = {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
+            };
+
+            console.log('API Response in getUserStats:', {
+                method: 'GET',
+                url: this.axiosClient.defaults.baseURL + 'statistics/games',
+                config: requestConfig
             });
-            return response.data.stats;
+            const response = await this.axiosClient.get('statistics/games', requestConfig);
+
+            console.log('API Response in getUserStats:', response.data);
+
+            if (response.data && response.data) {
+                return response.data;
+            } else {
+                console.error('Unexpected response format in getUserStats:', response.data);
+                // Handle the unexpected response format
+                throw new Error('Unexpected response format');
+            }
         } catch (error) {
             this.handleError(error, errorCallback)
         }
@@ -260,14 +276,18 @@ export default class TrueAchievementsGroupClient extends BindingClass {
         try {
             const token = await this.getTokenOrThrow("Only authenticated users can delete a game from a group.");
             const response = await this.axiosClient.delete(
-                `groups/${groupName}/games/${uniqueId}`,
+                `groups/${groupName}/games`,
                 {
+                    data: {
+                        groupName: groupName,
+                        uniqueId: uniqueId
+                    },
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
                 }
             );
-            return response;
+            return response.data.gameList;
         } catch (error) {
             this.handleError(error, errorCallback);
             throw error;
@@ -292,4 +312,5 @@ export default class TrueAchievementsGroupClient extends BindingClass {
             errorCallback(error);
         }
     }
+
 }

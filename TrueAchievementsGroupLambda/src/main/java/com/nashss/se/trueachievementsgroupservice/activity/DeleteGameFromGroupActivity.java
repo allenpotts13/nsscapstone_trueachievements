@@ -3,20 +3,27 @@ package com.nashss.se.trueachievementsgroupservice.activity;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.DeleteGameFromGroupRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.DeleteGameFromGroupResult;
 import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
+import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
+import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
 import com.nashss.se.trueachievementsgroupservice.exceptions.GroupNotFoundException;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
+import com.nashss.se.trueachievementsgroupservice.models.GameModel;
 import com.nashss.se.trueachievementsgroupservice.models.GroupModel;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import javax.inject.Inject;
 
 public class DeleteGameFromGroupActivity {
 
     private final Logger log = LogManager.getLogger();
+    private final GameDao gameDao;
 
     private final GroupDao groupDao;
 
@@ -25,11 +32,13 @@ public class DeleteGameFromGroupActivity {
     /**
      * Instantiates a new DeleteGameFromGroupActivity object.
      *
+     * @param gameDao GameDao to access the game table.
      * @param groupDao GroupDao to access the group table.
      * @param metricsPublisher MetricsPublisher to publish metrics.
      */
     @Inject
-    public DeleteGameFromGroupActivity(GroupDao groupDao, MetricsPublisher metricsPublisher) {
+    public DeleteGameFromGroupActivity(GameDao gameDao, GroupDao groupDao, MetricsPublisher metricsPublisher) {
+        this.gameDao = gameDao;
         this.groupDao = groupDao;
         this.metricsPublisher = metricsPublisher;
     }
@@ -49,24 +58,32 @@ public class DeleteGameFromGroupActivity {
         try {
             long startTime = System.currentTimeMillis();
 
-            Group group = groupDao.getGroup(
-                deleteGameFromGroupRequest.getUserId(),
-                deleteGameFromGroupRequest.getGroupName()
-            );
+            String userId = deleteGameFromGroupRequest.getUserId();
+            String uniqueId = deleteGameFromGroupRequest.getUniqueId();
+            String groupName = deleteGameFromGroupRequest.getGroupName();
 
+            Group group = groupDao.getGroup(userId, groupName);
+            Game game = gameDao.getGame(userId, uniqueId);
 
-            groupDao.deleteGameFromGroup(
-                deleteGameFromGroupRequest.getUserId(),
-                deleteGameFromGroupRequest.getGroupName(),
-                deleteGameFromGroupRequest.getUniqueId()
-            );
+            Set<Game> gameSet = group.getGamesList();
+            if (gameSet == null) {
+                gameSet = new HashSet<>();
+                group.setGamesList(gameSet);
+            }
+
+            gameSet.remove(game);
+
+            groupDao.saveGroup(group);
+
+            List<GameModel> gameModelList = new ModelConverter().toGameModelList(gameSet);
+            Set<GameModel> updatedGameSet = new HashSet<>(gameModelList);
 
             long endTime = System.currentTimeMillis();
             long duration = endTime - startTime;
             metricsPublisher.addTime("DeleteGameFromGroupActivity::handleRequest", duration);
 
             return DeleteGameFromGroupResult.builder()
-                .withGroup(new ModelConverter().toGroupModel(group))
+                .withGameSet(updatedGameSet)
                 .build();
         } catch (GroupNotFoundException e) {
             log.error("DeleteGameFromGroupActivity::handleRequest - GroupNotFoundException: {}", e.getMessage());

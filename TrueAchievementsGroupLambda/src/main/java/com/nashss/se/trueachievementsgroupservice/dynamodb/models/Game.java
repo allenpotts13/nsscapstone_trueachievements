@@ -3,6 +3,7 @@ package com.nashss.se.trueachievementsgroupservice.dynamodb.models;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBAttribute;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBHashKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBIndexHashKey;
+import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBIndexRangeKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBRangeKey;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBTable;
 
@@ -15,9 +16,9 @@ import java.util.Objects;
 @DynamoDBTable(tableName = "games")
 public class Game {
     public static final String PLATFORM_UNIQUEID_INDEX = "PlatformUniqueIdIndex";
-    public static final String GAMERSCOREWONINCLUDEDLC_USERID_INDEX = "GamerScoreWonIncludeDlcUserIdIndex";
-    public static final String TRUEACHIEVEMENTWONINCLUDEDLC_USERID_INDEX = "TrueAchievementWonIncludeDlcUserIdIndex";
-    public static final String MYCOMPLETIONPERCENTAGE_USERID_INDEX = "MyCompletionPercentageUserIdIndex";
+    public static final String USERID_GAMERSCOREWONINCLUDEDLC_INDEX = "UserIdGamerScoreWonIncludeDlcIndex";
+    public static final String USERID_TRUEACHIEVEMENTWONINCLUDEDLC_INDEX = "UserIdTrueAchievementWonIncludeDlcIndex";
+    public static final String USERID_MYCOMPLETIONPERCENTAGE_INDEX = "UserIdMyCompletionPercentageIndex";
     public static final String GAMENAME_USERID_INDEX = "GameNameUserIdIndex";
 
     private String userId;
@@ -54,6 +55,8 @@ public class Game {
     private List<String> gameNotes;
     private String contestStatus;
     @DynamoDBHashKey(attributeName = "userId")
+    @DynamoDBIndexHashKey(globalSecondaryIndexNames = {USERID_GAMERSCOREWONINCLUDEDLC_INDEX,
+        USERID_TRUEACHIEVEMENTWONINCLUDEDLC_INDEX, USERID_MYCOMPLETIONPERCENTAGE_INDEX}, attributeName = "userId")
     public String getUserId() {
         return userId;
     }
@@ -138,8 +141,8 @@ public class Game {
     public void setMaxGamerScoreNoDlc(Integer maxGamerScoreNoDlc) {
         this.maxGamerScoreNoDlc = maxGamerScoreNoDlc;
     }
-    @DynamoDBIndexHashKey(globalSecondaryIndexNames =
-        {GAMERSCOREWONINCLUDEDLC_USERID_INDEX}, attributeName = "gamerScoreWonIncludeDlc")
+    @DynamoDBIndexRangeKey(globalSecondaryIndexNames =
+        {USERID_GAMERSCOREWONINCLUDEDLC_INDEX}, attributeName = "gamerScoreWonIncludeDlc")
     public Integer getGamerScoreWonIncludeDlc() {
         return gamerScoreWonIncludeDlc;
     }
@@ -171,8 +174,8 @@ public class Game {
     public void setMaxTrueAchievementNoDlc(Integer maxTrueAchievementNoDlc) {
         this.maxTrueAchievementNoDlc = maxTrueAchievementNoDlc;
     }
-    @DynamoDBIndexHashKey(globalSecondaryIndexNames =
-        {TRUEACHIEVEMENTWONINCLUDEDLC_USERID_INDEX}, attributeName = "trueAchievementWonIncludeDlc")
+    @DynamoDBIndexRangeKey(globalSecondaryIndexNames =
+        {USERID_TRUEACHIEVEMENTWONINCLUDEDLC_INDEX}, attributeName = "trueAchievementWonIncludeDlc")
     public Integer getTrueAchievementWonIncludeDlc() {
         return trueAchievementWonIncludeDlc;
     }
@@ -188,8 +191,8 @@ public class Game {
     public void setMaxTrueAchievementIncludeDlc(Integer maxTrueAchievementIncludeDlc) {
         this.maxTrueAchievementIncludeDlc = maxTrueAchievementIncludeDlc;
     }
-    @DynamoDBIndexHashKey(globalSecondaryIndexNames =
-        {MYCOMPLETIONPERCENTAGE_USERID_INDEX}, attributeName = "myCompletionPercentage")
+    @DynamoDBIndexRangeKey(globalSecondaryIndexNames =
+        {USERID_MYCOMPLETIONPERCENTAGE_INDEX}, attributeName = "myCompletionPercentage")
     public Integer getMyCompletionPercentage() {
         return myCompletionPercentage;
     }

@@ -1,5 +1,8 @@
 package com.nashss.se.trueachievementsgroupservice.activity.requests;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
+@JsonDeserialize(builder = DeleteGameFromGroupRequest.Builder.class)
 public class DeleteGameFromGroupRequest {
     private final String userId;
     private final String groupName;

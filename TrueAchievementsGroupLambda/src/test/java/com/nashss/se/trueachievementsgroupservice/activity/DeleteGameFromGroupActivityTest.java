@@ -3,12 +3,15 @@ package com.nashss.se.trueachievementsgroupservice.activity;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.DeleteGameFromGroupRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.DeleteGameFromGroupResult;
 import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
+import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
+import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
 import com.nashss.se.trueachievementsgroupservice.exceptions.GroupNotFoundException;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GroupModel;
 
+import com.nashss.se.trueachievementsgroupservice.test.helper.GroupTestHelper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -19,6 +22,7 @@ import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -30,6 +34,9 @@ public class DeleteGameFromGroupActivityTest {
 	private GroupDao groupDao;
 
 	@Mock
+	private GameDao gameDao;
+
+	@Mock
 	private MetricsPublisher metricsPublisher;
 
 	@InjectMocks
@@ -38,31 +45,26 @@ public class DeleteGameFromGroupActivityTest {
 	@BeforeEach
 	void setUp() {
 		initMocks(this);
-		deleteGameFromGroupActivity = new DeleteGameFromGroupActivity(groupDao, metricsPublisher);
+		deleteGameFromGroupActivity = new DeleteGameFromGroupActivity(gameDao, groupDao, metricsPublisher);
 	}
 
 	@Test
 	public void handleRequest_validRequest_deletesGameFromGroup() {
-		// Mock data
-		String userId = "user123";
-		String groupName = "Favorite Games";
-		String uniqueId = "uniqueId123";
-
 		// Mocking the group retrieved from the DAO
-		Group mockGroup = new Group();
-		mockGroup.setUserId(userId);
-		mockGroup.setGroupName(groupName);
-		mockGroup.setGamesList(new HashSet<>());
+		Group mockGroup = GroupTestHelper.generateGroup();
+		String userId = mockGroup.getUserId();
+		String groupName = mockGroup.getGroupName();
+		String uniqueId = mockGroup.getGamesList().iterator().next().getUniqueId();
 
 		// Mocking the group retrieved after deletion
-		Group groupAfterDeletion = new Group();
-		groupAfterDeletion.setUserId(userId);
-		groupAfterDeletion.setGroupName(groupName);
-		groupAfterDeletion.setGamesList(new HashSet<>());
+		Game gameToDelete = mockGroup.getGamesList().iterator().next();
+		mockGroup.getGamesList().remove(gameToDelete);
+
 
 		// Mocking behavior of the groupDao
 		when(groupDao.getGroup(userId, groupName)).thenReturn(mockGroup);
-		when(groupDao.deleteGameFromGroup(userId, groupName, uniqueId)).thenReturn(groupAfterDeletion);
+		when(groupDao.saveGroup(mockGroup)).thenReturn(mockGroup);
+		when(groupDao.deleteGameFromGroup(userId, groupName, uniqueId)).thenReturn(mockGroup);
 
 		// Execute the method
 		DeleteGameFromGroupRequest request = DeleteGameFromGroupRequest.builder()
@@ -74,15 +76,11 @@ public class DeleteGameFromGroupActivityTest {
 		DeleteGameFromGroupResult result = deleteGameFromGroupActivity.handleRequest(request);
 
 		// Verify that the groupDao methods were called
-		verify(groupDao, times(1)).getGroup(userId, groupName);
-		verify(groupDao, times(1)).deleteGameFromGroup(userId, groupName, uniqueId);
+		verify(groupDao).getGroup(userId, groupName);
+		verify(groupDao).saveGroup(mockGroup);
 
-		// Check the result
-		ModelConverter modelConverter = new ModelConverter();
-		GroupModel expectedGroupModel = modelConverter.toGroupModel(groupAfterDeletion);
-		assertEquals(expectedGroupModel, result.getGroup());
-		assertEquals(0, result.getGroup().getGamesList().size());
-		assertNull(result.getError());
+		assertEquals(0, result.getGameModels().size());
+
 	}
 
 	@Test
@@ -107,9 +105,6 @@ public class DeleteGameFromGroupActivityTest {
 		// Verify that the groupDao method was called
 		verify(groupDao, times(1)).getGroup(userId, groupName);
 
-		// Check the result
-		assertNull(result.getGroup());
-		assertEquals("Group not found", result.getError());
 	}
 }
 

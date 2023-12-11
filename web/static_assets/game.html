@@ -13,6 +13,16 @@
             padding: 0;
         }
 
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: var(--tertiary-color);
+            padding: 16px 20px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
         .container {
             width: 80%;
             margin: 0 auto;
@@ -43,6 +53,14 @@
 
         .button:hover {
             background-color: #45a049; /* Darker green color on hover */
+        }
+
+        section {
+            margin-bottom: 60px; /* Adjust as needed */
+        }
+
+        section:nth-child(3) {
+            margin-bottom: 40px; /* Adjust as needed */
         }
 
     </style>
@@ -78,8 +96,9 @@
         <span th:unless="${game.walkthrough != null and game.walkthrough != ''}"></span>
     </p>
     <p>Contest Status: <span id="game-contestStatus">N/A</span></p>
+</section>
 
-
+<section>
     <h3>Achievements</h3>
     <p>Achievements (No DLC): <span id="game-achievementsWonNoDlc">N/A</span> / <span id="game-maxAchievementsNoDlc">N/A</span></p>
     <p>Achievements (Include DLC): <span id="game-achievementsWonIncludeDlc">N/A</span> / <span id="game-maxAchievementsIncludeDlc">N/A</span></p>
@@ -87,7 +106,9 @@
     <p>GamerScore Won (Include DLC): <span id="game-gamerScoreWonIncludeDlc">N/A</span> / <span id="game-maxGamerScoreIncludeDlc">N/A</span></p>
     <p>TrueAchievements Won (Include DLC): <span id="game-trueAchievementWonNoDlc">N/A</span> / <span id="game-maxTrueAchievementNoDlc">N/A</span></p>
     <p>TrueAchievements Won (Include DLC): <span id="game-trueAchievementWonIncludeDlc">N/A</span> / <span id="game-maxTrueAchievementIncludeDlc">N/A</span></p>
+</section>
 
+<section>
     <h3>Challenges</h3>
     <p>Challenges Won: <span id="game-challengesWon">N/A</span> / <span id="game-maxChallenges">N/A</span></p>
 

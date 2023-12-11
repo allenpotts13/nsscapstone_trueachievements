@@ -9,7 +9,7 @@ import DataStore from "../util/DataStore";
 class ViewGroup extends BindingClass {
     constructor() {
         super();
-        this.bindClassMethods(['clientLoaded', 'mount', 'addGroupToPage', 'addGamesToPage', 'addGame', 'populateGameDropdown'], this);
+        this.bindClassMethods(['clientLoaded', 'mount', 'addGroupToPage', 'addGamesToPage', 'addGame', 'deleteGame', 'populateGameDropdown'], this);
         this.dataStore = new DataStore();
         this.dataStore.addChangeListener(this.addGroupToPage);
         this.dataStore.addChangeListener(this.addGamesToPage);
@@ -26,10 +26,11 @@ class ViewGroup extends BindingClass {
         try {
           const urlParams = new URLSearchParams(window.location.search);
             console.log('URL Parameters:', Object.fromEntries(urlParams.entries()));
-          const encodedName = urlParams.get('name');
+          const encodedName = urlParams.get('groupName');
           const groupName = decodeURIComponent(encodedName);
           console.log("Group name from URL:", groupName);
           document.getElementById('group-name').innerText = 'Loading group ...';
+          console.log("Group name before getGroup call:", groupName);
           const group = await this.client.getGroup(groupName);
           this.dataStore.set('group', group);
           const gamesResponse = await this.client.getAllGames();
@@ -38,8 +39,6 @@ class ViewGroup extends BindingClass {
           if (!Array.isArray(games)) {
               throw new Error('Invalid game data received');
           }
-          const addGameButton = document.getElementById('add-game');
-          addGameButton.addEventListener('click', this.addGame);
           this.dataStore.set('games', games);
           await this.populateGameDropdown();
         } catch (error) {
@@ -52,14 +51,14 @@ class ViewGroup extends BindingClass {
     /**
      * Add the header to the page and load the TrueAchievementsGroupClient.
      */
-    async mount() {
+    mount() {
         try {
-            await this.header.addHeaderToPage();
+            document.getElementById('delete-game').addEventListener('click', this.deleteGame);
+            document.getElementById('add-game').addEventListener('click', this.addGame);
+            this.header.addHeaderToPage();
             this.client = new TrueAchievementsGroupClient();
-            await this.clientLoaded();
-            await this.populateGameDropdown();
-
-            await Promise.all([this.addGroupToPage(), this.addGamesToPage()]);
+            this.clientLoaded();
+            this.populateGameDropdown();
 
         } catch (error) {
             console.error('Error loading group:', error);
@@ -108,7 +107,9 @@ class ViewGroup extends BindingClass {
           return;
         }
 
-          const gamesListHtml = gamesList.map(game => `
+        const sortedGamesList = gamesList.sort((a, b) => a.gameName.localeCompare(b.gameName));
+
+          const gamesListHtml = sortedGamesList.map(game => `
             <li>
                 <h2><a href="/game.html?uniqueId=${game.uniqueId}">
                     ${game.gameName || ''} 
@@ -133,12 +134,15 @@ class ViewGroup extends BindingClass {
             errorMessageDisplay.classList.add('hidden');
 
             const group = this.dataStore.get('group');
-            console.log('Group in addGame:', group); // Add this log line
+            console.log('Group in addGame:', group);
 
-            if (!group) {
-                console.error('Group is undefined.');
+            if (!group || !group.groupName) {
+                console.error('Group is undefined or does not have a name.');
                 return;
             }
+
+            const groupName = group.groupName;
+            console.log('Group name before getGroup call:', groupName);
 
             const uniqueId = document.getElementById('add-game-dropdown').value;
 
@@ -168,31 +172,37 @@ class ViewGroup extends BindingClass {
             document.getElementById('add-game').innerText = 'Add Game';
             document.getElementById('add-game-form').reset();
 
-            await this.addGroupToPage();
-            await this.addGamesToPage();
-
             console.log('After updating group and games on the page');
-
             window.location.reload();
         } catch (error) {
             console.error('Error adding contact:', error);
         }
     }
 
-
-
     /**
      * Method to run when the delete game from group button is pressed.
      * Call the TrueAchievementsGroupService to delete a game from the group.
      */
-    async deleteGame(uniqueId) {
+    async deleteGame() {
         try {
             const errorMessageDisplay = document.getElementById('error-message');
             errorMessageDisplay.innerText = '';
             errorMessageDisplay.classList.add('hidden');
 
             const group = this.dataStore.get('group');
-            if (!group) {
+            console.log('Group in deleteGame:', group);
+            if (!group || !group.groupName) {
+                console.error('Group is undefined or does not have a name.');
+                return;
+            }
+
+            const groupName = group.groupName;
+            console.log('Group name before getGroup call:', groupName);
+
+            const uniqueId = document.getElementById('delete-game-dropdown').value;
+            if (!uniqueId) {
+                errorMessageDisplay.innerText = 'Please select a game.';
+                errorMessageDisplay.classList.remove('hidden');
                 return;
             }
 
@@ -214,9 +224,9 @@ class ViewGroup extends BindingClass {
 
             // Reset the button text
             document.getElementById('delete-game').innerText = 'Delete Game';
+            document.getElementById('delete-game-form').reset();
 
-            // Refresh the page or update the games list on the page
-            this.addGamesToPage();
+            window.location.reload();
         } catch (error) {
             console.error('Error deleting game:', error);
         }
@@ -224,26 +234,36 @@ class ViewGroup extends BindingClass {
 
     async populateGameDropdown() {
         try {
-             const games = this.dataStore.get('games');
+            const games = this.dataStore.get('games');
+            const group = this.dataStore.get('group');
 
-             if (!games) {
-                  console.log("No games found in DataStore");
-                  return;
-             }
-            const dropdown = document.getElementById('add-game-dropdown');
+            if (!games || !group) {
+                console.log("No games or group found in DataStore");
+                return;
+            }
 
-            games.forEach((games) => {
+            // Clear both dropdowns
+            document.getElementById('add-game-dropdown').innerHTML = '';
+            document.getElementById('delete-game-dropdown').innerHTML = '';
+
+            games.forEach((game) => {
                 const option = document.createElement('option');
-                option.value = games.uniqueId;
+                option.value = game.uniqueId;
+                option.textContent = `${game.gameName}`.trim();
 
-                // Display the games name (gameName)
-                option.textContent = `${games.gameName}`.trim();
-                dropdown.appendChild(option);
+                // Add the option to the "Add Game" dropdown
+                document.getElementById('add-game-dropdown').appendChild(option);
+
+                // Only add the option to the "Delete Game" dropdown if the game is assigned to the group
+                if (group.gamesList && group.gamesList.some((assignedGame) => assignedGame.uniqueId === game.uniqueId)) {
+                    document.getElementById('delete-game-dropdown').appendChild(option.cloneNode(true));
+                }
             });
         } catch (error) {
             console.error('Error fetching games:', error);
         }
     }
+
     }
 
 

@@ -21,7 +21,9 @@ class Dashboard extends BindingClass {
      */
     async clientLoaded() {
         try {
+            console.log('Retrieving data from the backend');
             const userData = await this.client.getUserStats();
+            console.log('Retrieved data from the backend', userData);
 
             // Store the user data in the data store
             this.dataStore.set('userData', {
