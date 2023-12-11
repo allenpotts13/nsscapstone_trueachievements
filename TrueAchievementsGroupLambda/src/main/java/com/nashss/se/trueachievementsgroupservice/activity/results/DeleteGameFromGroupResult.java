@@ -1,19 +1,22 @@
 package com.nashss.se.trueachievementsgroupservice.activity.results;
 
-import com.nashss.se.trueachievementsgroupservice.models.GroupModel;
+import com.nashss.se.trueachievementsgroupservice.models.GameModel;
+
+import java.util.HashSet;
+import java.util.Set;
 
 public class DeleteGameFromGroupResult {
 
-    private final GroupModel group;
+    private final Set<GameModel> gameModels;
     private final String error;
 
-    private DeleteGameFromGroupResult(GroupModel group, String error) {
-        this.group = group;
+    private DeleteGameFromGroupResult(Set<GameModel> gameModels, String error) {
+        this.gameModels = gameModels;
         this.error = error;
     }
 
-    public GroupModel getGroup() {
-        return group;
+    public Set<GameModel> getGameModels() {
+        return new HashSet<>(gameModels);
     }
 
     public String getError() {
@@ -23,7 +26,7 @@ public class DeleteGameFromGroupResult {
     @Override
     public String toString() {
         return "DeleteGameFromGroupResult{" +
-                "group=" + group +
+                "gameModels=" + gameModels +
                 '}';
     }
 
@@ -33,11 +36,11 @@ public class DeleteGameFromGroupResult {
     }
 
     public static class Builder {
-        private GroupModel group;
+        private Set<GameModel> gameModels;
         private String error;
 
-        public Builder withGroup(GroupModel group) {
-            this.group = group;
+        public Builder withGameSet(Set<GameModel> gameModels) {
+            this.gameModels = new HashSet<>(gameModels);
             return this;
         }
 
@@ -47,7 +50,7 @@ public class DeleteGameFromGroupResult {
         }
 
         public DeleteGameFromGroupResult build() {
-            return new DeleteGameFromGroupResult(group, error);
+            return new DeleteGameFromGroupResult(gameModels, error);
         }
     }
 }

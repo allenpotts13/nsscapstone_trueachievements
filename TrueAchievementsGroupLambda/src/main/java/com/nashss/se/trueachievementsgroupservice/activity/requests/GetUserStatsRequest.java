@@ -1,5 +1,7 @@
 package com.nashss.se.trueachievementsgroupservice.activity.requests;
 
+import java.util.Objects;
+
 public class GetUserStatsRequest {
 
     private final String userId;
@@ -20,6 +22,23 @@ public class GetUserStatsRequest {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof GetUserStatsRequest)) {
+            return false;
+        }
+        GetUserStatsRequest that = (GetUserStatsRequest) o;
+        return getUserId().equals(that.getUserId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getUserId());
+    }
+
     //CHECKSTYLE:OFF:Builder
     public static Builder builder() {
         return new Builder();
@@ -27,7 +46,6 @@ public class GetUserStatsRequest {
 
     public static class Builder {
         private String userId;
-
 
         public Builder withUserId(String userId) {
             this.userId = userId;

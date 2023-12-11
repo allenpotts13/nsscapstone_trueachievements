@@ -35,9 +35,9 @@ public class GetUserStatsResult {
     @Override
     public String toString() {
         return "GetUserStatsResult{" +
-                "gamerScoreWonIncludeDlc=" + gamerScoreWonIncludeDlc +
-                ", trueAchievementWonIncludeDlc=" + trueAchievementWonIncludeDlc +
-                ", myCompletionPercentage=" + myCompletionPercentage +
+                "GamerScoreWonIncludeDlc=" + gamerScoreWonIncludeDlc +
+                ", TrueAchievementWonIncludeDlc=" + trueAchievementWonIncludeDlc +
+                ", MyCompletionPercentage=" + myCompletionPercentage +
                 ", errorMessage='" + errorMessage + '\'' +
                 '}';
     }

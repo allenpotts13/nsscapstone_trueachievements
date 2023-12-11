@@ -348,12 +348,12 @@ Resources:
             Path: /groups/{groupName}/games
             Method: get
 
-  DeleteGameInGroupLambda:
+  DeleteGameFromGroupLambda:
     Type: AWS::Serverless::Function
     Properties:
       Role: !GetAtt AccessRole.Arn
       CodeUri: TrueAchievementsGroupLambda
-      Handler: com.nashss.se.trueachievementsgroupservice.lambda.DeleteGameInGroupLambda::handleRequest
+      Handler: com.nashss.se.trueachievementsgroupservice.lambda.DeleteGameFromGroupLambda::handleRequest
       Runtime: java11
       Architectures:
         - x86_64
@@ -365,7 +365,7 @@ Resources:
         TrueAchievementsGroupService:
           Type: Api
           Properties:
-            Path: /groups/{groupName}/games/{uniqueId}
+            Path: /groups/{groupName}/games
             Method: delete
 
   GetGroupLambda:
@@ -446,24 +446,30 @@ Resources:
             ProjectionType: "INCLUDE"
             NonKeyAttributes:
               - "gameName"
-        - IndexName: "GamerScoreWonIncludeDlc-Index"
+        - IndexName: "userId-gamerScoreWonIncludeDlc-index"
           KeySchema:
+            - AttributeName: "userId"
+              KeyType: "HASH"
             - AttributeName: "gamerScoreWonIncludeDlc"
-              KeyType: "HASH"
+              KeyType: "RANGE"
           Projection:
-            ProjectionType: "KEYS_ONLY"
-        - IndexName: "TrueAchievementWonIncludeDlc-Index"
+            ProjectionType: "ALL"
+        - IndexName: "userId-trueAchievementWonIncludeDlc-index"
           KeySchema:
+            - AttributeName: "userId"
+              KeyType: "HASH"
             - AttributeName: "trueAchievementWonIncludeDlc"
-              KeyType: "HASH"
+              KeyType: "RANGE"
           Projection:
-            ProjectionType: "KEYS_ONLY"
-        - IndexName: "MyCompletionPercentage-Index"
+            ProjectionType: "ALL"
+        - IndexName: "userId-myCompletionPercentage-index"
           KeySchema:
-            - AttributeName: "myCompletionPercentage"
+            - AttributeName: "userId"
               KeyType: "HASH"
+            - AttributeName: "myCompletionPercentage"
+              KeyType: "RANGE"
           Projection:
-            ProjectionType: "KEYS_ONLY"
+            ProjectionType: "ALL"
         - IndexName: "GameName-Index"
           KeySchema:
             - AttributeName: "gameName"

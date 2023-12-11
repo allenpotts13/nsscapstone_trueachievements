@@ -5,10 +5,10 @@ import com.nashss.se.trueachievementsgroupservice.exceptions.GameNotFoundExcepti
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 
+import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
-import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -23,6 +23,7 @@ import javax.inject.Singleton;
  */
 @Singleton
 public class GameDao {
+
     private DynamoDBMapper dynamoDbMapper;
     private final MetricsPublisher metricsPublisher;
 
@@ -34,6 +35,7 @@ public class GameDao {
      */
     @Inject
     public GameDao(DynamoDBMapper dynamoDbMapper, MetricsPublisher metricsPublisher) {
+
         this.dynamoDbMapper = dynamoDbMapper;
         this.metricsPublisher = metricsPublisher;
     }
@@ -82,60 +84,69 @@ public class GameDao {
      * @return the user stats, or none if none were found.
      */
     public Map<String, Integer> getUserStats(String userId) {
-        Map<String, AttributeValue> expressionAttributeValues = new HashMap<>();
-        expressionAttributeValues.put(":userId", new AttributeValue().withS(userId));
-
         Map<String, Integer> userStats = new HashMap<>();
-        userStats.put("gamerScoreWonIncludeDlc",
-            sumIndex("GamerScoreWonIncludeDlc-UserId-Index",
-                "gamerScoreWonIncludeDlc",
-                ":userId", expressionAttributeValues));
-        userStats.put("trueAchievementWonIncludeDlc",
-            sumIndex("TrueAchievementWonIncludeDlc-UserId-Index",
-                "trueAchievementWonIncludeDlc",
-                ":userId", expressionAttributeValues));
-        userStats.put("myCompletionPercentage",
-            sumIndex("MyCompletionPercentage-UserId-Index",
-                "myCompletionPercentage",
-                ":userId", expressionAttributeValues));
+
+        // Collect the data into the userStats map
+        userStats.put("gamerScoreWonIncludeDlc", getAttributeTotal(userId,
+            "userId-gamerScoreWonIncludeDlc-index"));
+        userStats.put("trueAchievementWonIncludeDlc", getAttributeTotal(userId,
+            "userId-trueAchievementWonIncludeDlc-index"));
+        userStats.put("myCompletionPercentage", getAverageMyCompletionPercentage(userId,
+            "userId-myCompletionPercentage-index"));
+
 
         return userStats;
     }
 
-    private int sumIndex(String indexName, String attributeName, String conditionExpression ,
-                         Map<String, AttributeValue> expressionAttributeValues) {
-        // Use a StringBuilder for constructing the query expression
-        StringBuilder queryExpressionBuilder = new StringBuilder("userId = :userId");
+    // Method to query a GSI and sum up the values for a specific attribute
+    private int getAttributeTotal(String userId, String indexName) {
+        DynamoDBQueryExpression<Game> queryExpression = new DynamoDBQueryExpression<Game>()
+            .withIndexName(indexName)
+            .withConsistentRead(false)
+            .withKeyConditionExpression("userId = :userId")
+            .withExpressionAttributeValues(Map.of(":userId", new AttributeValue().withS(userId)));
 
-        // Add additional conditions if provided
-        if (conditionExpression != null && !conditionExpression.isEmpty()) {
-            queryExpressionBuilder.append(" AND ").append(conditionExpression);
-        }
+        PaginatedQueryList<Game> results = dynamoDbMapper.query(Game.class, queryExpression);
 
-        // Perform a scan using DynamoDBMapper
-        PaginatedQueryList<Game> games = dynamoDbMapper.query(Game.class, new DynamoDBQueryExpression<Game>()
-                .withIndexName(indexName)
-                .withConsistentRead(false)
-                .withKeyConditionExpression(queryExpressionBuilder.toString())
-                .withExpressionAttributeValues(expressionAttributeValues));
-
-        Set<Game> gameSet = new HashSet<>(games);
-
-        // Sum the values
-        return gameSet.stream().mapToInt(game -> getValueByAttributeName(game, attributeName)).sum();
+        // Sum up the attribute from all items
+        return results.stream()
+            .mapToInt(game -> getAttribute(game, indexName))
+            .sum();
     }
 
-    private int getValueByAttributeName(Game game, String attributeName) {
-        switch (attributeName) {
-            case "gamerScoreWonIncludeDlc":
-                return game.getGamerScoreWonIncludeDlc();
-            case "trueAchievementWonIncludeDlc":
-                return game.getTrueAchievementWonIncludeDlc();
-            case "myCompletionPercentage":
-                return game.getMyCompletionPercentage();
-            // Add other attributes as needed
+    // Method to calculate the average of myCompletionPercentage
+    private int getAverageMyCompletionPercentage(String userId, String indexName) {
+        DynamoDBQueryExpression<Game> queryExpression = new DynamoDBQueryExpression<Game>()
+            .withIndexName(indexName)
+            .withConsistentRead(false)
+            .withKeyConditionExpression("userId = :userId")
+            .withExpressionAttributeValues(Map.of(":userId", new AttributeValue().withS(userId)));
+
+        PaginatedQueryList<Game> results = dynamoDbMapper.query(Game.class, queryExpression);
+
+        // Calculate the average of myCompletionPercentage
+        int sum = results.stream()
+            .mapToInt(game -> getAttribute(game, indexName))
+            .sum();
+
+        int count = (int) results.stream()
+            .filter(game -> getAttribute(game, indexName) != 0)
+            .count();
+
+        return count > 0 ? sum / count : 0;
+    }
+
+    // Helper method to get the attribute value based on the GSI
+    private int getAttribute(Game game, String indexName) {
+        switch (indexName) {
+            case "userId-gamerScoreWonIncludeDlc-index":
+                return game.getGamerScoreWonIncludeDlc() != null ? game.getGamerScoreWonIncludeDlc() : 0;
+            case "userId-trueAchievementWonIncludeDlc-index":
+                return game.getTrueAchievementWonIncludeDlc() != null ? game.getTrueAchievementWonIncludeDlc() : 0;
+            case "userId-myCompletionPercentage-index":
+                return game.getMyCompletionPercentage() != null ? game.getMyCompletionPercentage() : 0;
             default:
-                throw new IllegalArgumentException("Invalid attribute name: " + attributeName);
+                return 0;
         }
     }
 }

@@ -75,14 +75,14 @@ public class AddGameToGroupActivity {
         groupDao.saveGroup(group);
 
         List<GameModel> gameModelList = new ModelConverter().toGameModelList(gamesSet);
-        Set<GameModel> updatedContactSet = new HashSet<>(gameModelList);
+        Set<GameModel> updatedGameSet = new HashSet<>(gameModelList);
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
         metricsPublisher.addTime("AddGameToGroupActivity::handleRequest", duration);
 
         return AddGameToGroupResult.builder()
-            .withGameSet(updatedContactSet)
+            .withGameSet(updatedGameSet)
             .build();
     }
 }

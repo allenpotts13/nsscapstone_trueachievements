@@ -24,6 +24,7 @@ class ViewGroups extends BindingClass {
         const groups = await this.client.getAllGroups();
         console.log("API Response: ", groups);
         this.dataStore.set('groups', groups);
+        this.addGroupsToPage();
     }
 
     /**
@@ -48,10 +49,17 @@ class ViewGroups extends BindingClass {
             return;
         }
 
+        const sortedGroups = groups.map(group => {
+            const sortedGamesList = group.gamesList ? [...group.gamesList].sort((a, b) => a.gameName.localeCompare(b.gameName)) : [];
+            return { ...group, gamesList: sortedGamesList };
+        });
+
         const groupList = document.getElementById("group-list");
+        console.log("groupList:", groupList);
         groupList.innerHTML = ''; // Clear the previous content
 
-        groups.forEach((group) => {
+        sortedGroups.forEach((group) => {
+            console.log("Rendering group:", group);
             const encodedGroupName = encodeURIComponent(group.groupName);
             const groupListItem = document.createElement('div');
             groupListItem.classList.add('group-item');
@@ -60,26 +68,26 @@ class ViewGroups extends BindingClass {
             if (group.gamesList && Array.isArray(group.gamesList)) {
                 const displayedGames = group.gamesList.slice(0, 5); // Display only the first 5 games
                 gamesListHtml = `
-                    <div class="games-list">Games List:</div>
-                    <ul class="game-list-items">
-                        ${displayedGames.map(game => `<li>${game.gameName}</li>`).join('')}
-                        ${group.gamesList.length > 5 ? '<li>...</li>' : ''}
-                    </ul>
-                `;
+                <div class="games-list">Games List:</div>
+                <ul class="game-list-items">
+                    ${displayedGames.map(game => `<li>${game.gameName}</li>`).join('')}
+                    ${group.gamesList.length > 5 ? '<li>...</li>' : ''}
+                </ul>
+            `;
             } else {
                 gamesListHtml = '<div class="no-games">No games available.</div>';
             }
 
-
             groupListItem.innerHTML = `
-            <h2><a href="/group.html?name=${encodedGroupName}">${group.groupName}</a></h2>
-            <dl>
-                ${gamesListHtml}
-            </dl>
-        `;
+        <h2><a href="/group.html?groupName=${encodedGroupName}">${group.groupName}</a></h2>
+        <dl>
+            ${gamesListHtml}
+        </dl>
+    `;
             groupList.appendChild(groupListItem);
         });
     }
+
 }
 
 /**

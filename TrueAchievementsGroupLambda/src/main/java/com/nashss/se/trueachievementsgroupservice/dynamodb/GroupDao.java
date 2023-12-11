@@ -88,9 +88,11 @@ public class GroupDao {
      * @param userId the Group's userId
      * @param groupName the Group's name
      * @param uniqueId the Game's uniqueId
+     *
+     * @return the stored Group, or null if none was found.
      */
     public Group deleteGameFromGroup(String userId, String groupName, String uniqueId) {
-        Group group = getGroup(userId, groupName);
+        Group group = this.dynamoDbMapper.load(Group.class, userId, groupName);
 
         Set<Game> gamesList = group.getGamesList();
         if (gamesList != null) {

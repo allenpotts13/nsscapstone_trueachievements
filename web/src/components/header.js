@@ -5,7 +5,7 @@ import BindingClass from "../util/bindingClass";
  * The header component for the website.
  */
 export default class Header extends BindingClass {
-    constructor(dataStore) {
+    constructor() {
         super();
 
         const methodsToBind = [
@@ -15,7 +15,6 @@ export default class Header extends BindingClass {
         this.bindClassMethods(methodsToBind, this);
 
         this.client = new TrueAchievementsGroupClient();
-        this.dataStore = dataStore;
     }
 
     /**
