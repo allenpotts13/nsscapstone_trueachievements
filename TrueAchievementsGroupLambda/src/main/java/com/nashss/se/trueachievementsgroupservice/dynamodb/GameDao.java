@@ -94,7 +94,6 @@ public class GameDao {
         userStats.put("myCompletionPercentage", getAverageMyCompletionPercentage(userId,
             "userId-myCompletionPercentage-index"));
 
-
         return userStats;
     }
 

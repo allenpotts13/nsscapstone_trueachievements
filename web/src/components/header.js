@@ -13,8 +13,11 @@ export default class Header extends BindingClass {
             'createLoginButton', 'createLoginButton', 'createLogoutButton', 'createGoBackButton'
         ];
         this.bindClassMethods(methodsToBind, this);
-
         this.client = new TrueAchievementsGroupClient();
+        window.addEventListener('popstate', () => {
+            console.log('Popstate event triggered!');
+            window.location.reload();
+        });
     }
 
     /**

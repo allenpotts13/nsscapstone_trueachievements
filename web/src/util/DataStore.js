@@ -8,7 +8,7 @@ export default class DataStore extends BindingClass {
 
     constructor(initialState = {}) {
         super();
-        this.bindClassMethods(['getState', 'get', 'setState', 'set', 'addChangeListener'], this);
+        this.bindClassMethods(['getState', 'get', 'setState', 'set', 'addChangeListener', 'clear'], this);
         this.state = initialState;
         this.listeners = [];
     }
@@ -59,6 +59,15 @@ export default class DataStore extends BindingClass {
      */
     addChangeListener(listener) {
         this.listeners.push(listener);
+    }
+
+    /**
+     * Clear all of the data in the DataStore. Then execute all of the registered listeners, so they can react to any
+     * potential data updates.
+     */
+    clear() {
+        this.state = {};
+        this.listeners.forEach(listener => listener());
     }
 
 }

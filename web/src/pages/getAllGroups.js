@@ -9,11 +9,17 @@ import DataStore from "../util/DataStore";
 class ViewGroups extends BindingClass {
     constructor() {
         super();
-        this.bindClassMethods(['clientLoaded', 'mount', 'addGroupsToPage'], this);
+        this.bindClassMethods(['clientLoaded', 'mount', 'addGroupsToPage', 'handlePopstate'], this);
         this.dataStore = new DataStore();
         this.dataStore.addChangeListener(this.addGroupsToPage);
         this.header = new Header(this.dataStore);
         console.log("viewgroups constructor");
+    }
+
+    handlePopstate() {
+        this.dataStore.clear();
+        window.location.reload();
+
     }
 
     /**
@@ -25,6 +31,7 @@ class ViewGroups extends BindingClass {
         console.log("API Response: ", groups);
         this.dataStore.set('groups', groups);
         this.addGroupsToPage();
+        document.addEventListener('popstate', () => this.handlePopstate());
     }
 
     /**

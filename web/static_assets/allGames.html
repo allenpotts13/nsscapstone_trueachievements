@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
     <title>All Games</title>
     <style>
         body {
@@ -14,9 +18,20 @@
             /* Text color */
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
             align-items: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--primary-color);
+            color: var(--tertiary-color);
+            padding: 16px 20px;
+            border-bottom: 2px solid var(--accent-color);
         }
 
         #games-list {
@@ -54,11 +69,13 @@
         }
 
         #search-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
+            position: absolute;
+            top: 80px; /* Adjust this value based on your header height */
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             align-items: center;
+            z-index: 1;
         }
 
         #pagination {
@@ -124,6 +141,7 @@
     <input type="text" id="search-field" placeholder="Search...">
 </div>
 
+<div id="bottom-container">
 <div id="gamesPerPageDropdown-container">
     <label for="gamesPerPageDropdown">Games per Page:</label>
     <div id="gamesPerPageDropdown"></div>
