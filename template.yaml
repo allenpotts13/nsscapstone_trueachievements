@@ -217,9 +217,9 @@ Resources:
               Resource:
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/Platform-Index"
-              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/GamerScoreWonIncludeDlc-Index"
-              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/TrueAchievementWonIncludeDlc-Index"
-              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/MyCompletionPercentage-Index"
+              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/userId-gamerScoreWonIncludeDlc-index"
+              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/userId-trueAchievementWonIncludeDlc-index"
+              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/userId-myCompletionPercentage-index"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/GameName-Index"
 
 

@@ -244,24 +244,28 @@ export default class TrueAchievementsGroupClient extends BindingClass {
                 }
             };
 
-            console.log('API Response in getUserStats:', {
+            console.log('API Request in getUserStats:', {
                 method: 'GET',
                 url: this.axiosClient.defaults.baseURL + 'statistics/games',
                 config: requestConfig
             });
+
             const response = await this.axiosClient.get('statistics/games', requestConfig);
 
             console.log('API Response in getUserStats:', response.data);
 
-            if (response.data && response.data) {
-                return response.data;
+            const { data } = response;
+
+            if (data && data.gamerScoreWonIncludeDlc !== undefined) {
+                // Assuming 'gamerScoreWonIncludeDlc' is a key in the response
+                return data;
             } else {
-                console.error('Unexpected response format in getUserStats:', response.data);
+                console.error('Unexpected response format in getUserStats:', data);
                 // Handle the unexpected response format
                 throw new Error('Unexpected response format');
             }
         } catch (error) {
-            this.handleError(error, errorCallback)
+            this.handleError(error, errorCallback);
         }
     }
 
