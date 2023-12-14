@@ -3,7 +3,9 @@ package com.nashss.se.trueachievementsgroupservice.activity;
 import com.nashss.se.trueachievementsgroupservice.activity.requests.GetUserStatsRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.GetUserStatsResult;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
+import com.nashss.se.trueachievementsgroupservice.utils.MetricsUtil;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -59,7 +61,16 @@ public class GetUserStatsActivity {
             log.info("Successfully retrieved user stats: {}", result);
             long endTime = System.currentTimeMillis();
             long duration = endTime - startTime;
-            metricsPublisher.addTime("GetUserStatsActivity.handleRequest", duration);
+
+            // Publish metrics
+            metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_USER_STATS_ACTIVITY,
+                "Duration"), duration);
+
+            metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_USER_STATS_ACTIVITY,
+                "StartTime"), startTime);
+
+            metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_USER_STATS_ACTIVITY,
+                "EndTime"), endTime);
 
             return result;
         } catch (Exception e) {

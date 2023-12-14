@@ -35,7 +35,6 @@ class ViewGame extends BindingClass {
 
             document.getElementById('game-gameName').innerText = 'Loading game ...';
             const game = await this.client.getGame(uniqueId);
-            console.log("game: ", game)
             this.dataStore.set('game', game);
         } catch (error) {
             console.error('Error loading game:', error);

@@ -26,9 +26,7 @@ class ViewGroups extends BindingClass {
      * Once the client is loaded, get the groups list.
      */
     async clientLoaded() {
-        console.log("clientLoaded running")
         const groups = await this.client.getAllGroups();
-        console.log("API Response: ", groups);
         this.dataStore.set('groups', groups);
         this.addGroupsToPage();
         document.addEventListener('popstate', () => this.handlePopstate());
@@ -49,7 +47,6 @@ class ViewGroups extends BindingClass {
     addGroupsToPage() {
         console.log("addgroupsstopage");
         const groups = this.dataStore.get('groups');
-        console.log("Retrieved groups:", groups);
 
         if (!groups) {
             console.log("Groups is null");
@@ -62,11 +59,9 @@ class ViewGroups extends BindingClass {
         });
 
         const groupList = document.getElementById("group-list");
-        console.log("groupList:", groupList);
         groupList.innerHTML = ''; // Clear the previous content
 
         sortedGroups.forEach((group) => {
-            console.log("Rendering group:", group);
             const encodedGroupName = encodeURIComponent(group.groupName);
             const groupListItem = document.createElement('div');
             groupListItem.classList.add('group-item');

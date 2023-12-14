@@ -8,8 +8,10 @@ import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
 import com.nashss.se.trueachievementsgroupservice.exceptions.InvalidAttributeException;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GroupModel;
+import com.nashss.se.trueachievementsgroupservice.utils.MetricsUtil;
 import com.nashss.se.trueachievementsgroupservice.utils.TrueAchievementGroupServiceUtils;
 
 import org.apache.logging.log4j.LogManager;
@@ -85,7 +87,17 @@ public class CreateGroupActivity {
         GroupModel groupModel = new ModelConverter().toGroupModel(group);
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        metricsPublisher.addTime("CreateGroupActivity::handleRequest", duration);
+
+        // Publish metrics
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.CREATE_GROUP_ACTIVITY,
+            "Duration"), duration);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.CREATE_GROUP_ACTIVITY,
+            "StartTime"), startTime);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.CREATE_GROUP_ACTIVITY,
+            "EndTime"), endTime);
+
         return CreateGroupResult.builder()
             .withGroup(groupModel)
             .build();

@@ -101,7 +101,6 @@ export default class TrueAchievementsGroupClient extends BindingClass {
                     Authorization: `Bearer ${token}`
                 }
             });
-            console.log('API Response in getAllGames:', response.data)
             return response.data;
         } catch (error) {
             this.handleError(error, errorCallback)
@@ -139,22 +138,12 @@ export default class TrueAchievementsGroupClient extends BindingClass {
             const token = await this.getTokenOrThrow("Only authenticated users can view contacts.");
             const url = `games/${uniqueId}`;
 
-            console.log('API Request in getGame:', {
-                method: 'GET',
-                url: this.axiosClient.defaults.baseURL + url,
-                headers: {
-                    Authorization: `Bearer ${token}`,
-                    // Add any other headers as needed
-                },
-            });
-
             const response = await this.axiosClient.get(url, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
             });
 
-            console.log('API Response in getGame:', response.data);
             return response.data.game;
         } catch (error) {
             this.handleError(error, errorCallback);
@@ -222,7 +211,6 @@ export default class TrueAchievementsGroupClient extends BindingClass {
                     },
                 }
             );
-            console.log('addGameToGroup response:', response);
             return response.data.gameList;
         } catch (error) {
             this.handleError(error, errorCallback);
@@ -237,31 +225,24 @@ export default class TrueAchievementsGroupClient extends BindingClass {
      */
     async getUserStats(errorCallback) {
         try {
-            const token = await this.getTokenOrThrow("Only authenticated users can see their stats.");
+            //Check if the user is authenticated before making the call
+            if (!await this.authenticator.isUserLoggedIn()) {
+                throw new Error("Only authenticated users can see their stats.");
+            }
+            const token = await this.authenticator.getUserToken();
             const requestConfig = {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
             };
 
-            console.log('API Request in getUserStats:', {
-                method: 'GET',
-                url: this.axiosClient.defaults.baseURL + 'statistics/games',
-                config: requestConfig
-            });
-
             const response = await this.axiosClient.get('statistics/games', requestConfig);
-
-            console.log('API Response in getUserStats:', response.data);
-
             const { data } = response;
 
             if (data && data.gamerScoreWonIncludeDlc !== undefined) {
-                // Assuming 'gamerScoreWonIncludeDlc' is a key in the response
                 return data;
             } else {
                 console.error('Unexpected response format in getUserStats:', data);
-                // Handle the unexpected response format
                 throw new Error('Unexpected response format');
             }
         } catch (error) {
@@ -280,7 +261,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
         try {
             const token = await this.getTokenOrThrow("Only authenticated users can delete a game from a group.");
             const response = await this.axiosClient.delete(
-                `groups/${groupName}/games`,
+                `groups/${groupName}/games/${uniqueId}`,
                 {
                     data: {
                         groupName: groupName,

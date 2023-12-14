@@ -19,14 +19,10 @@ public class GetAllGamesLambda
     public LambdaResponse handleRequest(AuthenticatedLambdaRequest<GetAllGamesRequest> input, Context context) {
         log.info("handleRequest");
         return super.runActivity(
-            () -> {
-                GetAllGamesRequest unauthenticatedRequest = input.fromPath(path -> GetAllGamesRequest.builder()
-                    .build());
-                return input.fromUserClaims(claims ->
-                    GetAllGamesRequest.builder()
-                        .withUserId(claims.get("email"))
-                        .build());
-            },
+            () -> input.fromUserClaims(claims ->
+            GetAllGamesRequest.builder()
+                .withUserId(claims.get("email"))
+                .build()),
             (request, serviceComponent) ->
                 serviceComponent.provideGetAllGamesActivity().handleRequest(request)
         );

@@ -5,8 +5,10 @@ import com.nashss.se.trueachievementsgroupservice.activity.results.GetAllGroupsR
 import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GroupModel;
+import com.nashss.se.trueachievementsgroupservice.utils.MetricsUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -54,7 +56,17 @@ public class GetAllGroupsActivity {
         Collections.sort(groupModelList);
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        metricsPublisher.addTime("GetAllGroupsActivity", duration);
+
+        // Publish metrics
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_ALL_GROUPS_ACTIVITY,
+            "Duration"), duration);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_ALL_GROUPS_ACTIVITY,
+            "StartTime"), startTime);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_ALL_GROUPS_ACTIVITY,
+            "EndTime"), endTime);
+
         return GetAllGroupsResult.builder()
             .withGroupList(groupModelList)
             .build();
