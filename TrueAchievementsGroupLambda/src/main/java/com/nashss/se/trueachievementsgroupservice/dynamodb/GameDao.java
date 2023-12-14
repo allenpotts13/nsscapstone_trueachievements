@@ -24,13 +24,13 @@ import javax.inject.Singleton;
 @Singleton
 public class GameDao {
 
-    private DynamoDBMapper dynamoDbMapper;
-    private final MetricsPublisher metricsPublisher;
-
     // Static variables for index names
     private static final String GAMER_SCORE_INDEX = "userId-gamerScoreWonIncludeDlc-index";
     private static final String TRUE_ACHIEVEMENT_INDEX = "userId-trueAchievementWonIncludeDlc-index";
     private static final String COMPLETION_PERCENTAGE_INDEX = "userId-myCompletionPercentage-index";
+
+    private DynamoDBMapper dynamoDbMapper;
+    private final MetricsPublisher metricsPublisher;
 
     /**
      * Instantiates a GameDao object.

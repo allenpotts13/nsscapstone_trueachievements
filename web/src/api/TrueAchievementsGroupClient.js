@@ -225,7 +225,11 @@ export default class TrueAchievementsGroupClient extends BindingClass {
      */
     async getUserStats(errorCallback) {
         try {
-            const token = await this.getTokenOrThrow("Only authenticated users can see their stats.");
+            //Check if the user is authenticated before making the call
+            if (!await this.authenticator.isUserLoggedIn()) {
+                throw new Error("Only authenticated users can see their stats.");
+            }
+            const token = await this.authenticator.getUserToken();
             const requestConfig = {
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -257,7 +261,7 @@ export default class TrueAchievementsGroupClient extends BindingClass {
         try {
             const token = await this.getTokenOrThrow("Only authenticated users can delete a game from a group.");
             const response = await this.axiosClient.delete(
-                `groups/${groupName}/games`,
+                `groups/${groupName}/games/${uniqueId}`,
                 {
                     data: {
                         groupName: groupName,

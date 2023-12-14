@@ -2,15 +2,13 @@ package com.nashss.se.trueachievementsgroupservice.lambda;
 
 import com.nashss.se.trueachievementsgroupservice.activity.requests.GetGamesInGroupRequest;
 import com.nashss.se.trueachievementsgroupservice.activity.results.GetGamesInGroupResult;
+import com.nashss.se.trueachievementsgroupservice.utils.UrlDecoderUtils;
 
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
-import com.nashss.se.trueachievementsgroupservice.utils.UrlDecoderUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.io.UnsupportedEncodingException;
 
 public class GetGamesInGroupLambda
         extends LambdaActivityRunner<GetGamesInGroupRequest, GetGamesInGroupResult>

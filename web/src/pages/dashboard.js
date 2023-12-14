@@ -20,7 +20,10 @@ class Dashboard extends BindingClass {
      */
     async clientLoaded() {
         try {
-            const userData = await this.client.getUserStats();
+            // Check if the user is logged in
+            if (await this.client.authenticator.isUserLoggedIn()) {
+                const userData = await this.client.getUserStats();
+
             // Store the user data in the data store
             this.dataStore.set('userData', {
                 gamerScoreWonIncludeDlc: userData.gamerScoreWonIncludeDlc || 0,
@@ -29,6 +32,9 @@ class Dashboard extends BindingClass {
             });
 
             await this.updateButtonVisibility();
+        } else {
+            console.log('User is not logged in');
+        }
         } catch (error) {
             console.error('Error fetching user information:', error);
         }
@@ -38,10 +44,15 @@ class Dashboard extends BindingClass {
      * Add the header to the page and load the TrueAchievementGroupClient.
      */
     mount() {
-        this.header.addHeaderToPage();
         this.client = new TrueAchievementsGroupClient();
-        this.clientLoaded();
-        this.updateButtonVisibility();
+        //Check if the user is logged in
+        if (this.client.authenticator.isUserLoggedIn()) {
+            this.header.addHeaderToPage();
+            this.clientLoaded();
+            this.updateButtonVisibility();
+        } else {
+            console.log('User is not logged in');
+        }
     }
 
     /**

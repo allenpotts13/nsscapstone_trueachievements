@@ -7,8 +7,11 @@ import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GroupDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Group;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GameModel;
+
+import com.nashss.se.trueachievementsgroupservice.utils.MetricsUtil;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -79,7 +82,16 @@ public class AddGameToGroupActivity {
 
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        metricsPublisher.addTime("AddGameToGroupActivity::handleRequest", duration);
+
+        // Publish metrics
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.ADD_GAME_TO_GROUP_ACTIVITY,
+            "Duration"), duration);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.ADD_GAME_TO_GROUP_ACTIVITY,
+            "StartTime"), startTime);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.ADD_GAME_TO_GROUP_ACTIVITY,
+            "EndTime"), endTime);
 
         return AddGameToGroupResult.builder()
             .withGameSet(updatedGameSet)

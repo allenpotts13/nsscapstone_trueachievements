@@ -5,8 +5,10 @@ import com.nashss.se.trueachievementsgroupservice.activity.results.GetAllGamesRe
 import com.nashss.se.trueachievementsgroupservice.converters.ModelConverter;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.GameDao;
 import com.nashss.se.trueachievementsgroupservice.dynamodb.models.Game;
+import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 import com.nashss.se.trueachievementsgroupservice.models.GameModel;
+import com.nashss.se.trueachievementsgroupservice.utils.MetricsUtil;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -52,7 +54,17 @@ public class GetAllGamesActivity {
         Collections.sort(gameModelList);
         long endTime = System.currentTimeMillis();
         long duration = endTime - startTime;
-        metricsPublisher.addTime("GetAllGamesActivity.handleRequest", duration);
+
+        // Publish metrics
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_ALL_GAMES_ACTIVITY,
+            "Duration"), duration);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_ALL_GAMES_ACTIVITY,
+            "StartTime"), startTime);
+
+        metricsPublisher.addTime(MetricsUtil.getMetricName(MetricsConstants.GET_ALL_GAMES_ACTIVITY,
+            "EndTime"), endTime);
+
         return GetAllGamesResult.builder()
             .withGameList(gameModelList)
             .build();

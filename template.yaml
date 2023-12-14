@@ -361,7 +361,7 @@ Resources:
         TrueAchievementsGroupService:
           Type: Api
           Properties:
-            Path: /groups/{groupName}/games
+            Path: /groups/{groupName}/games/{uniqueId}
             Method: delete
 
   GetGroupLambda:

@@ -10,8 +10,6 @@ import com.amazonaws.services.lambda.runtime.RequestHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.UnsupportedEncodingException;
-
 public class CreateGroupLambda
         extends LambdaActivityRunner<CreateGroupRequest, CreateGroupResult>
         implements RequestHandler<AuthenticatedLambdaRequest<CreateGroupRequest>, LambdaResponse> {
