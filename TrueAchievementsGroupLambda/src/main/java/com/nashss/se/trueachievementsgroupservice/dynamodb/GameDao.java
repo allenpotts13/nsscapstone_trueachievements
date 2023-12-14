@@ -5,10 +5,10 @@ import com.nashss.se.trueachievementsgroupservice.exceptions.GameNotFoundExcepti
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsConstants;
 import com.nashss.se.trueachievementsgroupservice.metrics.MetricsPublisher;
 
-import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBQueryExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedQueryList;
+import com.amazonaws.services.dynamodbv2.model.AttributeValue;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -26,6 +26,11 @@ public class GameDao {
 
     private DynamoDBMapper dynamoDbMapper;
     private final MetricsPublisher metricsPublisher;
+
+    // Static variables for index names
+    private static final String GAMER_SCORE_INDEX = "userId-gamerScoreWonIncludeDlc-index";
+    private static final String TRUE_ACHIEVEMENT_INDEX = "userId-trueAchievementWonIncludeDlc-index";
+    private static final String COMPLETION_PERCENTAGE_INDEX = "userId-myCompletionPercentage-index";
 
     /**
      * Instantiates a GameDao object.
@@ -87,12 +92,9 @@ public class GameDao {
         Map<String, Integer> userStats = new HashMap<>();
 
         // Collect the data into the userStats map
-        userStats.put("gamerScoreWonIncludeDlc", getAttributeTotal(userId,
-            "userId-gamerScoreWonIncludeDlc-index"));
-        userStats.put("trueAchievementWonIncludeDlc", getAttributeTotal(userId,
-            "userId-trueAchievementWonIncludeDlc-index"));
-        userStats.put("myCompletionPercentage", getAverageMyCompletionPercentage(userId,
-            "userId-myCompletionPercentage-index"));
+        userStats.put("gamerScoreWonIncludeDlc", getAttributeTotal(userId, GAMER_SCORE_INDEX));
+        userStats.put("trueAchievementWonIncludeDlc", getAttributeTotal(userId, TRUE_ACHIEVEMENT_INDEX));
+        userStats.put("myCompletionPercentage", getAverageMyCompletionPercentage(userId, COMPLETION_PERCENTAGE_INDEX));
 
         return userStats;
     }
@@ -138,11 +140,11 @@ public class GameDao {
     // Helper method to get the attribute value based on the GSI
     private int getAttribute(Game game, String indexName) {
         switch (indexName) {
-            case "userId-gamerScoreWonIncludeDlc-index":
+            case GAMER_SCORE_INDEX:
                 return game.getGamerScoreWonIncludeDlc() != null ? game.getGamerScoreWonIncludeDlc() : 0;
-            case "userId-trueAchievementWonIncludeDlc-index":
+            case TRUE_ACHIEVEMENT_INDEX:
                 return game.getTrueAchievementWonIncludeDlc() != null ? game.getTrueAchievementWonIncludeDlc() : 0;
-            case "userId-myCompletionPercentage-index":
+            case COMPLETION_PERCENTAGE_INDEX:
                 return game.getMyCompletionPercentage() != null ? game.getMyCompletionPercentage() : 0;
             default:
                 return 0;

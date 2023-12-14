@@ -216,13 +216,9 @@ Resources:
               Action: dynamodb:*
               Resource:
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games"
-              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/Platform-Index"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/userId-gamerScoreWonIncludeDlc-index"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/userId-trueAchievementWonIncludeDlc-index"
               - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/userId-myCompletionPercentage-index"
-              - !Sub "arn:aws:dynamodb:${AWS::Region}:${AWS::AccountId}:table/games/index/GameName-Index"
-
-
 
   #-----------------------------------------------------
   # Lambda Functions Configuration
@@ -418,8 +414,6 @@ Resources:
       AttributeDefinitions:
         - AttributeName: "uniqueId"
           AttributeType: "S"
-        - AttributeName: "platform"
-          AttributeType: "S"
         - AttributeName: "userId"
           AttributeType: "S"
         - AttributeName: "gamerScoreWonIncludeDlc"
@@ -428,8 +422,6 @@ Resources:
           AttributeType: "N"
         - AttributeName: "myCompletionPercentage"
           AttributeType: "N"
-        - AttributeName: "gameName"
-          AttributeType: "S"
       KeySchema:
         - AttributeName: "userId"
           KeyType: "HASH"
@@ -438,14 +430,6 @@ Resources:
       BillingMode: "PAY_PER_REQUEST"
       TableName: "games"
       GlobalSecondaryIndexes:
-        - IndexName: "Platform-Index"
-          KeySchema:
-            - AttributeName: "platform"
-              KeyType: "HASH"
-          Projection:
-            ProjectionType: "INCLUDE"
-            NonKeyAttributes:
-              - "gameName"
         - IndexName: "userId-gamerScoreWonIncludeDlc-index"
           KeySchema:
             - AttributeName: "userId"
@@ -468,12 +452,6 @@ Resources:
               KeyType: "HASH"
             - AttributeName: "myCompletionPercentage"
               KeyType: "RANGE"
-          Projection:
-            ProjectionType: "ALL"
-        - IndexName: "GameName-Index"
-          KeySchema:
-            - AttributeName: "gameName"
-              KeyType: "HASH"
           Projection:
             ProjectionType: "ALL"
 

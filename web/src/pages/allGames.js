@@ -26,22 +26,14 @@ class ViewGames extends BindingClass {
         try {
             console.log('this.client', this.client);
             const response = await this.client.getAllGames();
-            console.log('API Response in clientLoaded:', response);
-
             const games = (response && response.game)  || [];
 
             if (games.length === 0) {
                 console.error("No games retrieved from the server");
                 return;
             }
-
-            console.log("clientloaded", games);
-
             this.dataStore.set('games', games);
-            const storedGames = this.dataStore.get('games');
-            console.log("DataStore after setting games", storedGames);
             this.filteredGames = games;
-            console.log("DataStore after setting games", this.dataStore.getState());
         } catch (error) {
             console.error("Error loading games:", error);
         }
@@ -54,7 +46,6 @@ class ViewGames extends BindingClass {
         await this.header.addHeaderToPage();
         this.client = new TrueAchievementsGroupClient();
         await this.clientLoaded();
-        console.log('Client after initialization: ', this.client);
         this.setupControls();
     }
 
@@ -139,9 +130,6 @@ class ViewGames extends BindingClass {
         gameURLElement.textContent = `Game URL: ${game.gameURL} / ${game.gameURL}`;
         gameElement.appendChild(gameURLElement);
 
-
-
-
         const linkElement = document.createElement('a');
         linkElement.href = game.gameURL;
         linkElement.textContent = 'View Details';
@@ -168,7 +156,7 @@ class ViewGames extends BindingClass {
         const endPage = Math.min(totalPages, startPage + maxVisibleButtons - 1);
 
         if (startPage > 1) {
-            this.addPaginationButton('<<', Math.max(1, this.currentPage - maxVisibleButtons)); // Add first page button or ellipsis
+            this.addPaginationButton('<<', Math.max(1, this.currentPage - maxVisibleButtons));
         }
 
         for (let i = startPage; i <= endPage; i++) {
@@ -176,7 +164,7 @@ class ViewGames extends BindingClass {
         }
 
         if (endPage < totalPages) {
-            this.addPaginationButton('>>', Math.min(totalPages, this.currentPage + maxVisibleButtons)); // Add last page button or ellipsis
+            this.addPaginationButton('>>', Math.min(totalPages, this.currentPage + maxVisibleButtons));
         }
     }
 

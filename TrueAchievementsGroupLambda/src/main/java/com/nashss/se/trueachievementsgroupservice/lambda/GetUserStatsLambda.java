@@ -10,8 +10,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class GetUserStatsLambda
-        extends LambdaActivityRunner<GetUserStatsRequest, GetUserStatsResult>
-        implements RequestHandler<AuthenticatedLambdaRequest<GetUserStatsRequest>, LambdaResponse> {
+    extends LambdaActivityRunner<GetUserStatsRequest, GetUserStatsResult>
+    implements RequestHandler<AuthenticatedLambdaRequest<GetUserStatsRequest>, LambdaResponse> {
 
     private final Logger log = LogManager.getLogger();
 
@@ -19,14 +19,11 @@ public class GetUserStatsLambda
     public LambdaResponse handleRequest(AuthenticatedLambdaRequest<GetUserStatsRequest> input, Context context) {
         log.info("handleRequest");
         return super.runActivity(
-            () -> {
-                GetUserStatsRequest unauthenticatedRequest = input.fromPath(path -> GetUserStatsRequest.builder()
-                    .build());
-                return input.fromUserClaims(claims ->
-                    GetUserStatsRequest.builder()
-                        .withUserId(claims.get("email"))
-                        .build());
-            },
+            () -> input.fromUserClaims(claims ->
+                GetUserStatsRequest.builder()
+                    .withUserId(claims.get("email"))
+                    .build()),
+
             (request, serviceComponent) ->
                 serviceComponent.provideGetUserStatsActivity().handleRequest(request)
         );

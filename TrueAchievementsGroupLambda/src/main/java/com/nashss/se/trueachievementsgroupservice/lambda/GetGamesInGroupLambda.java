@@ -6,6 +6,7 @@ import com.nashss.se.trueachievementsgroupservice.activity.results.GetGamesInGro
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 
+import com.nashss.se.trueachievementsgroupservice.utils.UrlDecoderUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -24,7 +25,7 @@ public class GetGamesInGroupLambda
             () -> {
                 GetGamesInGroupRequest unauthenticatedRequest =
                     input.fromPath(path -> GetGamesInGroupRequest.builder()
-                    .withGroupName(urlDecode(path.get("groupName")))
+                    .withGroupName(UrlDecoderUtils.urlDecode(path.get("groupName")))
                     .build());
                 return input.fromUserClaims(claims ->
                     GetGamesInGroupRequest.builder()
@@ -35,14 +36,5 @@ public class GetGamesInGroupLambda
             (request, serviceComponent) ->
                 serviceComponent.provideGetGamesInGroupActivity().handleRequest(request)
         );
-    }
-
-    private String urlDecode(String input) {
-        try {
-            return java.net.URLDecoder.decode(input, "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            log.error("URL decoding error: " + e.getMessage(), e);
-            return input;
-        }
     }
 }

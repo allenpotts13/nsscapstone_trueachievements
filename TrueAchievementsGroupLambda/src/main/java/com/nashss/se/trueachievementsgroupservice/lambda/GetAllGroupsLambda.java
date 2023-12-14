@@ -19,14 +19,10 @@ public class GetAllGroupsLambda
     public LambdaResponse handleRequest(AuthenticatedLambdaRequest<GetAllGroupsRequest> input, Context context) {
         log.info("handleRequest");
         return super.runActivity(
-            () -> {
-                GetAllGroupsRequest unauthenticatedRequest = input.fromPath(path -> GetAllGroupsRequest.builder()
-                    .build());
-                return input.fromUserClaims(claims ->
-                    GetAllGroupsRequest.builder()
-                        .withUserId(claims.get("email"))
-                        .build());
-            },
+            () -> input.fromUserClaims(claims ->
+                GetAllGroupsRequest.builder()
+                    .withUserId(claims.get("email"))
+                    .build()),
             (request, serviceComponent) ->
                 serviceComponent.provideGetAllGroupsActivity().handleRequest(request)
         );

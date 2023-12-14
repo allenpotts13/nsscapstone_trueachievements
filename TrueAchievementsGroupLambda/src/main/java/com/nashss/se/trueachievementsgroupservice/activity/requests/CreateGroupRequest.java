@@ -26,7 +26,7 @@ public class CreateGroupRequest {
      * @param userId UserId for this group
      * @param gamesList Set of games for this group
      */
-    public CreateGroupRequest(String groupName, String userId, Set<Game> gamesList) {
+    private CreateGroupRequest(String groupName, String userId, Set<Game> gamesList) {
         this.groupName = groupName;
         this.userId = userId;
         this.gamesList = gamesList;

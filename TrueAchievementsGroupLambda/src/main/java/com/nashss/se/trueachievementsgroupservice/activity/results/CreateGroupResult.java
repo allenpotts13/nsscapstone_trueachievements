@@ -12,7 +12,7 @@ public class CreateGroupResult {
      * @param group the {@link GroupModel} is how a group is formatted.
      */
 
-    public CreateGroupResult(GroupModel group) {
+    private CreateGroupResult(GroupModel group) {
         this.group = group;
     }
 

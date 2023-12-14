@@ -14,10 +14,6 @@ export default class Header extends BindingClass {
         ];
         this.bindClassMethods(methodsToBind, this);
         this.client = new TrueAchievementsGroupClient();
-        window.addEventListener('popstate', () => {
-            console.log('Popstate event triggered!');
-            window.location.reload();
-        });
     }
 
     /**

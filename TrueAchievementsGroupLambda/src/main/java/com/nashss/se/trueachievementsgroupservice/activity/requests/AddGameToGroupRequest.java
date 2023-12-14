@@ -18,7 +18,7 @@ public class AddGameToGroupRequest {
      * @param groupName the name of the group
      */
 
-    public AddGameToGroupRequest(String userId, String uniqueId, String groupName) {
+    private AddGameToGroupRequest(String userId, String uniqueId, String groupName) {
         this.userId = userId;
         this.uniqueId = uniqueId;
         this.groupName = groupName;

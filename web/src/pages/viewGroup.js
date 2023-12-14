@@ -25,16 +25,12 @@ class ViewGroup extends BindingClass {
     async clientLoaded() {
         try {
           const urlParams = new URLSearchParams(window.location.search);
-            console.log('URL Parameters:', Object.fromEntries(urlParams.entries()));
           const encodedName = urlParams.get('groupName');
           const groupName = decodeURIComponent(encodedName);
-          console.log("Group name from URL:", groupName);
           document.getElementById('group-name').innerText = 'Loading group ...';
-          console.log("Group name before getGroup call:", groupName);
           const group = await this.client.getGroup(groupName);
           this.dataStore.set('group', group);
           const gamesResponse = await this.client.getAllGames();
-          console.log("API Response in getAllGames:", gamesResponse);
           const games = gamesResponse.game || [];
           if (!Array.isArray(games)) {
               throw new Error('Invalid game data received');
@@ -79,12 +75,7 @@ class ViewGroup extends BindingClass {
                 return;
             }
 
-            console.log("Updated group in addGroupToPage:", group);
-
             document.getElementById('group-name').innerText = group.groupName || 'N/A';
-
-
-            console.log("Games list in addGroupToPage:", group.gamesList);
 
         } catch (error) {
             console.error('Error fetching group:', error);
@@ -134,15 +125,11 @@ class ViewGroup extends BindingClass {
             errorMessageDisplay.classList.add('hidden');
 
             const group = this.dataStore.get('group');
-            console.log('Group in addGame:', group);
 
             if (!group || !group.groupName) {
                 console.error('Group is undefined or does not have a name.');
                 return;
             }
-
-            const groupName = group.groupName;
-            console.log('Group name before getGroup call:', groupName);
 
             const uniqueId = document.getElementById('add-game-dropdown').value;
 
@@ -151,11 +138,6 @@ class ViewGroup extends BindingClass {
                 errorMessageDisplay.classList.remove('hidden');
                 return;
             }
-
-            console.log('Data being sent in Axios request:', {
-                groupName: group.groupName,
-                uniqueId: uniqueId,
-            });
 
             document.getElementById('add-game').innerText = 'Adding...';
 
@@ -190,14 +172,10 @@ class ViewGroup extends BindingClass {
             errorMessageDisplay.classList.add('hidden');
 
             const group = this.dataStore.get('group');
-            console.log('Group in deleteGame:', group);
             if (!group || !group.groupName) {
                 console.error('Group is undefined or does not have a name.');
                 return;
             }
-
-            const groupName = group.groupName;
-            console.log('Group name before getGroup call:', groupName);
 
             const uniqueId = document.getElementById('delete-game-dropdown').value;
             if (!uniqueId) {
@@ -205,11 +183,6 @@ class ViewGroup extends BindingClass {
                 errorMessageDisplay.classList.remove('hidden');
                 return;
             }
-
-            console.log('Data being sent in Axios request:', {
-                group: group.groupName,
-                uniqueId: uniqueId,
-            });
 
             document.getElementById('delete-game').innerText = 'Deleting...';
 
