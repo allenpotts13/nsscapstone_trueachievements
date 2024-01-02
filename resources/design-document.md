@@ -45,8 +45,9 @@ you more freedom over how things are structured. The data within will only perta
 to add other users. 
 
 ## 4. Proposed Architecture Overview
-We will use API Gateway and Lambda to create six endpoints (`GetUserStatsLambda`, `CreateGroupLambda`, 
-`GetGroupLambda`, `GetGameLambda`, `GetAllGroupsLambda`, `GetAllGamesLambda`, `AddGameToGroupLambda`, and `GetGamesInGroupLambda`)
+We will use API Gateway and Lambda to create nine endpoints (`GetUserStatsLambda`, `GetGroupLambda`, 
+`GetGamesInGroupLambda`, `GetGameLambda`, `GetAllGroupsLambda`, `GetAllGamesLambda`, `DeleteGameFromGroupLambda`, 
+`CreateGroupLambda`, and `AddGameToGroupLambda`)
 that will handle the creation, update, and retrieval of groups to satisfy our
 requirements.
 
@@ -66,13 +67,15 @@ statistics will be their central hub. A main page will allow users to create new
 ```
 // GroupModel
 
+String userId;
 String groupName;
-List<Games> gameList;
+Set<Games> gameList;
 ```
 
 ```
 // GameModel
 
+String userId;
 String uniqueId;
 String gameName;	
 String platform;	
@@ -105,16 +108,6 @@ String completionEstimate;
 String walkthrough;	
 List<String> gameNotes;	
 String contestStatus;
-```
-
-```
-// UserStatsModel
-
-Integer gamerScore;
-Integer trueAchievementScore;
-Integer hoursPlayed;
-Integer numberOfGamesOwned;
-Integer myCompletionPercentage;
 ```
 
 ## 5.2. Get Group Endpoint
@@ -152,16 +145,26 @@ Integer myCompletionPercentage;
   empty
 * If the group name is not found, will throw a `GroupNotFoundException`
 
-## 5.7 Get All Groups Endpoint
+## 5.7 Delete Game from Group Endpoint
+* Accepts `DELETE` requests to `/groups/:groupName/games/:uniqueId`
+* Accepts a group name and a game to be deleted. The game is specified by its uniqueId.
+    * If the group is not found, will throw a `GroupNotFoundException`
+    * If the uniqueId doesn't exist, will throw a `GameNotFoundException`
+    * If the uniqueId exists, but is not in the group, will throw a
+      `GameNotFoundException`
+    * If the uniqueId exists and is in the group, will delete the game from the
+      group
+
+## 5.8 Get All Groups Endpoint
 * Accepts `GET` requests to `/groups`
 * Retrieves all groups
 
-## 5.8 Get All Games Endpoint
+## 5.9 Get All Games Endpoint
 * Accepts `GET` requests to `/games`
 * Retrieves all games
 
-## 5.9 Get User Stats Endpoint
-* Accepts `GET` requests to `/statistics`
+## 5.10 Get User Stats Endpoint
+* Accepts `GET` requests to `/statistics/games`
 * Retrieves user stats from various data points
 
 
@@ -169,13 +172,15 @@ Integer myCompletionPercentage;
 
 ### 6.1. 'groups'
 ```
-groupName // partition key, string
-gameList // list
+userId // partition key, string
+groupName // range key, string
+gameList // stringList
 ```
 
 ### 6.2. 'games'
 ```
-uniqueId // partition key, string
+userId // partition key, string
+uniqueId // range key, string
 gameName // string	
 platform // string	
 gameURL // string	
@@ -209,5 +214,7 @@ gameNotes // stringList
 contestStatus // string
 ```
 
-- platform-uniqueId-index includes gameName
+- userId-gamerScoreWonIncludeDlc-index
+- userId-trueAchievementWonIncludeDlc-index
+- userId-myCompletionPercentage-index
 
