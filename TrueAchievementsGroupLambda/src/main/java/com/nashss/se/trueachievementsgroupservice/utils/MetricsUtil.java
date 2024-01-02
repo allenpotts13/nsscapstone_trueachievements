@@ -1,9 +1,6 @@
 package com.nashss.se.trueachievementsgroupservice.utils;
 
 public class MetricsUtil {
-    public static final String DURATION_SUFFIX = ".Duration";
-    public static final String START_TIME_SUFFIX = ".StartTime";
-    public static final String END_TIME_SUFFIX = ".EndTime";
 
     /**
      * Returns the metric name for the provided activity name and metric type.
