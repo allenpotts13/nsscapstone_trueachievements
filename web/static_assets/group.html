@@ -9,19 +9,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
-
     <title>Your Group Page</title>
     <style>
         body {
             background-color: #000;
             color: #fff;
             font-family: 'Roboto Condensed', sans-serif;
-            margin: 0;
+            margin-top: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
             min-height: 100vh;
         }
 
@@ -59,14 +57,24 @@
             background-color: #45a049; /* Darker green color on hover */
         }
 
-    </style>
-</head>
+        section {
+            margin: 20px 0; /* Add spacing between sections */
+            text-align: center;
+        }
 
+        .add-delete-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+    </style>
+
+</head>
 <body>
 <!-- Header Section -->
-<div id="header"></div>
+<header class="header" id="header"></header>
 <!-- Games List Section -->
-<section>
+<section class="container">
     <h1 id="group-name">Loading group...</h1>
     <h3>Games List</h3>
     <div id="games-list">
@@ -75,7 +83,7 @@
 </section>
 
 <!-- Add Game Section -->
-<div class="add-delete-container">
+<div class="add-delete-container container">
 <section>
     <h2>Add Game to Group</h2>
     <form id="add-game-form">
@@ -97,7 +105,7 @@
 </div>
 
 <!-- Error Message Section -->
-<section>
+<section class="container">
     <p id="error-message" class="hidden"></p>
 </section>
 
