@@ -4,3 +4,11 @@
 # These are explicitly windows files and should use crlf
 *.bat           text eol=crlf
 
+# .gitattributes
+*.js linguist-language=JavaScript
+*.py linguist-language=Python
+*.html linguist-language=HTML
+*.java linguist-language=Java
+*.css linguist-language=CSS
+
+
