@@ -47,14 +47,14 @@ class ViewGroup extends BindingClass {
     /**
      * Add the header to the page and load the TrueAchievementsGroupClient.
      */
-    mount() {
+    async mount() {
         try {
             document.getElementById('delete-game').addEventListener('click', this.deleteGame);
             document.getElementById('add-game').addEventListener('click', this.addGame);
-            this.header.addHeaderToPage();
-            this.client = new TrueAchievementsGroupClient();
-            this.clientLoaded();
-            this.populateGameDropdown();
+             await this.header.addHeaderToPage();
+             await this.client = new TrueAchievementsGroupClient();
+             await this.clientLoaded();
+             await this.populateGameDropdown();
 
         } catch (error) {
             console.error('Error loading group:', error);
