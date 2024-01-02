@@ -52,7 +52,7 @@ class ViewGroup extends BindingClass {
             document.getElementById('delete-game').addEventListener('click', this.deleteGame);
             document.getElementById('add-game').addEventListener('click', this.addGame);
              await this.header.addHeaderToPage();
-             await this.client = new TrueAchievementsGroupClient();
+             this.client = new TrueAchievementsGroupClient();
              await this.clientLoaded();
              await this.populateGameDropdown();
 
