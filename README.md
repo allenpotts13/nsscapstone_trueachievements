@@ -2,7 +2,8 @@
 
 ![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)
 ![Dependencies](https://img.shields.io/badge/Dependencies-Up%20to%20Date-brightgreen)
-![Languages](https://img.shields.io/github/languages/top/allenpotts13/nsscapstone_trueachievements?style=flat-square)
+[![Languages](https://img.shields.io/github/languages/count/allenpotts13/nsscapstone_trueachievements)](https://github.com/allenpotts13/nsscapstone_trueachievements)
+
 [![Coverage](https://img.shields.io/badge/coverage-56%25-brightgreen)](http://localhost:63342/nsscapstone_trueachievements/TrueAchievementsGroupLambda/build/reports/jacoco/test/html/index.html?_ijt=rjaolb59evrglql6aj5266d01m&_ij_reload=RELOAD_ON_SAVE)
 ![Version](https://img.shields.io/badge/Version-1.0-blue)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin&labelColor=blue)](https://www.linkedin.com/in/allen-potts/)
