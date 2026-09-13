@@ -12,7 +12,7 @@
     "run-remote": "API_LOCATION=remote webpack-dev-server --mode=development --hot"
   },
   "dependencies": {
-    "aws-amplify": "^5.0.7",
+    "aws-amplify": "^6.20.0",
     "axios": "^1.1.2",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
