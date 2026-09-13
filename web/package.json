@@ -19,7 +19,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^11.0.0",
+    "copy-webpack-plugin": "^14.0.0",
     "dotenv-webpack": "^8.0.1"
   }
 }
